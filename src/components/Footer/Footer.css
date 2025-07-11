@@ -1,0 +1,135 @@
+/* Footer.css */
+
+.main-footer {
+    background-color: #F8F9FA; /* خلفية بيضاء/رمادية فاتحة */
+    padding: 40px 20px; /* مساحة داخلية */
+    border-top: 1px solid #e0e0e0; /* خط فاصل علوي رفيع */
+    text-align: right; /* محاذاة المحتوى لليمين كما في الصورة */
+  }
+  
+  .footer-content-wrapper {
+    max-width: 1200px; /* لتحديد أقصى عرض للفوتر */
+    margin: 0 auto; /* توسيط المحتوى */
+    display: flex;
+    justify-content: flex-end; /* لدفع المحتوى إلى اليمين */
+    align-items: flex-start; /* محاذاة العناصر من الأعلى */
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column; /* ترتيب العناصر عمودياً */
+    align-items: flex-end; /* محاذاة النصوص والأيقونات لليمين */
+  }
+  
+  .contact-title {
+    font-size: 1.8em; /* حجم الخط لـ "تواصل معنا :" */
+    color: #1A68A6; /* لون النص */
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  .contact-item {
+    margin-bottom: 15px; /* مسافة بين عناصر الاتصال */
+  }
+  
+  .contact-item a {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center; /* لمحاذاة النص والأيقونة أفقياً */
+    text-decoration: none; /* إزالة خط تحت الروابط */
+    color: #1A68A6; /* لون أزرق للروابط */
+    font-size: 1.4em; /* حجم الخط لرقم الهاتف واسم التيليجرام */
+    font-weight: 500;
+    direction: rtl; /* لجعل النص يبدأ من اليمين */
+
+  }
+  .contact-item span{
+    margin-left: 1em;
+  }
+  
+  .contact-item a:hover {
+    text-decoration: underline; /* إظهار خط تحت الروابط عند التحويم */
+  }
+  
+  .icon-wrapper {
+    width: 40px; /* حجم الأيقونة الدائرية */
+    height: 40px; /* حجم الأيقونة الدائرية */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px; /* مسافة بين الأيقونة والنص */
+  }
+  
+  .icon-wrapper img {
+    width: 40px; /* حجم أيقونة SVG داخل الدائرة */
+    height: 40px; /* حجم أيقونة SVG داخل الدائرة */
+    /* fill: #1A68A6; */
+  }
+  
+  /* .whatsapp-bg {
+    background-color: #1A68A6; 
+  }
+  
+  .telegram-bg {
+    background-color: #1A68A6;
+  } */
+  
+  
+  /* --- Responsive Design (أجهزة لوحية وهواتف) --- */
+  
+  @media (max-width: 768px) {
+    .main-footer {
+      padding: 30px 15px;
+      text-align: center; /* توسيط المحتوى في الشاشات الأصغر */
+    }
+  
+    .footer-content-wrapper {
+      flex-direction: column; /* ترتيب العناصر عمودياً */
+      align-items: center; /* توسيط المحتوى */
+    }
+  
+    .contact-info {
+      align-items: center; /* توسيط عناصر الاتصال */
+    }
+  
+    .contact-title {
+      font-size: 1.6em;
+      margin-bottom: 15px;
+    }
+  
+    .contact-item {
+      margin-bottom: 10px;
+    }
+  
+    .contact-item a {
+      font-size: 1.2em;
+      flex-direction: row-reverse; /* لعكس ترتيب الأيقونة والنص ليظهر الرقم ثم الأيقونة */
+    }
+  
+    .icon-wrapper {
+      width: 35px;
+      height: 35px;
+      margin-left: 10px; /* مسافة لليسار عندما يكون النص يمين الأيقونة */
+      margin-right: 0; /* إزالة المسافة السابقة */
+    }
+  
+    .icon-wrapper img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .main-footer {
+      padding: 25px 10px;
+    }
+  
+    .contact-title {
+      font-size: 1.4em;
+    }
+  
+    .contact-item a {
+      font-size: 1.1em;
+    }
+  }

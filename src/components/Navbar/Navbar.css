@@ -1,0 +1,444 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Custom Navbar Styling */
+.custom-navbar {
+  /* background-color: #2C7CCF !important; */
+  /* إذا كنت تريده فوق صورة وتكون خلفيته شفافة، استخدم: */
+  background-color: transparent !important;
+  position: absolute; /* أو sticky أو fixed حسب التصميم */
+  width: 100%; /* يجب أن تكون 100% وليس 99vw لتجنب المشاكل */
+  z-index: 1000;
+  /* padding: 2.5rem 0; */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* خط فاصل خفيف */
+  /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
+  transition: all 0.3s ease-in-out; /* إضافة انتقال للخلفية إذا تغيرت */
+}
+
+/* إذا كان الـ Navbar شفافاً في البداية ويصبح ملوناً عند التمرير: */
+/*
+.custom-navbar.scrolled {
+  background-color: #2C7CCF !important;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+*/
+
+.custom-navbar .navbar-brand {
+  color: #FAFCFE !important; /* لون الشعار */
+  font-size: 2.2em; /* حجم أكبر للشعار */
+  font-weight: bold;
+  /* height: 100px; */
+  /* اتجاه النص في RTL */
+  margin-left: 20px; /* مسافة من قائمة الروابط في RTL */
+}
+
+.custom-navbar .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5); /* لون حدود زر الهامبرغر */
+}
+
+.custom-navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+/* لا داعي للتحكم في عرض و justify-content هنا إذا استخدمت utility classes في JSX */
+/* .custom-navbar .navbar-collapse {
+  width: 100% !important;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+} */
+
+
+.custom-nav-links .nav-link-item {
+  color: #FAFCFE !important; /* لون الروابط أبيض */
+  font-size: 1.2em; /* حجم خط مناسب للشاشات الكبيرة */
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 4.5rem; /* المسافة بين الروابط (في RTL) */
+  /* margin-top: 2rem; */
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+  /* animation: navLinkFadeIn 1s ease-out forwards; */ /* يمكن إزالة الأنيميشن لتبسيط الكود */
+  opacity: 1; /* يجب أن تكون 1 بشكل افتراضي */
+}
+
+/* إلغاء الأنيميشن الافتراضي لكل عنصر إذا لم تعد تستخدمه */
+/*
+.custom-nav-links .nav-link-item:nth-child(1) { animation-delay: 0s; }
+.custom-nav-links .nav-link-item:nth-child(2) { animation-delay: 0s; }
+.custom-nav-links .nav-link-item:nth-child(3) { animation-delay: 0s; }
+.custom-nav-links .nav-link-item:nth-child(4) { animation-delay: 0s; }
+*/
+
+
+.custom-nav-links .nav-link-item:hover,
+.custom-nav-links .nav-link-item.active {
+  /* color: #ffc107 !important; */
+  transform: translateY(-2px); /* رفع بسيط عند التحويم */
+}
+
+.custom-nav-links .nav-link-item::after {
+  content: '';
+  position: absolute;
+  /* في RTL، الخط السفلي يجب أن يبدأ من اليمين */
+  right: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: #1A68A6;
+  transition: width 0.3s ease-in-out;
+}
+
+.custom-nav-links .nav-link-item:hover::after,
+.custom-nav-links .nav-link-item.active::after {
+  width: 100%;
+}
+
+.custom-nav-links .contact-us-link {
+  background-color: #ffc107; 
+  color: #2C7CCF !important;
+  padding: 8px 20px;
+  border-radius: 25px; 
+  margin-right: 0; 
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-weight: 600;
+  border: none; 
+}
+
+.custom-nav-links .contact-us-link:hover {
+  background-color: #e0b000;
+  transform: scale(1.05); 
+}
+
+
+@keyframes logoFadeIn {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes navLinkFadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 
+@media (max-width: 991px) { 
+  .custom-navbar {
+    padding: 0.5rem 0; 
+  }
+
+  .custom-navbar .navbar-collapse {
+    background-color: #2C7CCF; 
+    margin-top: 10px;
+    padding: 15px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+ 
+  }
+  
+  .custom-nav-links {
+    flex-direction: column; 
+    align-items: center; 
+    width: 100%; 
+    margin-right: 0 !important; 
+  }
+  
+  .custom-nav-links .nav-link-item {
+    margin: 10px 0; 
+    width: auto; 
+    text-align: center;
+    font-size: 1.1em; 
+  }
+  
+  .custom-nav-links .contact-us-link {
+    margin-top: 15px;
+    margin-bottom: 5px; 
+  }
+}
+
+
+@media (max-width: 575px) {
+  .custom-navbar .navbar-brand {
+    font-size: 1.8em;
+  }
+  .custom-nav-links .nav-link-item {
+    font-size: 1em;
+  }
+  .custom-nav-links .contact-us-link {
+    font-size: 0.9em;
+    padding: 6px 15px;
+  }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Custom Navbar Styling */
+.custom-navbar {
+  background-color: transparent !important; /* شفافية افتراضية للصفحة الرئيسية */
+  position: absolute; /* أو fixed إذا كان دائما في الأعلى */
+  width: 100%;
+  z-index: 1000;
+  /* padding: 1.5rem 0; */
+  transition: all 0.4s ease-in-out; /* انتقال سلس عند تغيير الألوان والخلفية */
+  direction: rtl; /* للتأكد من RTL */
+}
+
+/* حالة الـ Navbar عندما لا تكون على الصفحة الرئيسية */
+.custom-navbar.navbar-scrolled {
+  /* background-color: #FAFCFE !important; */
+  /* يمكن أن يكون "position: fixed;" هنا إذا كنت تريده ثابتاً عند التمرير في الصفحات الفرعية */
+  /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
+}
+
+.container-nav{
+  padding: 2.5rem 0 ;
+  display: flex ;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: row-reverse;
+}
+
+/* تصميم الشعار */
+.navbar-logo {
+  display: flex; 
+  align-items: center;
+}
+
+.navbar-logo-image {
+  height: 150px;
+  margin-left: 10px; /* مسافة بين الشعار والروابط في RTL */
+  transition: all 0.4s ease-in-out;
+}
+
+/* لون زر الهامبرغر عندما تكون الخلفية بيضاء (في حالة navbar-scrolled) */
+.custom-navbar.navbar-scrolled .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+/* لون زر الهامبرغر عندما تكون الخلفية شفافة (في الصفحة الرئيسية) */
+.custom-navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+/* لون الروابط الافتراضي (للصفحة الرئيسية) */
+.custom-nav-links .nav-link-item {
+  color: #FAFCFE !important;
+  font-size: 1.2em;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 1.5rem;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* لون الروابط عندما تكون showLogoAndBlueText صحيحة (في الصفحات الأخرى) */
+.custom-navbar.navbar-scrolled .custom-nav-links .nav-link-item {
+  color: #2C7CCF !important; /* لون أزرق للروابط في الصفحات الفرعية */
+}
+
+/* تأثير التظليل السفلي (يجب أن يكون لونه ثابتًا أو يتغير أيضًا) */
+.custom-nav-links .nav-link-item::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  /* background-color: #ffc107; */
+  transition: width 0.3s ease-in-out;
+}
+
+.custom-nav-links .nav-link-item:hover::after,
+.custom-nav-links .nav-link-item.active::after {
+  width: 100%;
+}
+
+/* زر "تواصل معنا" */
+/* .custom-nav-links .contact-us-link {
+  background-color: #ffc107;
+  color: #2C7CCF !important;
+  padding: 8px 20px;
+  border-radius: 25px;
+  margin-right: 0;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-weight: 600;
+  border: none;
+} */
+
+/* .custom-nav-links .contact-us-link:hover {
+  background-color: #e0b000;
+  transform: scale(1.05);
+} */
+
+/* ----- Responsive Adjustments (unchanged from previous answer) ----- */
+@media (max-width: 992px) {
+  .custom-navbar {
+    padding: 0.5rem 0;
+  }
+.container-nav{
+  padding: 0 !important;
+  display: flex;
+  justify-content: space-around;
+      align-items: center;
+      flex-direction: row-reverse;
+}
+  /* في وضع الجوال، تكون الخلفية دائمًا صلبة (لون الـ Navbar الرئيسي أو الأبيض حسب التصميم) */
+  .custom-navbar .navbar-collapse {
+    /* background-color: #2C7CCF; */
+    border-radius: 8px;
+    margin-top: 10px;
+    padding: 15px;
+    /* position: absolute; */
+    /* top: 100%; */
+    /* left: 0; */
+    width: 100%;
+  }
+  
+  .custom-nav-links {
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* width: 100%; */
+    margin-right: 0 !important;
+  }
+  
+  .custom-nav-links .nav-link-item {
+    /* margin: 10px 0; */
+    width: auto;
+    text-align: center;
+    font-size: 1.1em;
+    /* يجب أن يكون لون النص أزرق في القائمة المنسدلة على الجوال إذا كانت الخلفية بيضاء */
+    /* ولكن إذا كانت الخلفية زرقاء (كما هو الحال أعلاه)، فالأبيض أفضل */
+    color: #FAFCFE !important; /* لون أبيض لروابط القائمة المنسدلة */
+  }
+  
+  .custom-nav-links .contact-us-link {
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+
+  /* الشعار في وضع الجوال: */
+  .custom-navbar .navbar-brand {
+    /* يمكنك التحكم في مكان الشعار عندما تكون القائمة منهارة */
+    position: relative; /* أو absolute */
+    /* top: 0; */
+    /* left: 0; */
+    /* margin: 0; */
+    /* padding: 0; */
+  }
+}
+
+@media (max-width:670px){
+  .custom-nav-links .nav-link-item {
+    font-size: .85em;
+  }
+}
+
+
+@media (max-width: 580px) {
+  /* .custom-navbar .navbar-brand {
+    font-size: 1.8em;
+  } */
+
+  .navbar-logo-image{
+    height: 75px;
+  }
+  .custom-nav-links .nav-link-item {
+    font-size: .7em !important;
+  }
+  
+}
+@media (max-width: 460px) {
+  /* .custom-navbar .navbar-brand {
+    font-size: 1.8em;
+  } */
+
+  .navbar-logo-image{
+    height: 55px;
+  }
+  .custom-nav-links .nav-link-item {
+    font-size: .5em !important;
+  }
+ 
+}
+@media (max-width: 360px) {
+  /* .custom-navbar .navbar-brand {
+    font-size: 1.8em;
+  } */
+
+  .navbar-logo-image{
+    height: 45px;
+  }
+  .custom-nav-links .nav-link-item {
+    font-size: .3em !important;
+    margin-left: 0.5rem !important;
+  }
+ 
+}

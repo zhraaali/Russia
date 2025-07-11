@@ -1,0 +1,16 @@
+/* FeaturedToursSection.css */
+
+.featured-tours-section {
+    background-color: #F8F9FA; /* خلفية رمادية فاتحة جدًا */
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .section-title {
+    font-size: 3em;
+    color: #2C3E50; /* لون العنوان */
+    margin-bottom: 60px;
+  }
+  

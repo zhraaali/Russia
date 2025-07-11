@@ -1,0 +1,268 @@
+/* Hero Section Styling */
+
+/* .hero{
+    background-image: url('../../assets/images/باك\ copy.png');
+    
+    width: 100%;
+    height: 100vh;
+} */
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* object-fit: contain; */
+    /* object-fit: cover; */
+    
+    /* -moz-background-clip: content-box; */
+    /* background-size: cover; */
+    /* background-position-y: 10vh; */
+     background-position: center;
+     
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;  */
+    color: #fff; 
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+/* .img-container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: inline-block;
+}
+
+.img-container::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: -5px;
+    width: 50%;
+    height: 10px;
+    background: linear-gradient(to right,rgba(0,0,0,0.3));
+} */
+
+  .hero-section img{
+    width: 100%;
+    height: 100vh;
+    filter: drop-shadow(-50px 30px 0px #477BAE)
+            drop-shadow(-50px 20px 0px #ACCDEE);
+    /* box-shadow: 0px 0px 8px 5px #477BAE; */
+    /* object-fit: contain; */
+  }
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 100vh; */
+    /* background-image: url('../../assets/images/روسيل44.png'); */
+    background-size: cover;
+    /* background: rgba(0, 0, 0, 0.4);  */
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    top: -75%;
+    /* bottom: 20%; */
+    z-index: 2; /* لجعل المحتوى فوق الطبقة الشفافة */
+    padding-top: 80px; /* مسافة من الأعلى لعدم تداخلها مع ال Navbar */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* ظل للنص لتحسين القراءة */
+  }
+  
+  .hero-title {
+    font-size: 5em; /* حجم كبير للعنوان */
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: slideInFromTop 1s ease-out forwards; /* انيميشن للعنوان */
+    opacity: 0;
+    color: #fff; /* اللون الافتراضي للعناوين هو الأبيض */
+  }
+  
+  .hero-subtitle {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+    animation: slideInFromBottom 1s ease-out forwards; /* انيميشن للوصف */
+    animation-delay: 0.3s; /* تأخير بسيط بعد العنوان */
+    opacity: 0;
+    color: #fff;
+  }
+  
+  .hero-buttons .hero-button {
+    padding: 15px 40px;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 50px; /* أزرار بيضاوية */
+    margin: 0 10px;
+    transition: all 0.3s ease;
+    animation: fadeInButton 1s ease-out forwards; /* انيميشن للأزرار */
+    animation-delay: 0.6s; /* تأخير بعد الوصف */
+    opacity: 0;
+    border: 2px solid; /* إضافة حدود للأزرار */
+    border: 1px solid #707070;
+    border-radius: 15px;
+  }
+  
+  .hero-buttons .hero-button:first-child {
+    background-color: #FFFFFF; /* لون زر "وجهات سياحية" */
+    border-color: #8c8c8c;
+    color: #1A68A6;
+  }
+  
+  .hero-buttons .hero-button:first-child:hover {
+    background-color: #7a7a7a;
+    border-color: #7a7a7a;
+    transform: translateY(-3px); /* رفع الزر عند التحويم */
+  }
+  
+  .hero-buttons .hero-button:last-child {
+    background-color: #D7273E; /* لون زر "الخدمات" */
+    border-color: #5d3f6a;
+    
+    color: #fff;
+  }
+  
+  .hero-buttons .hero-button:last-child:hover {
+    background-color: #4b3252;
+    border-color: #4b3252;
+    transform: translateY(-3px); /* رفع الزر عند التحويم */
+  }
+  
+  /* Animations */
+  @keyframes slideInFromTop {
+    0% { opacity: 0; transform: translateY(-50px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slideInFromBottom {
+    0% { opacity: 0; transform: translateY(50px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeInButton {
+    0% { opacity: 0; transform: scale(0.8); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 991px) {
+    .hero-section {
+      height: 80vh; /* تقليل الارتفاع على الشاشات الأصغر */
+    }
+
+    .hero-inner{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-content {
+      padding-top: 0; /* إزالة المسافة العلوية */
+      top: -72% !important;
+      /* bottom: 100% !important; */
+    }
+    .hero-title {
+      font-size: 3.5em; /* تصغير حجم العنوان */
+    }
+    .hero-subtitle {
+      font-size: 1.4em; /* تصغير حجم الوصف */
+    }
+    .hero-buttons .hero-button {
+      padding: 12px 30px;
+      font-size: 1em;
+      margin: 0 5px;
+    }
+  }
+  
+  @media (max-width: 770px) {
+    .hero-section {
+      height: 70vh;
+    }
+    .hero-section img{
+      height: 100%;
+    }
+    /* .hero-content{
+      top: -70% !important;
+    } */
+    .hero-title {
+      font-size: 2.8em;
+    }
+    .hero-subtitle {
+      font-size: 1.2em;
+    }
+    .hero-buttons {
+      /* flex-direction: column; */
+      gap: 15px; 
+      display: flex;
+    }
+    .hero-buttons .hero-button {
+      width: 80%; 
+      margin: 0 auto;
+    }
+  }
+
+
+@media (max-width:628px){
+  .hero-section{
+    height: 50vh;
+  }
+  .hero-content{
+    top: -70% !important;
+  }
+  .hero-title {
+    font-size: 2em;
+  }
+  .hero-subtitle {
+    font-size: 1em;
+  }
+  .hero-buttons{
+    gap: 10px;
+  }
+  .hero-button{
+    width: 60%;
+    font-size: .7em;
+    padding: 10px 17px !important;
+  }
+}
+
+
+
+@media (max-width:460px){
+  /* .hero-section{
+    height: 45vh;
+  } */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

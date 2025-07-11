@@ -1,0 +1,197 @@
+
+
+
+
+  /* MoscowInfoSection.css */
+
+.moscow-info-section {
+  background-color: #FFFFFF; /* خلفية بيضاء للقسم بشكل عام */
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.moscow-info-title {
+  font-size: 3em;
+  color: #477BAE; /* لون أزرق للعنوان */
+  margin-bottom: 60px;
+  margin-bottom: 100px;
+  font-weight: bold;
+  margin-top: 10rem;
+}
+
+.info-cards-grid-moscow {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* بطاقتان في كل صف */
+  gap: 40px 60px; /* مسافة عمودية 40px، مسافة أفقية 60px */
+  gap: 60px 100px;
+  max-width: 1200px;
+  max-width: 800px;
+  margin: 0 auto;
+  justify-content:center;
+}
+
+.info-card-moscow{
+  /* التدرج اللوني الجديد للخلفية */
+  background: linear-gradient(to bottom, #A1D0F0, #EEF4F9, #FAFCFE); /* تدرج الألوان */
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  padding-top: 55px; /* زيادة المساحة العلوية لاستيعاب الأيقونة التي تخرج للأعلى */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+  position: relative; /* مهم لتموضع wrapper الأيقونة بشكل مطلق بالنسبة للكرت */
+  /* overflow: hidden; */
+}
+
+.info-card-moscow:hover {
+  transform: translateY(-5px);
+}
+
+.info-icon-wrapper {
+  position: absolute; /* تموضع مطلق بالنسبة للـ .info-card-moscow*/
+  top: 0; /* يبدأ من أعلى البطاقة */
+  left: 50%; /* توسيط أفقي */
+  transform: translate(-50%, -50%); /* تحريك الأيقونة نصف ارتفاعها للأعلى ونصف عرضها لليسار لتوسيطها فوق البطاقة */
+  z-index: 3; /* لضمان ظهور الأيقونة فوق أي عناصر أخرى */
+  background-color: #1A68A6; /* لون خلفية الأيقونة */
+  border-radius: 50%; /* لجعل الغلاف دائرياً أيضاً */
+  padding: 10px; /* لإعطاء مساحة حول الأيقونة إذا أردت حدوداً حولها */
+}
+
+.info-icon-circle {
+  width: 70px; /* حجم الدائرة */
+  height: 70px; /* */
+  border-radius: 50%;
+  background-color: transparent; /* الخلفية الفعلية للدائرة ستأتي من الـ wrapper الجديد */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-icon-circle img {
+  width: 40px; /* حجم الأيقونة داخل الدائرة */
+  height: 40px; /* */
+  /* لون الأيقونات محدد مباشرة في SVG fill="#2C7CCF" */
+  fill: #FFFFFF; /* جعل الأيقونة بيضاء لتتناسب مع خلفية #1A68A6 */
+}
+
+.card-heading {
+  font-size: 1.4em;
+  color: #477BAE;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-description-moscow {
+  font-size: 0.95em;
+  color: #477BAE;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+/* --- Responsive Design --- */
+
+@media (max-width: 1200px) {
+  .info-cards-grid-moscow {
+    gap: 30px 40px;
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 991px) {
+  .moscow-info-title {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+  }
+
+  .info-cards-grid-moscow {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 30px;
+    max-width: 650px;
+  }
+
+  .info-card-moscow{
+    padding: 25px;
+    padding-top: 50px; /* تعديل الـ padding-top */
+  }
+
+  .info-icon-wrapper {
+    transform: translate(-50%, -50%); /* التأكد من بقاء التموضع صحيحاً */
+  }
+
+  .info-icon-circle {
+    width: 60px;
+    height: 60px;
+  }
+
+  .info-icon-circle img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .card-heading {
+    font-size: 1.3em;
+  }
+
+  .card-description-moscow {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 767px) {
+  .moscow-info-section {
+    padding: 60px 15px;
+  }
+
+  .moscow-info-title {
+    font-size: 2em;
+    margin-bottom: 40px;
+  }
+
+  .info-cards-grid-moscow {
+    grid-template-columns: 1fr; /* عمود واحد في الشاشات الصغيرة */
+    gap: 20px;
+    max-width: 400px;
+  }
+
+  .info-card-moscow {
+    padding: 20px;
+    padding-top: 45px; /* تعديل الـ padding-top للهواتف */
+  }
+
+  .info-icon-wrapper {
+    /* للحفاظ على الأيقونة في المنتصف من الأعلى حتى في العمود الواحد */
+    transform: translate(-50%, -50%);
+  }
+
+  .info-icon-circle {
+    width: 55px;
+    height: 55px;
+  }
+
+  .info-icon-circle img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .card-heading {
+    font-size: 1.2em;
+  }
+
+  .card-description-moscow {
+    font-size: 0.85em;
+  }
+}
+
+@media (max-width: 480px) {
+  .moscow-info-title {
+    font-size: 1.8em;
+  }
+  .info-card-moscow {
+    padding: 15px;
+    padding-top: 40px;
+  }
+}

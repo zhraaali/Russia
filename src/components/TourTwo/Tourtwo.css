@@ -1,0 +1,165 @@
+.tour-item {
+    display: flex;
+    flex-direction: row-reverse; /* الصورة على اليمين والنص على اليسار في العربية */
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px; /* تحديد أقصى عرض للقسم */
+    margin: 0 auto 80px auto; /* توسيط العنصر مع مسافة سفلية */
+    gap: 40px; /* مسافة بين الصورة والنص */
+    text-align: right; /* محاذاة النص لليمين للعربية */
+  }
+  
+  /* تبديل الترتيب للصورة والنص في اتجاهات LTR إذا كان الموقع يدعم ذلك */
+  /* .tour-item:nth-child(even) {
+      flex-direction: row-reverse;
+  } */
+  
+  
+  .tour-image-container {
+    flex-shrink: 0; /* منع الصورة من الانكماش */
+    width: 500px; /* حجم الصورة في شاشات اللابتوب */
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden; /* لضمان أن الحواف المستديرة تعمل */
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); */
+    position: relative;
+    z-index: 1;
+    /* background-image: url('../../assets/images/Rectangle\ 3.svg'); */
+  }
+  /* .inner-img{
+    position: relative;
+    top: 0;
+
+    z-index: 1;
+  }
+
+.inner-img img{
+    width: 100%;
+    object-fit: fill;
+} */
+
+
+  .tour-image {
+    /* width: 100%; */
+    height: 16em;
+    object-fit: cover; /* لضمان تغطية الصورة للمساحة دون تشوه */
+    display: block; /* إزالة المسافة البيضاء الزائدة تحت الصورة */
+    position: relative;
+    margin-left: 5em;
+    bottom: 16em;
+
+  }
+  
+.tour-image-back{
+    width: 100%;
+    height: 19em;
+    display: block;
+    position: relative;
+    z-index: 0;
+    /* margin-right: 5em; */
+    right: 2em;
+    top: 0.5em;
+}
+
+  /* تراكب الشكل المميز على الصورة (كما في الصورة tour.png) */
+  .tour-image-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      /* هذا الجزء يتطلب SVG أو قص الصورة لإنشاء الشكل المموج/غير المنتظم */
+      /* لتبسيط الأمر الآن، سأضع تدرجاً أزرق شفافًا، ولكن للتطابق الدقيق ستحتاج لـ SVG mask */
+      /* background: linear-gradient(to top right, rgba(74, 144, 226, 0.2), rgba(142, 68, 173, 0.2)); */
+      border-radius: 20px; /* للحفاظ على نفس الحواف المستديرة */
+  }
+  
+  
+  .tour-details {
+    flex-grow: 1; /* السماح للنص بأخذ المساحة المتبقية */
+    max-width: 600px; /* تحديد أقصى عرض للنص */
+  }
+  
+  .tour-details h3 {
+    font-size: 2.2em;
+    color: #477BAE; /* لون أزرق فاتح للعنوان الفرعي */
+    margin-bottom: 20px;
+  }
+  
+  .tour-details p {
+    font-size: 1.1em;
+    color: #477BAE; /* لون نص فاتح قليلاً */
+    line-height: 1.8;
+  }
+  
+  /* Media Queries لأجهزة اللابتوب (تعديلات دقيقة) */
+  @media (min-width: 1024px) {
+    .tour-item {
+      gap: 60px; /* زيادة المسافة بين الصورة والنص على الشاشات الكبيرة */
+    }
+  }
+  
+  
+  /* Media Query للأجهزة الأصغر (الهواتف والأجهزة اللوحية) */
+  @media (max-width: 991px) {
+    .tour-item {
+      /* flex-direction: column; */
+      align-items: center;
+      text-align: center; /* توسيط النص على الموبايل */
+      margin-bottom: 40px;
+    }
+  
+    .tour-image-container {
+      width: 379px;
+      /* height: 250px; */
+      margin-bottom: 30px;
+    }
+  
+    .tour-image-container img{
+      margin-left: 0em;
+    }
+  
+    .tour-details {
+      max-width: 90%;
+    }
+  
+    .tour-details h3 {
+      font-size: 1.8em;
+    }
+  
+    .tour-details p {
+      font-size: 1em;
+    }
+  }
+  @media (max-width: 601px) {
+    .tour-item {
+      flex-direction: column; /* ترتيب العناصر عموديًا */
+      align-items: center;
+      text-align: center; /* توسيط النص على الموبايل */
+      margin-bottom: 40px;
+    }
+  
+    .tour-image-container {
+      width: 379px;
+      width: 340px;
+      /* height: 250px; */
+      margin-bottom: 0px;
+    }
+  
+    .tour-image-container img{
+      margin-left: 0em;
+    }
+  
+    .tour-details {
+      max-width: 90%;
+    }
+  
+    .tour-details h3 {
+      font-size: 1.8em;
+    }
+  
+    .tour-details p {
+      font-size: 1em;
+    }
+  }

@@ -1,0 +1,256 @@
+/* FamousLandmarksSection.css */
+
+.famous-landmarks-section {
+    background-color: #F8F9FA; /* خلفية القسم الرئيسية (رمادية فاتحة) */
+    /* padding: 80px 20px; */
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* لإخفاء أي جزء زائد من الخلفية المائلة */
+  
+    /* الخلفية المائلة الزرقاء (الصورة التي أشرت إليها) */
+    /* ستحتاج إلى صورة PNG شفافة لهذا الخط المائل */
+    /* background-image: url('../../assets/images/wave6.png'); */
+    /* height: 450px; */
+    /* background-size: 100% 90% ; */
+    /* background-position: right bottom; */
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    /* background-position:  bottom; */
+  }
+  
+  .landmarks-title {
+    font-size: 3em;
+    color: #1A68A6;
+    margin-bottom: 50px;
+    position: relative; /* لجعله فوق الخلفية */
+    z-index: 1;
+  }
+  
+  .moscow-button-container {
+    /* margin-bottom: 60px; */
+    /* margin-bottom: 25em; */
+    /* padding: 50%; */
+    position: relative;
+    z-index: 1;
+    top: 8em;
+  }
+  
+  .moscow-button {
+    background-color: transparent; /* زر شفاف */
+    border: 2px solid #1A68A6; /* حدود زرقاء */
+    color: #1A68A6;
+    font-size: 1.5em;
+    font-size: 3.5em;
+    padding: 12px 30px;
+    border-radius: 30px; /* حواف دائرية */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    /* margin-bottom: 15em; */
+  }
+  
+  /* .moscow-button:hover {
+    background-color: #2C7CCF;
+    color: #FFFFFF;
+  } */
+  
+  .landmarks-cards-container {
+    display: flex; /* استخدام فليكس بوكس لتوزيع البطاقات أفقياً */
+    justify-content: center; /* توسيط البطاقات */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px; /* للسماح للبطاقات بالانتقال إلى سطر جديد في الشاشات الصغيرة */
+    gap: 180px; /* المسافة بين البطاقات */
+    /* max-width: 1000px; */
+    /* margin: 5em auto 0; */
+    margin: 0 auto ;
+    position: relative;
+    z-index: 1;
+    /* bottom: 20em; */
+    /* top: 2em; */
+    /* top: 0em; */
+    background-image: url('../../assets/images/wave6.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+  }
+
+
+  
+  .landmark-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 12em;
+    top: 8em;
+    /* لا يوجد خلفية بيضاء صلبة للبطاقة، النص فوق الصورة مباشرة */
+  }
+  
+  .landmark-image-wrapper {
+    width: 250px;/* حجم البطاقة الدائرية */
+    height: 250px;/* حجم البطاقة الدائرية */
+    width: 300px; 
+    height: 300px; 
+    border-radius: 50%;
+    overflow: hidden; 
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); */
+    margin-bottom: 20px; 
+    /* border: 5px solid #FFFFFF; */
+  }
+  
+  .landmark-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .landmark-name {
+    font-size: 1.8em;
+    color: #1A68A6;
+    font-weight: 600;
+  }
+  
+  /* Media Queries للتجاوبية */
+  
+
+  @media (max-width:1280px){
+    .landmarks-cards-container{
+      gap: 30px;
+    }
+    .landmark-image-wrapper {
+      width: 265px; /* تصغير حجم الدائرة */
+      height: 265px;
+    }
+  }
+  /* أجهزة لوحية وشاشات متوسطة */
+  @media (max-width: 992px) {
+    .landmarks-title {
+      font-size: 2.5em;
+    }
+  
+    .moscow-button {
+      font-size: 1.3em;
+      padding: 10px 25px;
+    }
+  
+    .landmarks-cards-container {
+      gap: 30px;
+      /* max-width: 800px; */
+    height: 430px;
+
+    }
+    .landmark-card{
+      top: 8em;
+    }
+  
+    .landmark-image-wrapper {
+      width: 200px; /* تصغير حجم الدائرة */
+      height: 200px;
+    }
+  
+    .landmark-name {
+      font-size: 1.3em;
+    }
+  }
+  
+  /* الهواتف الذكية */
+  @media (max-width: 767px) {
+    .landmarks-title {
+      font-size: 2em;
+      margin-bottom: 40px;
+    }
+  
+    .moscow-button {
+      font-size: 1.2em;
+      padding: 8px 20px;
+    }
+    .moscow-button-container{
+      margin-bottom: 5em;
+    }
+    .landmark-card{
+      top: 3em;
+    }
+  
+    .landmarks-cards-container {
+      background-position-y: center;
+      background-size: contain;
+      /* flex-direction: column; 
+      justify-content: flex-start;
+      align-items: center;  */
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 30px;
+  }
+     
+  
+    .landmark-image-wrapper {
+      width: 150px; /* يمكن أن تكون أكبر قليلاً في وضع العمود الواحد */
+      height: 150px;
+    }
+  
+    .landmark-name {
+      font-size: 1.4em;
+    }
+  
+    .famous-landmarks-section {
+      /* padding: 60px 15px; */
+      background-size: auto 100%; /* ضبط الخلفية في الجوال */
+      background-position: center bottom;
+    }
+  }
+  
+  /* للهواتف الصغيرة جداً */
+  @media (max-width: 600px) {
+    .landmarks-cards-container{
+      background-position-y: center;
+      background-size: contain;
+      height: 400px;
+    }
+    .landmark-image-wrapper {
+      width: 127px;
+      height: 127px;
+    }
+    .landmark-name {
+      font-size: 1em;
+    }
+    .moscow-button-container{
+      margin-bottom: 2em;
+    }
+    /* .landmark-card{
+      top: 7em;
+    } */
+  }
+  @media (max-width: 515px) {
+    .landmark-image-wrapper {
+      width: 100px;
+      height: 100px;
+    }
+    .landmark-name {
+      font-size: .8em;
+    }
+    .moscow-button-container{
+      margin-bottom: 5em;
+    }
+  }
+  @media (max-width:440px) {
+    .landmarks-cards-container{
+      gap: 10px;
+      background-position-y: center;
+      background-size: contain;
+    }
+    .landmark-image-wrapper {
+      width: 80px;
+      height: 80px;
+    }
+
+    .landmark-card{
+      top: 7em;
+    }
+
+    .landmark-name {
+      font-size: .6em;
+    }
+  }

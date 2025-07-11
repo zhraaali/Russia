@@ -1,0 +1,216 @@
+/* ServicesSectionTwo.css */
+
+.services-section-two {
+    background-color: #F8F9FA;
+    /* padding: 60px 20px; */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    /* margin-top: 5em; */
+  }
+  
+  .services-title {
+    font-size: 3em;
+    color: #2C3E50;
+    margin-bottom: 60px;
+  }
+  
+  /* حاوية التخطيط لكل صف (الصف العلوي والسفلي) */
+  .services-layout-container-two {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* عرض تقريبي لكي تظهر الصورة بشكل جيد */
+    height: 200px;
+    margin: 0 auto 50px auto;
+  
+    background-image: url('../../assets/images/ww2.png'); /* */
+    background-size: 100% auto;
+    background-position: center; /* توسيط الصورة */
+    background-repeat: no-repeat; /* عدم تكرار الصورة */
+  }
+  
+  /* نمط الأيقونة الدائرية نفسها والنص */
+  .service-icon-wrapper-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    width: 150px; /* لتحديد عرض الأيقونة مع النص أسفلها */
+    /* margin-top: 3em; */
+    margin-right: 2em;
+  }
+  
+ /* .internet{
+    margin-top: 3em;
+} */
+
+  .service-icon-two {
+    width: 80px;
+    height: 80px;
+    background-color: #1A68A6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-icon-two svg {
+    width: 40px;
+    height: 40px;
+    /* margin-top: 3em; */
+  }
+  
+  .service-text-two {
+    color: #2C3E50;
+    font-size: 1.1em;
+    margin-top: 15px;
+    line-height: 1.4;
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  /* تموضع العناصر المطلق فوق نقاط الخط المنقط */
+  .absolute-positioned-item {
+    position: absolute;
+    /* transform: translate(-50%, -50%); سيتم تطبيقه على service-icon-wrapper-two */
+  }
+  
+  /* أيقونات الطائرة */
+  .plane-icon-rotated {
+      width: 50px;
+      height: 50px;
+      fill: #9BC4EA;
+      transform: rotate(-45deg); /* تدوير الطائرة اليسرى */
+  }
+  .plane-icon-rotated.rotate-right {
+      transform: rotate(45deg); /* تدوير الطائرة اليمنى */
+  }
+  
+  
+  /* *** تموضع الصف العلوي *** */
+  .top-row-layout {
+    /* ضبط خاص بخلفية الصف العلوي إذا كانت الصورة لا تغطي المساحة كلها بشكل مثالي */
+    /* background-position: center bottom; /* أو center top حسب شكل ww2.png */
+  }
+  
+  /* أيقونة الطائرة في بداية الصف العلوي */
+  .plane-icon-start-top {
+    left: 5%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  
+  /* خدمة جداول للأماكن السياحية */
+  .location-pos {
+    left: 25%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* خدمة شراء خطوط وباقات انترنت */
+  .internet-pos {
+    left: 50%;
+    top: 30%; /* أعلى قليلاً ليتبع الميلان */
+    transform: translate(-50%, -50%);
+  }
+  
+  /* خدمة إقامة في فنادق */
+  .hotel-pos {
+    left: 75%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* أيقونة الطائرة في نهاية الصف العلوي */
+  .plane-icon-end-top {
+    right: 5%;
+    top: 50%;
+    transform: translate(50%, -50%) rotate(45deg); /* تدوير الطائرة وتوسيطها */
+  }
+  
+  
+  /* *** تموضع الصف السفلي *** */
+  .bottom-row-layout {
+    /* يمكن ضبط background-position هنا لكي تبدو كأنها مسار جديد */
+    /* أو استخدام صورة خلفية مختلفة إذا كانت available */
+    /* بما أننا نستخدم ww2.png مرتين، قد تحتاج لضبط background-position-y */
+    background-position: center 30%; /* ضبط مختلف عن الصف العلوي لجعلها تبدو كمسار منفصل */
+  }
+  
+  /* أيقونة الطائرة في بداية الصف السفلي */
+  .plane-icon-start-bottom {
+    left: 5%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  
+  /* خدمة شراء بطاقة هاتف وكرت بنك */
+  .simcard-pos {
+    left: 35%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* خدمة تأمين سيارة */
+  .car-insurance-pos {
+    left: 65%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* أيقونة الطائرة في نهاية الصف السفلي */
+  .plane-icon-end-bottom {
+    right: 5%;
+    top: 50%;
+    transform: translate(50%, -50%) rotate(45deg);
+  }
+  
+  
+  /* Media Query لأجهزة اللابتوب */
+  @media (min-width: 992px) {
+    .services-layout-container-two {
+      /* background-size: 100% 100%; */
+    }
+  }
+  
+  /* Media query للأجهزة الأصغر (الهواتف والأجهزة اللوحية) */
+  @media (max-width: 991px) {
+    .services-layout-container-two {
+      height: auto;
+      min-height: 300px; /* لتظهر الخلفية بشكل معقول */
+      background-size: cover; /* لتغطية المساحة بشكل أفضل */
+      background-position: center top;
+      /* في الموبايل، قد يكون من الأفضل إخفاء الخلفية أو إعادة ترتيب العناصر */
+    }
+  
+    .absolute-positioned-item {
+        /* position: static;  */
+        transform: none; 
+        margin-bottom: 30px; 
+        /* width: 80%; */
+    }
+  
+    
+    /* إلغاء التموضع الدقيق المحدد مسبقًا للعناصر */
+    /* .location-pos, .internet-pos, .hotel-pos,
+    .simcard-pos, .car-insurance-pos {
+        top: auto;
+        left: auto;
+        right: auto;
+        margin: 20px auto; 
+    } */
+    .location-pos{
+      top: 18em;
+      left: 6em;
+    }
+    .internet-pos{
+      top: 0em;
+      left: 15em;
+    }
+    .hotel-pos{
+      top: -13em;
+      left: 33em;
+    }
+  }

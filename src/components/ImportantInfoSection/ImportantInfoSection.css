@@ -1,0 +1,279 @@
+
+
+
+
+
+
+
+
+
+
+
+  /* ImportantInfoSection.css */
+.important{
+  background-image: url('../../assets/images/Untitled-1 copy44.png');
+  /* padding: 20px 0 0 0; */
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: 100vh; /* قد تحتاج لتعديل هذا الارتفاع ليتناسب مع المحتوى على الشاشات المختلفة */
+  height: max-content;
+  background-repeat: no-repeat;
+}
+.important-info-section {
+  background-image: url('./../../assets/images/Untitled-1 copy44-1@2x.png');
+  background-size: cover;
+  height: max-content;
+  background-repeat: no-repeat;
+  background-position:top;
+  padding: 20px 0 0 0;
+  text-align: center;
+  position: relative;
+}
+
+.important-section-inner{
+  background-image: url('../../assets/images/travel b.png');
+  background-size: cover;
+  height: 100vh; /* قد تحتاج لتعديل هذا الارتفاع ليتناسب مع المحتوى على الشاشات المختلفة */
+  /* height: max-content; */
+  background-repeat: no-repeat;
+}
+
+.info-title {
+  font-size: 3em;
+  color: #2C3E50;
+  margin-bottom: 60px;
+}
+
+.info-cards-grid {
+  display: grid;
+  /* الافتراضي للشاشات الكبيرة (أكبر من 991 بكسل): 3 أعمدة */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.info-card {
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  /* padding: 30px; */
+  padding: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Height and width adjustments for responsive design */
+  height: auto;
+  width: auto; /* استخدم auto ليتناسب مع grid */
+  position: static; /* إزالة absolute positioning ما لم يكن هناك سبب قوي لها */
+  /* top: 20%; */ /* إزالة هذا أو جعله responsive */
+}
+
+/* التغييرات في الموضع: من الأفضل استخدام grid-template-rows أو ضبط الـ align-items/justify-items
+ في الـ grid container بدلاً من position: relative; top: ...; على البطاقات الفردية،
+ لأنها قد تتسبب في مشاكل في التجاوبية وتراكب العناصر.
+ إذا كنت تريد تباعدًا مختلفًا، يمكنك إضافة كلاسات لبعض البطاقات وضبط الهامش عليها.
+ سأحتفظ بها كما هي مع التوصية بمراجعتها.
+*/
+.payment{
+  position: relative;
+  top: 35%;
+}
+
+.payment2{
+  position: relative;
+  top: 35%;
+}
+
+.electric{
+  position: relative;
+  top: 45%;
+}
+
+.electric2{
+  position: relative;
+  top: 45%;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px; /* مسافة بين الأيقونة والعنوان */
+}
+
+.card-icon img {
+  width: 27px;
+  height: 27px;
+  color: #2C7CCF;
+}
+
+.card-title {
+  font-size: 1.4em; /* حجم مناسب للعناوين */
+  color: #477BAE;
+  margin-bottom: 10px; /* مسافة بين العنوان والوصف */
+  margin-top: 0;
+  font-weight: 600;
+}
+
+.card-description {
+  font-size: 0.9em; /* حجم مناسب للوصف */
+  font-weight: 500; /* وزن خط طبيعي للوصف */
+  color: #477BAE;
+  line-height: 1.6; /* تباعد الأسطر لسهولة القراءة */
+  margin: 0;
+}
+
+/* Media Queries للتجاوبية */
+
+/* أجهزة لوحية وشاشات أقل من 992px (متوسطة) */
+@media (max-width: 991px) {
+  .info-cards-grid {
+    grid-template-columns: repeat(2, 1fr); /* عمودين فقط */
+    gap: 25px;
+    /* أزل خاصيات flex إذا كنت تستخدم grid */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+  }
+
+  .info-title {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+  }
+  .important-section-inner{
+    height: max-content !important;
+  }
+  .info-card {
+    padding: 25px; /* تعديل padding للبطاقات */
+    height: auto; /* التأكد من أن الارتفاع مرن */
+    width: auto; /* التأكد من أن العرض مرن */
+    position: static; /* إزالة الـ positioning لتجنب التراكب في الشاشات الأصغر */
+    /* top: auto; */ /* إزالة خاصية top إذا كانت مرتبطة بـ position */
+  }
+
+  /* يمكنك تعديل هذه الـ positioning إذا كنت لا تزال ترغب بها في هذا الـ breakpoint */
+  .payment, .payment2, .electric, .electric2 {
+      position: static; /* إلغاء التعديل اليدوي للموضع */
+      top: auto;
+  }
+
+  .card-icon {
+    width: 50px; /* حجم أصغر للأيقونات */
+    height: 50px;
+    margin-bottom: 15px; /* تقليل المسافة */
+  }
+
+  .card-icon img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .card-title {
+    font-size: 1.2em; /* حجم عنوان أصغر */
+  }
+
+  .card-description {
+    font-size: 0.85em; /* حجم وصف أصغر */
+  }
+}
+
+/* الهواتف الذكية (أقل من 576px) */
+@media (max-width: 575px) {
+  /* .important-section-inner{
+    background-size: contain;
+  } */
+  .info-cards-grid {
+    grid-template-columns: 2fr; /* عمود واحد فقط */
+    gap: 20px;
+  }
+
+  .important-info-section {
+    padding: 50px 15px; /* padding أقل للقسم بأكمله */
+  }
+
+  .info-title {
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+
+  .info-card {
+    padding: 20px; /* padding أصغر للبطاقات */
+    height: auto; /* مرونة في الارتفاع */
+  }
+
+  .card-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  .card-icon img {
+    width: 22px;
+    height: 22px;
+  }
+  .card-title {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+  }
+  .card-description {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 575px) {
+  /* .info-cards-grid سيبقى بعمودين بسبب الـ media query الأعلى */
+  .info-cards-grid {
+      gap: 15px; /* تقليل المسافة بين البطاقات أكثر على الشاشات الصغيرة جداً */
+      padding: 0 10px; /* padding أفقي أقل للشبكة */
+  }
+
+  .important-info-section {
+    padding: 40px 10px; /* padding أقل للقسم بأكمله */
+  }
+
+  .info-title {
+    font-size: 2em;
+    margin-bottom: 25px;
+  }
+
+  .info-card {
+    padding: 15px; /* تقليل padding البطاقات أكثر */
+  }
+
+  .card-icon {
+    width: 35px; /* حجم أيقونة أصغر جداً */
+    height: 35px;
+    margin-bottom: 8px;
+  }
+  .card-icon img {
+    width: 20px;
+    height: 20px;
+  }
+  .card-title {
+    font-size: 1em; /* حجم عنوان أصغر */
+    margin-bottom: 3px;
+  }
+  .card-description {
+    font-size: 0.75em; /* حجم وصف أصغر جداً */
+    line-height: 1.5;
+  }
+}
+/* يمكنك إضافة ميديا كويري إضافي إذا أردت 3 أعمدة بين 992px و 1200px */
+/*
+@media (min-width: 992px) and (max-width: 1200px) {
+  .info-cards-grid {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+*/

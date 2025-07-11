@@ -1,0 +1,14 @@
+.service {
+    background-color: #F8F9FA; /* خلفية رمادية فاتحة جدًا */
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .service h2 {
+    font-size: 3em;
+    color: #1A68A6; /* لون العنوان */
+    /* margin-bottom: 60px; */
+  }
+  

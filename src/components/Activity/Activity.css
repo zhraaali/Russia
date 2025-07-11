@@ -1,0 +1,220 @@
+/* .activity-inner{
+    margin: 5em 0;
+} */
+
+
+.background-wave {
+    /* position: absolute; */
+    position: relative;
+    top: 0;
+    right: 0;
+    /* width: 100%; */
+    /* height: 100%; */
+    /* background-image: url('../../assets/images/wave3.png'); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-position: right top; */
+    z-index: 0;
+    /* margin-bottom: 500px; */
+  }
+.background-wave img{
+  width: 100%;
+}
+
+
+
+  .activities-cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 50px;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    position: absolute;
+    top: 20em;
+    right: 15%;
+    z-index: 1;
+    /* margin-bottom: 50em; */
+  }
+  
+  .activity-card {
+    width: 480px;
+    width: 480px;
+    height: 350px;
+    height: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+    position: relative;
+    display: flex;
+    align-items: flex-end; /* لضمان أن الـ overlay يلتصق بالأسفل */
+    transition: transform 0.3s ease;
+    background-size: cover; /* لصور الدباب والبقي */
+    background-position: center; /* لصور الدباب والبقي */
+  }
+  
+  .activity-card:hover {
+    transform: translateY(-8px);
+  }
+  
+  /* صور الخلفية لكل بطاقة */
+  /* .snowmobile-card {
+    background-image: 'url(${bgUrl})';
+  } */
+  
+  /* .atv-card {
+    background-image: url('../../assets/images/motor2.png');
+  } */
+  
+  .card-overlay {
+    /* ليس لون خلفية صلب، بل صورة */
+    background-image: url('../../assets/images/Path 142.png'); /* الصورة الحمراء المائلة */
+    background-size:50%;
+    background-repeat: no-repeat;
+    background-position:right bottom;
+    
+    width: 100%;
+    /* تحديد ارتفاع الـ overlay بناءً على الجزء الذي تغطيه الصورة الحمراء في التصميم */
+    /* يمكن تقدير هذا الارتفاع أو جعله يتجاوب */
+    height: 100px; /* جرب هذه القيمة واضبطها حسب ما تراه في المتصفح */
+    
+    padding: 15px 25px; /* Adjust padding as needed for text positioning */
+    display: flex; /* لتمكين توسيط النص داخله */
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    /* يمكن استخدام bottom: 0; لضمان أنها في الأسفل تماماً إذا كان الـ parent لديه position: relative */
+  }
+  
+  .card-name {
+    color: #FFFFFF;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 0;
+    position: relative; /* لضمان ظهور النص فوق صورة الموجة الحمراء */
+    z-index: 2; /* لجعل النص فوق الخلفية الحمراء */
+  }
+  
+  /* Media Queries للتجاوبية */
+  
+
+@media (max-width:1150px){
+  .activities-cards-container{
+    /* max-width: 950px;
+    max-width: 888px; */
+    width: 100%;
+    right: 0%;
+    flex-wrap: nowrap;
+  }
+  .activity-card{
+    width: 365px;
+  }
+}
+
+  @media (max-width: 991px) {
+    .activities-title {
+      font-size: 2.8em;
+      margin-bottom: 50px;
+    }
+  .background-wave img{
+    object-fit: scale-down;
+  }
+    .activities-cards-container {
+      gap: 16px;
+      top: 14em;
+      /* max-width: 900px; */
+    }
+  
+    .activity-inner{
+      margin-bottom: 5em;
+    }
+
+    .activity-card {
+      width: 400px;
+      width: 312px;
+      height: 300px;
+    }
+  
+    .card-overlay {
+      height: 90px; /* تعديل ارتفاع الـ overlay للأجهزة اللوحية */
+    }
+  
+    .card-name {
+      font-size: 1.6em;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .activities-section {
+      /* padding: 60px 15px; */
+      min-height: 550px;
+    }
+  
+    .activities-title {
+      font-size: 2.2em;
+      margin-bottom: 40px;
+    }
+  
+    .activities-cards-container {
+      /* flex-direction: column; */
+      gap: 16px;
+      max-width: 100%;
+    }
+  
+    .activity-card {
+      width: 90%;
+      max-width: 420px;
+      max-width: 267px;
+      height: 218px;
+    }
+  
+    .card-overlay {
+      /* height: 80px; */
+      padding: 15px 20px;
+    }
+  
+    .card-name {
+      font-size: 1.5em;
+    }
+  }
+  @media (max-width:525px){
+    .activities-cards-container{
+      bottom: 40%;
+    }
+  }
+  @media (max-width: 480px) {
+    .activity-card {
+      max-width: 175px;
+      height: 160px;
+    }
+    .card-overlay {
+      height: 70px;
+      padding: 0px 6px;
+    }
+    .card-name {
+      font-size: .8em;
+    }
+    
+  }
+  @media (max-width: 408px) {
+    .activities-cards-container{
+      /* bottom: 30%; */
+      top: 30%;
+    }
+    .activity-card {
+      max-width: 148px;
+      height: 128px;
+    }
+    .card-overlay {
+      height: 70px;
+      /* padding: 12px 15px; */
+    }
+    /* .card-name {
+      font-size: 1.3em;
+    } */
+  }
+
+

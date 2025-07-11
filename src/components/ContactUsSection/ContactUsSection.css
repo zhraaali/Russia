@@ -1,0 +1,156 @@
+/* ContactUsSection.css */
+
+.contact-us-section {
+    background-color: #FFFFFF; /* خلفية بيضاء */
+    padding: 80px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* توسيط العناصر أفقياً */
+    justify-content: center; /* توسيط العناصر عمودياً */
+    min-height: 70vh; /* لجعل القسم يأخذ مساحة كافية، يمكن تعديلها */
+  }
+  
+  .contact-us-title {
+    font-size: 3em;
+    color: #2C7CCF; /* لون أزرق */
+    margin-bottom: 50px;
+    margin-top: 10%;
+    font-weight: bold;
+  }
+  
+  .contact-logo {
+    margin-bottom: 60px; /* مسافة تحت الشعار */
+  }
+  
+  .logo-image {
+    max-width: 350px; /* حجم الشعار */
+    max-width: 600px;
+    height: auto;
+    display: block; /* لإزالة أي مسافة إضافية أسفل الصورة */
+    margin: 0 auto; /* توسيط الصورة */
+  }
+  
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* مسافة بين عناصر الاتصال */
+    align-items: flex-end; /* محاذاة العناصر إلى اليمين (في اتجاه النص العربي) */
+    width: 100%;
+    max-width: 400px; /* تحديد أقصى عرض لمجموعة تفاصيل الاتصال */
+    margin: 0 auto; /* توسيط مجموعة تفاصيل الاتصال */
+  }
+  
+  .contact-item {
+    display: flex;
+    /* flex-direction: row-reverse; */
+    align-items: center;
+    /* justify-content: flex-end; */
+    justify-content: center;
+    gap: 15px; /* مسافة بين النص والأيقونة */
+    font-size: 1.8em; /* حجم الخط */
+    font-size: 2em;
+    color: #333;
+    font-weight: bold;
+    /* direction: rtl; */
+  }
+  
+  .contact-item .contact-number,
+  .contact-item .contact-telegram {
+    white-space: nowrap; /* منع انقسام الأرقام والأسماء */
+    font-weight: 500; /* تخفيف سماكة الخط قليلاً إذا كان bold جداً */
+    color: #2C7CCF; /* لون أزرق للنص */
+  }
+  
+  .whatsapp-icon-link img,
+  .telegram-icon-link img {
+    width: 60px; /* حجم الأيقونة */
+    height: 60px; /* */
+    flex-shrink: 0; /* منع الأيقونة من الانكماش */
+  }
+  
+  /* --- Responsive Design --- */
+  
+  @media (max-width: 991px) {
+    .contact-us-title {
+      font-size: 2.5em;
+      margin-bottom: 40px;
+    }
+  
+    .logo-image {
+      max-width: 300px;
+      margin-bottom: 50px;
+    }
+  
+    .contact-details {
+      max-width: 350px;
+      gap: 25px;
+    }
+  
+    .contact-item {
+      font-size: 1.6em;
+      gap: 12px;
+    }
+  
+    .whatsapp-icon-link svg,
+    .telegram-icon-link svg {
+      width: 35px;
+      height: 35px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .contact-us-section {
+      padding: 60px 15px;
+      min-height: 60vh;
+    }
+  
+    .contact-us-title {
+      font-size: 2em;
+      margin-bottom: 30px;
+      margin-top: 18%;
+    }
+  
+    .logo-image {
+      max-width: 250px;
+      margin-bottom: 40px;
+    }
+  
+    .contact-details {
+      max-width: 300px;
+      gap: 20px;
+    }
+  
+    .contact-item {
+      font-size: 1.4em;
+      gap: 10px;
+    }
+  
+    .whatsapp-icon-link svg,
+    .telegram-icon-link svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-us-title {
+      font-size: 1.8em;
+    }
+    .logo-image {
+      max-width: 300px;
+      margin-bottom: 30px;
+    }
+    .contact-item {
+      font-size: 1.2em;
+    }
+    .whatsapp-icon-link svg,
+    .telegram-icon-link svg {
+      width: 28px;
+      height: 28px;
+    }
+    .contact-details {
+      max-width: 250px;
+      gap: 15px;
+    }
+  }

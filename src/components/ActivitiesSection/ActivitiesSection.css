@@ -1,0 +1,23 @@
+/* ActivitiesSection.css */
+
+.activities-section {
+    background-color: #F8F9FA;
+    /* padding: 80px 20px; */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    /* min-height: 700px; */
+    /* margin-top: 3em; */
+  }
+  
+
+  
+  .activities-title {
+    font-size: 3em;
+    font-size: 90px;
+    color: #1A68A6;
+    /* margin-bottom: 60px; */
+    position: relative;
+    z-index: 1;
+    margin-top: 10rem;
+  }

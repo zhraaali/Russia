@@ -1,0 +1,392 @@
+
+.services-section {
+    background-color: #F8F9FA;
+    /* padding: 80px 20px; */
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* لمنع ظهور أي scrollbars غير مرغوبة */
+  }
+  
+  /* .services-title {
+    font-size: 3em;
+    color: #2C3E50;
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 2;
+  } */
+  
+  .services-layout-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px; 
+    /* height: 750px; */
+    height: 350px;
+    margin: 0 auto; 
+    background-image: url('../../assets/images/ww11.png');
+    background-size: 100% auto; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    
+  }
+  
+  /* نمط الأيقونة الدائرية نفسها والنص */
+  .service-icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    width: 150px; /* لتحديد عرض الأيقونة مع النص أسفلها */
+  }
+  /* .absolute-positioned-item{
+    position:  relative !important;
+  } */
+  .service-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #1A68A6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-icon img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .service-text {
+    color: #2C3E50;
+    font-size: 1.1em;
+    margin-top: 15px;
+    line-height: 1.4;
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  /* تموضع العناصر المطلق فوق نقاط الخط المنقط */
+  /* .absolute-positioned-item {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    لكي لا يؤثر على موضع النص
+  }
+   */
+
+
+  
+  .plane-icon-pos img {
+      width: 100%;
+      height: 100%;
+      
+  }
+  
+  
+  /* تحديد المواضع الدقيقة لكل أيقونة خدمة */
+  /* هذه القيم تحتاج إلى ضبط دقيق جداً باستخدام أدوات المطور في المتصفح */
+  /* تعتمد على أبعاد ww11.png وحجم الحاوية services-layout-container */
+  
+  /* خدمة تذاكر الطيران */
+  .ticket-pos {
+    /* left: 17%; */
+    left: 20%;
+    top: 50%; /* ضبط رأسي */
+    transform: translate(-50%, -50%); /* لتوسيط الأيقونة نفسها على النقطة */
+  }
+  
+  /* خدمة إصدارات بطاقات بنكية */
+  .card-pos {
+    /* left: 37%; */
+    left: 39%;
+    /* top: 55%; */
+    top: 58%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* خدمة الإستقبال من المطار */
+  .car-pos {
+    left: 63%;
+    /* top: 40%; */
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* خدمة المساعدة في الأوراق المطلوبة */
+  .document-pos {
+    /* left: 83%; */
+    left: 85%;
+    /* top: 55%; */
+    top: 58%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  /* Media Query لأجهزة اللابتوب (للتأكد من عدم وجود التفاف) */
+  @media (min-width: 992px) {
+    .services-layout-container {
+      /* للحفاظ على نسبة العرض إلى الارتفاع ووضع الأيقونات بدقة */
+      /* background-size: 100% 100%; */
+    }
+  }
+  
+  /* Media query للأجهزة الأصغر (الهواتف والأجهزة اللوحية) */
+  @media (max-width: 991px) {
+    .services-layout-container {
+      /* height: auto; */
+      min-height: 500px; /* لضمان رؤية الخلفية بشكل معقول */
+      background-size: cover; /* لتغطية المساحة بشكل أفضل في الموبايل */
+      background-position: center top; /* للحفاظ على بداية الخط ظاهرة */
+      display: flex;
+      /* flex-direction: column; */
+      align-items: center; /* توسيط العناصر */
+      padding-top: 50px; /* مسافة علوية لترك مساحة للخلفية */
+      flex-direction: row !important;
+    }
+  .service-icon{
+    width: 60px;
+    height: 60px;
+  }
+
+  .service-icon img{
+    width: 30px;
+    height: 30px;
+  }
+    .absolute-positioned-item {
+        position: relative !important;
+        transform: none; /* إلغاء التحويل */
+        margin-bottom: 30px; /* مسافة بين العناصر */
+        width: 80%; /* لتسهيل قراءة النصوص */
+    }
+    /* إلغاء التموضع الدقيق المحدد مسبقًا */
+    /* .plane-icon-pos,
+    .ticket-pos,
+    .card-pos,
+    .car-pos,
+    .document-pos {
+        top: auto;
+        left: auto;
+        right: auto;
+        margin: 20px auto; 
+    } */
+  .ticket-pos{
+    /* left: 50% !important; */
+    left: 10% !important;
+    top: 2% !important;
+  }
+  .card-pos{
+    /* left: 50% !important; */
+    left: 6% !important;
+    top: 4% !important;
+  }
+  .car-pos{
+    /* left: 50% !important; */
+    left: 3% !important;
+    top: 9% !important;
+  }
+  .document-pos{
+    /* left: 50% !important; */
+    left: 1% !important;
+    top: 5% !important;
+  }
+    
+  }
+
+@media (max-width:870px){
+  .services-layout-container{
+    /* height: 353px; */
+    min-height: 432px;
+  }
+}
+@media (max-width:830px){
+  .services-layout-container{
+    height: 353px;
+  }
+  .ticket-pos{
+    /* left: 50% !important; */
+    left: 7% !important;
+    top: 0% !important;
+  }
+  .card-pos{
+    /* left: 50% !important; */
+    left: 6% !important;
+    top: 4% !important;
+  }
+  .car-pos{
+    /* left: 50% !important; */
+    left: 3% !important;
+    top: 9% !important;
+  }
+  .document-pos{
+    /* left: 50% !important; */
+    left: 1% !important;
+    top: 2% !important;
+  }
+}
+
+
+@media (max-width:715px){
+  .services-layout-container{
+    /* height: 353px; */
+    min-height: 332px;
+  }
+  .service-text{
+    font-size: .8em;
+  }
+}
+@media (max-width:650px){
+  .services-layout-container{
+    /* height: 353px; */
+    min-height: 232px;
+    background-size: contain;
+  }
+  .service-text{
+    font-size: .6em;
+  }
+  .service-icon{
+    width: 40px;
+    height: 40px;
+  }
+  
+  .service-icon img{
+    width: 20px;
+    height: 20px;
+  }
+  .ticket-pos{
+    /* left: 50% !important; */
+    left: 7% !important;
+    top: -6% !important;
+  }
+  .card-pos{
+    /* left: 50% !important; */
+    left: -2% !important;
+    top: -3% !important;
+  }
+  .car-pos{
+    /* left: 50% !important; */
+    left: -2% !important;
+    top: 1% !important;
+  }
+  .document-pos{
+    /* left: 50% !important; */
+    left: -5% !important;
+    top: -1% !important;
+  }
+}
+@media (max-width:550px){
+  .services-layout-container{
+    /* height: 353px; */
+    min-height: 232px;
+    background-size: contain;
+  }
+  .service-text{
+    font-size: .5em;
+  }
+  .service-icon{
+    width: 30px;
+    height: 30px;
+  }
+  
+  .service-icon img{
+    width: 15px;
+    height: 15px;
+  }
+  .ticket-pos{
+    /* left: 50% !important; */
+    left: 3% !important;
+    top: -13% !important;
+  }
+  .card-pos{
+    /* left: 50% !important; */
+    left: -6% !important;
+    top: -8% !important;
+  }
+  .car-pos{
+    /* left: 50% !important; */
+    left: -20% !important;
+    top: -10% !important;
+  }
+  .document-pos{
+    /* left: 50% !important; */
+    left: -31% !important;
+    top: -14% !important;
+  }
+}
+@media (max-width:510px){
+  .services-layout-container{
+    /* height: 353px; */
+    min-height: 232px;
+    background-size: contain;
+  }
+  .service-text{
+    font-size: .5em;
+  }
+  .service-icon{
+    width: 30px;
+    height: 30px;
+  }
+  
+  .service-icon img{
+    width: 15px;
+    height: 15px;
+  }
+  .ticket-pos{
+    /* left: 50% !important; */
+    left: 0% !important;
+    top: -23% !important;
+  }
+  .card-pos{
+    /* left: 50% !important; */
+    left: -18% !important;
+    top: -19% !important;
+  }
+  .car-pos{
+    /* left: 50% !important; */
+    left: -34% !important;
+    top: -18% !important;
+  }
+  .document-pos{
+    /* left: 50% !important; */
+    left: -50% !important;
+    top: -20% !important;
+  }
+}
+@media (max-width:450px){
+  .services-layout-container{
+    /* height: 353px; */
+    min-height: 232px;
+    background-size: contain;
+  }
+  .service-text{
+    font-size: .45em;
+  }
+  .service-icon{
+    width: 25px;
+    height: 25px;
+  }
+  
+  .service-icon img{
+    width: 12px;
+    height: 12px;
+  }
+  .ticket-pos{
+    /* left: 50% !important; */
+    left: -1% !important;
+    top: -23% !important;
+  }
+  .card-pos{
+    /* left: 50% !important; */
+    left: -20% !important;
+    top: -22% !important;
+  }
+  .car-pos{
+    /* left: 50% !important; */
+    left: -35% !important;
+    top: -19% !important;
+  }
+  .document-pos{
+    /* left: 50% !important; */
+    left: -53% !important;
+    top: -24% !important;
+  }
+}
