@@ -9,21 +9,18 @@ const Footer = () => {
   return (
     <footer className="main-footer">
       <div className="footer-content-wrapper">
-        {/* يمكنك إضافة حقوق النشر أو أي معلومات أخرى هنا */}
-        {/* <div className="copyright">
-          <p>&copy; 2023 Your Company Name. All rights reserved.</p>
-        </div> */}
+       
 
         <div className="contact-info">
           <h3 className="contact-title">:تواصل معنا</h3>
           <div className="contact-item">
             <a href="https://wa.me/79268270788" target="_blank" rel="noopener noreferrer">
-              79268270788+ <span className="icon-wrapper whatsapp-bg"><img src={whatsappIcon}/></span>
+              79268270788+ <span className="icon-wrapper whatsapp-bg"><img src={whatsappIcon} loading="lazy"/></span>
             </a>
           </div>
           <div className="contact-item">
             <a href="https://t.me/Russia_gulf" target="_blank" rel="noopener noreferrer">
-              Russia_gulf@ <span className="icon-wrapper telegram-bg"><img src={telegramIcon}/></span>
+              Russia_gulf@ <span className="icon-wrapper telegram-bg"><img src={telegramIcon} loading="lazy"/></span>
             </a>
           </div>
         </div>

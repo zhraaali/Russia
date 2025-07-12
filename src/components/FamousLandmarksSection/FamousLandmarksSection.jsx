@@ -19,14 +19,14 @@ const FamousLandmarksSection = (props) => {
         <div className="landmark-card">
           <p className="landmark-name">{props.title3}</p>
           <div className="landmark-image-wrapper">
-            <img src={props.img3} alt="الكرملين" />
+            <img src={props.img3} alt="الكرملين" loading="lazy"/>
           </div>
         </div>
         {/* بطاقة الساحة الحمراء */}
         <div className="landmark-card">
           <p className="landmark-name"> {props.title2}</p>
           <div className="landmark-image-wrapper">
-            <img src={props.img2} alt="الساحة الحمراء" />
+            <img src={props.img2} alt="الساحة الحمراء" loading="lazy"/>
           </div>
         </div>
 
@@ -34,7 +34,7 @@ const FamousLandmarksSection = (props) => {
         <div className="landmark-card">
           <p className="landmark-name">{props.title1}</p>
           <div className="landmark-image-wrapper">
-            <img src={props.img1} alt="محطة مترو موسكو" />
+            <img src={props.img1} alt="محطة مترو موسكو" loading="lazy"/>
           </div>
         </div>
       </div>

@@ -35,18 +35,7 @@ const FeaturedToursSection = (props) => {
       moscowImage={mourmensk}
       desc="مدينة روسية تقع في أقصى شمال غرب البلاد تُعرف مورمانسك بلقب مدينة الليل القطبي تشهد صيفاً بليالي بيضاء لا تغيب فيها الشمس هذه الظواهر الطبيعية تجعلها وجهة فريدة لعشاق الطبيعة والظواهر الفلكية
       مثل الشفق القطبي"/>
-      {/* إذا كان هناك المزيد من الوجهات، يمكنك تكرار `tour-item` أو جعلها ديناميكية */}
-      {/*
-      <div className="tour-item">
-        <div className="tour-details">
-          <h3>وجهة أخرى</h3>
-          <p>وصف للوجهة الأخرى هنا.</p>
-        </div>
-        <div className="tour-image-container">
-          <img src={anotherImage} alt="Another Destination" className="tour-image" />
-        </div>
-      </div>
-      */}
+     
     </section>
   );
 };

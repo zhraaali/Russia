@@ -79,7 +79,7 @@
   /* تموضع العناصر المطلق فوق نقاط الخط المنقط */
   .absolute-positioned-item {
     position: absolute;
-    /* transform: translate(-50%, -50%); سيتم تطبيقه على service-icon-wrapper-two */
+    
   }
   
 
@@ -121,9 +121,7 @@
   
   /* *** تموضع الصف السفلي *** */
   .bottom-row-layout {
-    /* يمكن ضبط background-position هنا لكي تبدو كأنها مسار جديد */
-    /* أو استخدام صورة خلفية مختلفة إذا كانت available */
-    /* بما أننا نستخدم ww2.png مرتين، قد تحتاج لضبط background-position-y */
+    
     background-position: center 30%; /* ضبط مختلف عن الصف العلوي لجعلها تبدو كمسار منفصل */
   }
   
@@ -182,16 +180,5 @@
   
    
   
-    /* إلغاء التموضع الدقيق المحدد مسبقًا للعناصر */
-    /* .location-pos, .internet-pos, .hotel-pos,
-    .simcard-pos, .car-insurance-pos {
-        top: auto;
-        left: auto;
-        right: auto;
-        margin: 20px auto;
-    } */
-    /* .hotel-pos{
-      top: -12em;
-      left: 28em;
-    } */
+    
   }

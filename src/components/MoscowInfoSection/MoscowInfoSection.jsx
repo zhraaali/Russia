@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 import './MoscowInfoSection.css';
 import sportIcon from '../../assets/images/sport-faculty-svgrepo-com.png'
@@ -8,18 +7,6 @@ import historyIcon from '../../assets/images/history-svgrepo-com.png'
 import studentIcon from '../../assets/images/student-svgrepo-com.png'
 import metroIcon from '../../assets/images/metro-svgrepo-com.png'
 import peopleIcon from '../../assets/images/people-svgrepo-com (1).png'
-// import sportIcon from '../../assets/images'
-// import sportIcon from '../../assets/images'
-// أيقونات SVG بسيطة (يمكنك استبدالها بأيقونات حقيقية)
-
-
-
-
-
-
-
-
-
 const MoscowInfoSection = () => {
   return (
     <section className="moscow-info-section">
@@ -30,7 +17,7 @@ const MoscowInfoSection = () => {
         <div className="info-card-moscow">
           <div className="info-icon-wrapper"> {/* غلاف جديد للأيقونة لتموضعها */}
             <div className="info-icon-circle">
-              <img src={historyIcon}/>
+              <img src={historyIcon} loading="lazy"/>
             </div>
           </div>
           {/* <p className="card-heading">موسكو تعد بحق مدينة الفعاليات المتنوعة</p> */}
@@ -44,7 +31,7 @@ const MoscowInfoSection = () => {
         <div className="info-card-moscow">
           <div className="info-icon-wrapper">
             <div className="info-icon-circle">
-              <img src={sportIcon}/>
+              <img src={sportIcon} loading="lazy"/>
             </div>
           </div>
           {/* <p className="card-heading">موسكو تعد أبرز مدن الرياضة</p> */}
@@ -58,7 +45,7 @@ const MoscowInfoSection = () => {
         <div className="info-card-moscow">
           <div className="info-icon-wrapper">
             <div className="info-icon-circle">
-              <img src={studentIcon}/>
+              <img src={studentIcon} loading="lazy"/>
             </div>
           </div>
           {/* <p className="card-heading">موسكو تعد مدينة مثالية للطلاب</p> */}
@@ -72,7 +59,7 @@ const MoscowInfoSection = () => {
         <div className="info-card-moscow">
           <div className="info-icon-wrapper">
             <div className="info-icon-circle">
-              <img src={treeIcon}/>
+              <img src={treeIcon} loading="lazy"/>
             </div>
           </div>
           {/* <p className="card-heading">موسكو ليست فقط مدينة ناطحات السحاب</p> */}
@@ -86,7 +73,7 @@ const MoscowInfoSection = () => {
         <div className="info-card-moscow">
           <div className="info-icon-wrapper">
             <div className="info-icon-circle">
-              <img src={peopleIcon}/>
+              <img src={peopleIcon} loading="lazy"/>
             </div>
           </div>
           {/* <span className="card-description-moscow"ت</span> */}
@@ -100,7 +87,7 @@ const MoscowInfoSection = () => {
         <div className="info-card-moscow">
           <div className="info-icon-wrapper">
             <div className="info-icon-circle">
-              <img src={metroIcon}/>
+              <img src={metroIcon} loading="lazy"/>
             </div>
           </div>
           {/* <p className="card-heading">يعتبر مترو موسكو من أكثر شبكات المترو جاذبية في العالم</p> */}

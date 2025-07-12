@@ -21,14 +21,14 @@ import airportIcon from '../../assets/images/airport-departure-svgrepo-com.png'
         <div className="service-item-two absolute-positioned-item location-pos-three">
           <div className="service-icon-wrapper-two">
             <div className="service-text-two">جداول للأماكن السياحية و إمكانية تغييرها حسب الرغبة</div>
-            <div className="service-icon-two"><img src={airportIcon}/></div>
+            <div className="service-icon-two"><img src={airportIcon} loading="lazy"/></div>
           </div>
         </div>
 
         {/* خدمة شراء خطوط وباقات انترنت */}
         <div className="service-item-two absolute-positioned-item internet-pos-three ">
           <div className="service-icon-wrapper-two " style={{marginTop:'10em',marginLeft:'4em'}}>
-          <div className="service-icon-two "><img src={simIcon}/></div>
+          <div className="service-icon-two "><img src={simIcon} loading="lazy"/></div>
           <div className="service-text-two">شراء خطوط و باقات انترنت</div>
             
             
@@ -40,7 +40,7 @@ import airportIcon from '../../assets/images/airport-departure-svgrepo-com.png'
           <div className="service-icon-wrapper-two">
             <div className="service-text-two">تأمين سيارة كل النهار صغيرة او كبيرة و السفر ضمن المدن الروسية</div>
             {/* <div className="service-icon-two"><HotelIcon /></div> */}
-            <div className="service-icon-two"><img src={caricon}/></div>
+            <div className="service-icon-two"><img src={caricon} loading="lazy"/></div>
           </div>
         </div>
 

@@ -6,13 +6,13 @@ const Tourtwo = (props) => {
       
         <div className="tour-image-container">
         <div>
-            <img src={props.backimg} className="tour-image-back"/>
+            <img src={props.backimg} className="tour-image-back" loading="lazy"/>
             {/* <div className='inner-img'> */}
             
 
             {/* </div> */}
           </div>
-          <img src={props.moscowImage} alt="Moscow" className="tour-image" />
+          <img src={props.moscowImage} alt="Moscow" className="tour-image" loading="lazy"/>
         </div>
         <div className="tour-details">
           <h3>{props.title}</h3>

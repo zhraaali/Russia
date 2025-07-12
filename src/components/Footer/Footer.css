@@ -64,19 +64,9 @@
   .icon-wrapper img {
     width: 40px; /* حجم أيقونة SVG داخل الدائرة */
     height: 40px; /* حجم أيقونة SVG داخل الدائرة */
-    /* fill: #1A68A6; */
+
   }
-  
-  /* .whatsapp-bg {
-    background-color: #1A68A6; 
-  }
-  
-  .telegram-bg {
-    background-color: #1A68A6;
-  } */
-  
-  
-  /* --- Responsive Design (أجهزة لوحية وهواتف) --- */
+
   
   @media (max-width: 768px) {
     .main-footer {

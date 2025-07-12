@@ -6,9 +6,9 @@ const HeroSection = () => {
   return (
     
         <div className="hero-section">
-            {/* <div className='img-container'> */}
-                <img src={heroimg}/>
-            {/* </div> */}
+         
+                <img src={heroimg} />
+           
        <div className="hero-overlay"></div> 
       <Container className="hero-content text-center text-md-start">
         <Row className="justify-content-center justify-content-md-start hero-inner">
