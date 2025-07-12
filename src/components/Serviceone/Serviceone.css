@@ -254,23 +254,23 @@
   }
   .ticket-pos{
     /* left: 50% !important; */
-    left: 7% !important;
-    top: -6% !important;
+    left: 4% !important;
+    top: -10% !important;
   }
   .card-pos{
     /* left: 50% !important; */
-    left: -2% !important;
-    top: -3% !important;
+    left: -4% !important;
+    top: -7% !important;
   }
   .car-pos{
     /* left: 50% !important; */
-    left: -2% !important;
-    top: 1% !important;
+    left: -12% !important;
+    top: -6% !important;
   }
   .document-pos{
     /* left: 50% !important; */
-    left: -5% !important;
-    top: -1% !important;
+    left: -22% !important;
+    top: -8% !important;
   }
 }
 @media (max-width:550px){
@@ -332,23 +332,23 @@
   }
   .ticket-pos{
     /* left: 50% !important; */
-    left: 0% !important;
-    top: -23% !important;
+    left: 2% !important;
+    top: -18% !important;
   }
   .card-pos{
     /* left: 50% !important; */
-    left: -18% !important;
-    top: -19% !important;
+    left: -13% !important;
+    top: -16% !important;
   }
   .car-pos{
     /* left: 50% !important; */
-    left: -34% !important;
-    top: -18% !important;
+    left: -28% !important;
+    top: -17% !important;
   }
   .document-pos{
     /* left: 50% !important; */
-    left: -50% !important;
-    top: -20% !important;
+    left: -42% !important;
+    top: -18% !important;
   }
 }
 @media (max-width:450px){
@@ -376,17 +376,95 @@
   }
   .card-pos{
     /* left: 50% !important; */
-    left: -20% !important;
-    top: -22% !important;
+    left: -25% !important;
+    top: -25% !important;
   }
   .car-pos{
     /* left: 50% !important; */
-    left: -35% !important;
-    top: -19% !important;
+    left: -45% !important;
+    top: -21% !important;
   }
   .document-pos{
     /* left: 50% !important; */
-    left: -53% !important;
-    top: -24% !important;
+    left: -65% !important;
+    top: -28% !important;
+  }
+}
+@media (max-width:400px){
+  .services-layout-container{
+    /* height: 353px; */
+    min-height: 232px;
+    background-size: contain;
+  }
+  .service-text{
+    font-size: .45em;
+  }
+  .service-icon{
+    width: 25px;
+    height: 25px;
+  }
+  
+  .service-icon img{
+    width: 12px;
+    height: 12px;
+  }
+  .ticket-pos{
+    /* left: 50% !important; */
+    left: -8% !important;
+    top: -31% !important;
+  }
+  .card-pos{
+    /* left: 50% !important; */
+    left: -39% !important;
+    top: -32% !important;
+  }
+  .car-pos{
+    /* left: 50% !important; */
+    left: -68% !important;
+    top: -27% !important;
+  }
+  .document-pos{
+    /* left: 50% !important; */
+    left: -100% !important;
+    top: -34% !important;
+  }
+}
+@media (max-width:370px){
+  .services-layout-container{
+    /* height: 353px; */
+    min-height: 232px;
+    background-size: contain;
+  }
+  .service-text{
+    font-size: .45em;
+  }
+  .service-icon{
+    width: 25px;
+    height: 25px;
+  }
+  
+  .service-icon img{
+    width: 12px;
+    height: 12px;
+  }
+  .ticket-pos{
+    /* left: 50% !important; */
+    left: -8% !important;
+    top: -31% !important;
+  }
+  .card-pos{
+    /* left: 50% !important; */
+    left: -34% !important;
+    top: -30% !important;
+  }
+  .car-pos{
+    /* left: 50% !important; */
+    left: -61% !important;
+    top: -25% !important;
+  }
+  .document-pos{
+    /* left: 50% !important; */
+    left: -87% !important;
+    top: -31% !important;
   }
 }

@@ -142,7 +142,7 @@ const NavbarComponent = () => {
         {/* الشعار - يظهر فقط عندما تكون showLogoAndBlueText صحيحة */}
         {showLogoAndBlueText && (
           <Navbar.Brand as={Link} to="/" className="navbar-logo">
-            <img src={logoimg} alt="Russia & Gulf Logo" className="navbar-logo-image" loading="lazy"/>
+            <img src={logoimg} alt="Russia & Gulf Logo" className="navbar-logo-image" />
             {/* <span className="logo-text">روسيا والخليج</span> إذا أردت نصًا بجانب الشعار */}
           </Navbar.Brand>
         )}

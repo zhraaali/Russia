@@ -9,14 +9,14 @@ const ContactUsSection = () => {
     <section className="contact-us-section">
       <h2 className="contact-us-title">تواصل معنا</h2>
       <div className="contact-logo">
-        <img src={logoImage} alt="Russia & Gulf Logo" className="logo-image" loading="lazy"/>
+        <img src={logoImage} alt="Russia & Gulf Logo" className="logo-image" />
       </div>
       <div className="contact-details">
         <div className="contact-item">
           <span className="contact-number">+79268270788</span>
           <a href="https://wa.me/79268270788" target="_blank" rel="noopener noreferrer" className="whatsapp-icon-link">
             {/* <WhatsAppIcon /> */}
-            <img src={WhatsAppIcon} alt="WhatsApp" loading="lazy"/>
+            <img src={WhatsAppIcon} alt="WhatsApp" />
           </a>
         </div>
         <div className="contact-item">
@@ -24,7 +24,7 @@ const ContactUsSection = () => {
           <span className="contact-telegram">@Russia_golf</span>
           <a href="https://t.me/Russia_golf" target="_blank" rel="noopener noreferrer" className="telegram-icon-link">
             {/* <TelegramIcon /> */}
-            <img src={TelegramIcon} alt="WhatsApp" loading="lazy"/>
+            <img src={TelegramIcon} alt="WhatsApp" />
           </a>
         </div>
       </div>

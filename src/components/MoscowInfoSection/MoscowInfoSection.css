@@ -22,7 +22,7 @@
 .info-cards-grid-moscow {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* بطاقتان في كل صف */
-  gap: 40px 60px; /* مسافة عمودية 40px، مسافة أفقية 60px */
+  /* gap: 40px 60px; */
   gap: 60px 100px;
   max-width: 1200px;
   max-width: 800px;
@@ -96,7 +96,7 @@
 
 @media (max-width: 1200px) {
   .info-cards-grid-moscow {
-    gap: 30px 40px;
+    /* gap: 30px 40px; */
     max-width: 900px;
   }
 }
@@ -109,7 +109,7 @@
 
   .info-cards-grid-moscow {
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px 30px;
+    /* gap: 20px 30px; */
     max-width: 650px;
   }
 
@@ -153,7 +153,7 @@
 
   .info-cards-grid-moscow {
     grid-template-columns: 1fr; /* عمود واحد في الشاشات الصغيرة */
-    gap: 20px;
+    /* gap: 20px; */
     max-width: 400px;
   }
 

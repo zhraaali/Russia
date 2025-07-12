@@ -5,7 +5,7 @@ import ServicesSectionTwo from '../ServicesSectionTwo/ServicesSectionTwo'
 import ServiceSectionThree from '../ServiceSectionThree/ServiceSectionThree'
 const Service = () => {
   return (
-    <div className='service'>
+    <div className='service' id='trans1'>
         <h2>الخدمات</h2>
         <Serviceone/>
         <ServicesSectionTwo/>

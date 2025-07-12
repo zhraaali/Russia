@@ -32,7 +32,7 @@
     /* padding: 50%; */
     position: relative;
     z-index: 1;
-    top: 8em;
+    top: 4em;
   }
   
   .moscow-button {
@@ -84,7 +84,7 @@
     text-align: center;
     position: relative;
     top: 12em;
-    top: 8em;
+    top: 4em;
     /* لا يوجد خلفية بيضاء صلبة للبطاقة، النص فوق الصورة مباشرة */
   }
   
@@ -142,7 +142,7 @@
 
     }
     .landmark-card{
-      top: 8em;
+      top: 5em;
     }
   
     .landmark-image-wrapper {
@@ -207,7 +207,7 @@
     .landmarks-cards-container{
       background-position-y: center;
       background-size: contain;
-      height: 400px;
+      /* height: 400px; */
     }
     .landmark-image-wrapper {
       width: 127px;

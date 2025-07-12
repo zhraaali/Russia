@@ -17,7 +17,7 @@ const MoscowInfoSection = () => {
         <div className="info-card-moscow">
           <div className="info-icon-wrapper"> {/* غلاف جديد للأيقونة لتموضعها */}
             <div className="info-icon-circle">
-              <img src={historyIcon} loading="lazy"/>
+              <img src={historyIcon} />
             </div>
           </div>
           {/* <p className="card-heading">موسكو تعد بحق مدينة الفعاليات المتنوعة</p> */}
@@ -31,7 +31,7 @@ const MoscowInfoSection = () => {
         <div className="info-card-moscow">
           <div className="info-icon-wrapper">
             <div className="info-icon-circle">
-              <img src={sportIcon} loading="lazy"/>
+              <img src={sportIcon} />
             </div>
           </div>
           {/* <p className="card-heading">موسكو تعد أبرز مدن الرياضة</p> */}
@@ -45,7 +45,7 @@ const MoscowInfoSection = () => {
         <div className="info-card-moscow">
           <div className="info-icon-wrapper">
             <div className="info-icon-circle">
-              <img src={studentIcon} loading="lazy"/>
+              <img src={studentIcon} />
             </div>
           </div>
           {/* <p className="card-heading">موسكو تعد مدينة مثالية للطلاب</p> */}
@@ -59,7 +59,7 @@ const MoscowInfoSection = () => {
         <div className="info-card-moscow">
           <div className="info-icon-wrapper">
             <div className="info-icon-circle">
-              <img src={treeIcon} loading="lazy"/>
+              <img src={treeIcon} />
             </div>
           </div>
           {/* <p className="card-heading">موسكو ليست فقط مدينة ناطحات السحاب</p> */}
@@ -73,7 +73,7 @@ const MoscowInfoSection = () => {
         <div className="info-card-moscow">
           <div className="info-icon-wrapper">
             <div className="info-icon-circle">
-              <img src={peopleIcon} loading="lazy"/>
+              <img src={peopleIcon} />
             </div>
           </div>
           {/* <span className="card-description-moscow"ت</span> */}
@@ -87,7 +87,7 @@ const MoscowInfoSection = () => {
         <div className="info-card-moscow">
           <div className="info-icon-wrapper">
             <div className="info-icon-circle">
-              <img src={metroIcon} loading="lazy"/>
+              <img src={metroIcon} />
             </div>
           </div>
           {/* <p className="card-heading">يعتبر مترو موسكو من أكثر شبكات المترو جاذبية في العالم</p> */}

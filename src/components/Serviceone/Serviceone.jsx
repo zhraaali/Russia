@@ -46,7 +46,7 @@ const ServiceOne = () => { // تم تغيير اسم المكون ليتناسب
         {/* خدمة تذاكر الطيران */}
         <div className="service-item absolute-positioned-item ticket-pos">
           <div className="service-icon-wrapper">
-            <div className="service-icon"><img src={ticketIcon} loading="lazy"/></div>
+            <div className="service-icon"><img src={ticketIcon} /></div>
             <div className="service-text">تذاكر طيران بأفضل الأسعار</div>
           </div>
         </div>
@@ -56,14 +56,14 @@ const ServiceOne = () => { // تم تغيير اسم المكون ليتناسب
           <div className="service-icon-wrapper">
             
             <div className="service-text">إصدارات بطاقات بنكية</div>
-            <div className="service-icon"><img src={cardIcon} loading="lazy"/></div>
+            <div className="service-icon"><img src={cardIcon} /></div>
           </div>
         </div>
 
         {/* خدمة الإستقبال من المطار */}
         <div className="service-item absolute-positioned-item car-pos">
           <div className="service-icon-wrapper">
-            <div className="service-icon"><img src={caricon} loading="lazy"/></div>
+            <div className="service-icon"><img src={caricon} /></div>
             <div className="service-text">الإستقبال من المطار بجميع أنواع السيارات الفاخرة و السياحية</div>
           </div>
         </div>
@@ -72,7 +72,7 @@ const ServiceOne = () => { // تم تغيير اسم المكون ليتناسب
         <div className="service-item absolute-positioned-item document-pos">
           <div className="service-icon-wrapper">
             <div className="service-text">المساعدة في الأوراق المطلوبة</div>
-            <div className="service-icon"><img src={documentIcon} loading="lazy"/></div>
+            <div className="service-icon"><img src={documentIcon} /></div>
           </div>
         </div>
       </div>

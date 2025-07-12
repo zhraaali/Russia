@@ -13,7 +13,7 @@ const Activity = (props) => {
     
     <div className='activity-inner'>
       <div className="background-wave">
-        <img src={props.img} alt="خلفية موجة زرقاء" className="wave-img" loading="lazy"/>
+        <img src={props.img} alt="خلفية موجة زرقاء" className="wave-img"/>
       
 
       <div className="activities-cards-container">

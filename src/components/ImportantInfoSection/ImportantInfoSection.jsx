@@ -25,7 +25,7 @@ const ImportantInfoSection = () => {
        
       
         <div className="info-card electric">
-          <div className="card-icon"><img src={currencyIcon} loading="lazy"/></div>
+          <div className="card-icon"><img src={currencyIcon} /></div>
           <h3 className="card-title">العملة الرسمية</h3>
           <p className="card-description">
             العملة الرسمية في روسيا هي الروبل الروسي.
@@ -36,7 +36,7 @@ const ImportantInfoSection = () => {
         
      
         <div className="info-card payment">
-          <div className="card-icon"><img src={paymentIcon} loading="lazy"/></div>
+          <div className="card-icon"><img src={paymentIcon} /></div>
           <h3 className="card-title">طريقة الدفع</h3>
           <p className="card-description">
           النقد (الكاش) و البطاقات المصرفية التحويلات البنكية: شائعة بين الأفراد والشركات
@@ -44,7 +44,7 @@ const ImportantInfoSection = () => {
           </p>
         </div>
         <div className="info-card ">
-          <div className="card-icon"><img src={plugIcon} loading="lazy"/></div>
+          <div className="card-icon"><img src={plugIcon} /></div>
           <h3 className="card-title"> مخارج الكهرباء</h3>
           <p className="card-description">
             الجهد الكهربائي: 220-240 فولت.
@@ -55,7 +55,7 @@ const ImportantInfoSection = () => {
 
      
         <div className="info-card electric2">
-          <div className="card-icon"><img src={climateIcon} loading="lazy"/></div>
+          <div className="card-icon"><img src={climateIcon} /></div>
           <h3 className="card-title">المناخ</h3>
           <p className="card-description">
             روسيا تتميز بمناخ قاري متطرف، حيث يسودها
@@ -67,7 +67,7 @@ const ImportantInfoSection = () => {
       
 
         <div className="info-card payment2">
-          <div className="card-icon"><img src={busIcon} loading="lazy"/></div>
+          <div className="card-icon"><img src={busIcon} /></div>
           <h3 className="card-title">المواصلات</h3>
           <p className="card-description">
             تعد المواصلات في موسكو من بين الأكثر تطوراً
@@ -78,7 +78,7 @@ const ImportantInfoSection = () => {
         </div>
        
         <div className="info-card ">
-          <div className="card-icon"><img src={languageIcon} loading="lazy"/></div>
+          <div className="card-icon"><img src={languageIcon} /></div>
           <h3 className="card-title">اللغة</h3>
           <p className="card-description">
             اللغة الرسمية في موسكو هي اللغة الروسية.

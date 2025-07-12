@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import './Hero.css'; // استيراد ملف CSS
 import heroimg from './../../assets/images/روسيل44.png'
-const HeroSection = () => {
+const HeroSection = ({ scrollToFeaturedTours ,scrollTotours}) => {
   return (
     
         <div className="hero-section">
@@ -20,10 +20,10 @@ const HeroSection = () => {
               شركة خدمات سياحية تأسست عام 2023
             </p>
             <div className="hero-buttons mt-4">
-              <Button variant="primary" size="lg" className="hero-button me-3 animated-button">
+              <Button variant="primary" size="lg" className="hero-button me-3 animated-button" onClick={scrollTotours}>
                 وجهات سياحية
               </Button>
-              <Button variant="secondary" size="lg" className="hero-button animated-button">
+              <Button variant="secondary" size="lg" className="hero-button animated-button" onClick={scrollToFeaturedTours}>
                 الخدمات
               </Button>
             </div>

@@ -44,20 +44,20 @@ const ActivitiesSection = () => {
       />
       <Activity img={blueBackImg}
                 bgImage1={img6}
-                title1="البقي العملاق"
+                title1="السيرك الروسي"
                 bgImage2={img5}
-                title2=" الدباب الثلجي"
+                title2="المنطاد"
       />
       <Activity img={skyBackImg}
                 bgImage1={img8}
-                title1="البقي العملاق"
+                title1="  سيارات Drift"
                 bgImage2={img7}
-                title2=" الدباب الثلجي" />
+                title2="كارتينغ" />
       <Activity img={blueBackImg}
                 bgImage1={img10}
-                title1="البقي العملاق"
+                title1=" الكروز الملكي البنورامي"
                 bgImage2={img9}
-                title2=" الدباب الثلجي"
+                title2="اللعب مع الدب"
       />
       <Activity img={skyBackImg}
                 bgImage1={img12}

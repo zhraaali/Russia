@@ -1,26 +1,20 @@
-/* ServicesSectionTwo.css */
 
-.services-section-two {
+
+.services-section-three {
     background-color: #F8F9FA;
-    /* padding: 60px 20px; */
     text-align: center;
     position: relative;
     overflow: hidden;
-    /* margin-top: 5em; */
   }
   
-  .services-title {
-    font-size: 3em;
-    color: #2C3E50;
-    margin-bottom: 60px;
-  }
   
-  /* حاوية التخطيط لكل صف (الصف العلوي والسفلي) */
-  .services-layout-container-two {
+  
+
+  .services-layout-container-three {
     position: relative;
     width: 100%;
     max-width: 1200px; /* عرض تقريبي لكي تظهر الصورة بشكل جيد */
-    height: 200px;
+    min-height: 417px;
     margin: 0 auto 50px auto;
   
     background-image: url('../../assets/images/ww2.png'); /* */
@@ -30,13 +24,13 @@
   }
   
   /* نمط الأيقونة الدائرية نفسها والنص */
-  .service-icon-wrapper-two {
+  .service-icon-wrapper-three {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     z-index: 5;
-    width: 150px; /* لتحديد عرض الأيقونة مع النص أسفلها */
+    width: 200px; /* لتحديد عرض الأيقونة مع النص أسفلها */
     /* margin-top: 3em; */
     margin-right: 2em;
   }
@@ -45,7 +39,7 @@
     margin-top: 3em;
 } */
 
-  .service-icon-two {
+  .service-icon-three {
     width: 80px;
     height: 80px;
     background-color: #1A68A6;
@@ -56,19 +50,15 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
-  .service-icon-two svg {
+  .service-icon-three img {
     width: 40px;
     height: 40px;
-    /* margin-top: 3em; */
-  }
-  .service-icon-two img {
-    width: 40px;
-    height: 40px;
-    /* margin-top: 3em; */
+    
   }
   
-  .service-text-two {
-    color: #2C3E50;
+  
+  .service-text-three {
+    color: #477BAE;
     font-size: 1.1em;
     margin-top: 15px;
     line-height: 1.4;
@@ -88,7 +78,7 @@
   .location-pos-three {
     /* left: 25%; */
     left: 30%;
-    top: 45%;
+    top: 54%;
     transform: translate(-50%, -50%);
   }
   
@@ -96,7 +86,7 @@
   .internet-pos-three {
     left: 50%;
     /* left: 55%; */
-    top: 0%; /* أعلى قليلاً ليتبع الميلان */
+    top: 25%; /* أعلى قليلاً ليتبع الميلان */
     /* bottom: 60%; */
     transform: translate(-50%, -50%);
    
@@ -107,78 +97,241 @@
     left: 77%;
     /* left: 80%; */
     /* top: 50%; */
-    top: 50%;
+    top: 38%;
     transform: translate(-50%, -50%);
   }
   
-  /* أيقونة الطائرة في نهاية الصف العلوي */
-  .plane-icon-end-top {
-    right: 5%;
-    top: 50%;
-    transform: translate(50%, -50%) rotate(45deg); /* تدوير الطائرة وتوسيطها */
-  }
+
   
-  
-  /* *** تموضع الصف السفلي *** */
+ 
   .bottom-row-layout {
     
-    background-position: center 30%; /* ضبط مختلف عن الصف العلوي لجعلها تبدو كمسار منفصل */
+    background-position: center 30%; 
   }
   
-  /* أيقونة الطائرة في بداية الصف السفلي */
-  .plane-icon-start-bottom {
-    left: 5%;
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(-45deg);
-  }
+
   
-  /* خدمة شراء بطاقة هاتف وكرت بنك */
-  .simcard-pos {
-    left: 35%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  /* خدمة تأمين سيارة */
-  .car-insurance-pos {
-    left: 65%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  /* أيقونة الطائرة في نهاية الصف السفلي */
-  /* .plane-icon-end-bottom {
-    right: 5%;
-    top: 50%;
-    transform: translate(50%, -50%) rotate(45deg);
-  } */
+ 
+ 
   
   
-  /* Media Query لأجهزة اللابتوب */
-  @media (min-width: 992px) {
-    .services-layout-container-two {
-      /* background-size: 100% 100%; */
-    }
-  }
+ 
   
   /* Media query للأجهزة الأصغر (الهواتف والأجهزة اللوحية) */
   @media (max-width: 991px) {
-    .services-layout-container-two {
-      height: auto;
-      min-height: 300px; /* لتظهر الخلفية بشكل معقول */
-      background-size: cover; /* لتغطية المساحة بشكل أفضل */
-      background-position: center top;
-      /* في الموبايل، قد يكون من الأفضل إخفاء الخلفية أو إعادة ترتيب العناصر */
+    .services-layout-container-three {
+      
+      background-size: cover;
+     
     }
   
     .absolute-positioned-item {
-        position: static; /* إلغاء التموضع المطلق */
+        
         transform: none; /* إلغاء التحويل */
         margin-bottom: 30px; /* مسافة بين العناصر */
-        width: 80%; /* لجعل النصوص قابلة للقراءة */
+        
     }
   
-   
+    .location-pos-three{
+      top: 16em;
+      left: 9em;
+    }
+    .internet-pos-three{
+      top: -2em;
+      left: 19em;
+    }
+    .hotel-pos-three{
+      top: -16em;
+      left: 38em;
+    }
   
     
   }
+
+  @media (max-width: 830px){
+    .services-layout-container-three {
+      
+      background-size: contain;
+     
+    }
+    .location-pos-three{
+      top: 16em;
+      left: 7em !important;
+    }
+    .internet-pos-three{
+      top: -2em;
+      left: 15em;
+    }
+    .hotel-pos-three{
+      top: -16em;
+      left: 29em;
+    }
+    
+  }
+
+
+
+  @media (max-width: 750px){
+    .service-icon-three{
+      width: 60px !important;
+      height: 60px !important;
+    }
+    .service-icon-three img {
+      width: 25px !important;
+      height: 25px !important;
+
+    }
+  .location-pos-three{
+    top: 13em;
+    left: 5em !important;
+  }
+  .internet-pos-three{
+    top: -2em;
+    left: 10em;
+  }
+  .hotel-pos-three{
+    top: -13em;
+    left: 26em;
+  }
+  .service-text-three{
+    font-size: .8em !important;
+  }
+}
+
+
+
+@media (max-width: 670px){
+  .service-icon-three{
+    width: 60px !important;
+    height: 60px !important;
+  }
+  .service-icon-three img {
+    width: 25px !important;
+    height: 25px !important;
+  }
+.location-pos-three{
+  top: 13em;
+  left: 3em !important;
+}
+.internet-pos-three{
+  top: -3em;
+  left: 8.4em;
+}
+.hotel-pos-three{
+  top: -14em;
+  left: 20.4em;
+}
+.service-text-three{
+  font-size: .8em !important;
+}
+}
+
+
+
+
+@media (max-width: 600px){
+  .service-icon-three{
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .service-icon-three img {
+    width: 20px !important;
+    height: 20px !important;
+  }
+.location-pos-three{
+  top: 11em;
+  left: 3em !important;
+}
+.internet-pos-three{
+  top: -1.9em;
+  left: 6.4em;
+}
+.hotel-pos-three{
+  top: -12.5em;
+  left: 18.4em;
+}
+.service-text-three{
+  font-size: .7em !important;
+}
+}
+
+
+
+
+@media (max-width: 520px){
+  .services-layout-container-three{
+   background-size: contain !important;
+  }
+ .location-pos-three{
+   top: 11em;
+   left: 2em !important;
+ }
+ .internet-pos-three{
+   top: -2.5em;
+   left: 3.5em;
+ }
+ .hotel-pos-three{
+   top: -14em;
+   left: 14.4em;
+ }
+ 
+}
+
+
+
+@media (max-width: 440px){
+  .service-icon-three{
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .service-icon-three img {
+    width: 17px !important;
+    height: 17px !important;
+  }
+ 
+.location-pos-three{
+  top: 10em;
+  left: 0em !important;
+}
+.internet-pos-three{
+  top: -3.5em;
+  left: 2em;
+}
+.hotel-pos-three{
+  top: -12.5em;
+  left: 10.4em;
+}
+.service-text-three{
+  font-size: .45em !important;
+}
+
+}
+
+
+@media (max-width: 365px){
+  .service-icon-three{
+    width: 35px !important;
+    height: 35px !important;
+  }
+  .service-icon-three img {
+    width: 17px !important;
+    height: 17px !important;
+  }
+ 
+.location-pos-three{
+  top: 7em;
+  left: 2em !important;
+}
+.internet-pos-three{
+  top: -0.5em;
+  left: 2em;
+}
+.hotel-pos-three{
+  top: -3em;
+  left: 6.4em;
+}
+.service-text-three{
+  font-size: .45em !important;
+}
+
+}
