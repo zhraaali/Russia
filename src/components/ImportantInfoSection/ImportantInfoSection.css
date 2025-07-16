@@ -79,36 +79,36 @@
 .card-right{
   position: relative;
   /* top: 100%; */
-  top: 150%;
+  top: 130%;
   /* bottom: 10%; */
 }
 
 .card-right2{
   position: relative;
-  top: 180%;
+  top: 150%;
 }
 
 .payment{
   position: relative;
   /* top: 130%; */
-  top: 180%;
+  top: 150%;
 }
 
 .payment2{
   position: relative;
   /* top: 180%; */
-  top: 210%;
+  top: 170%;
 }
 
 .electric{
   position: relative;
-  top: 195%;
+  top: 170%;
 }
 
 .electric2{
   position: relative;
   /* top: 195%; */
-  top: 235%;
+  top: 190%;
 }
 
 .info-card:hover {
@@ -123,12 +123,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 25px; /* مسافة بين الأيقونة والعنوان */
+  margin-top: 15px;
+  /* margin-bottom: 25px; */
+  /* object-fit: contain; */
 }
 
 .card-icon img {
   width: 27px;
+  width: 50px;
   height: 27px;
+  height: 50px;
+  object-fit: contain;
   color: #2C7CCF;
 }
 
