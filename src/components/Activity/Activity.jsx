@@ -3,10 +3,12 @@ import './Activity.css'
 import blueWaveBackground from '../../assets/images/wave3.png'
 const Activity = (props) => {
   const imgStyle ={
-    backgroundImage: `url(${props.bgImage1})`
+    backgroundImage: `url(${props.bgImage1})`,
+    backgroundSize:'109%'
   };
   const img2Style ={
-    backgroundImage: `url(${props.bgImage2})`
+    backgroundImage: `url(${props.bgImage2})`,
+    backgroundSize:'109%'
   };
   return (
 

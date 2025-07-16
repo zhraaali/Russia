@@ -10,17 +10,17 @@
 
     color: #fff; 
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 20rem;
   }
 
 
   .hero-section img{
     width: 100%;
-    height: 100vh;
-    filter: drop-shadow(-50px 30px 0px #477BAE)
-            drop-shadow(-50px 20px 0px #ACCDEE);
+    /* height: 100vh; */
+    /* filter: drop-shadow(-50px 30px 0px #477BAE)
+            drop-shadow(-50px 20px 0px #ACCDEE); */
     /* box-shadow: 0px 0px 8px 5px #477BAE; */
-    /* object-fit: contain; */
+    /* object-fit: auto; */
   }
   .hero-overlay {
     position: absolute;
@@ -37,7 +37,8 @@
   .hero-content {
     position: relative;
     top: -75%;
-    /* bottom: 20%; */
+    top: -170%;
+    /* bottom: 100%; */
     z-index: 2; /* لجعل المحتوى فوق الطبقة الشفافة */
     padding-top: 80px; /* مسافة من الأعلى لعدم تداخلها مع ال Navbar */
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* ظل للنص لتحسين القراءة */
@@ -45,8 +46,15 @@
   
   .hero-title {
     font-size: 5em; /* حجم كبير للعنوان */
+    font-size: 12vw;
     font-weight: bold;
     margin-bottom: 20px;
+    margin-bottom: 0px;
+    margin-bottom: -50px !important;
+
+    /* margin-bottom: 50%; */
+    /* height: 86.2%; */
+    height: max-content;
     animation: slideInFromTop 1s ease-out forwards; /* انيميشن للعنوان */
     opacity: 0;
     color: #fff; /* اللون الافتراضي للعناوين هو الأبيض */
@@ -54,7 +62,9 @@
   
   .hero-subtitle {
     font-size: 1.8em;
-    margin-bottom: 30px;
+    font-size: 5vw;
+    margin-top: 0%;
+    margin-bottom: 0px;
     animation: slideInFromBottom 1s ease-out forwards; /* انيميشن للوصف */
     animation-delay: 0.3s; /* تأخير بسيط بعد العنوان */
     opacity: 0;
@@ -62,7 +72,8 @@
   }
   
   .hero-buttons .hero-button {
-    padding: 15px 40px;
+    /* padding: 15px 40px; */
+    padding: 23px 50px;
     font-size: 1.2em;
     font-weight: 600;
     border-radius: 50px; /* أزرار بيضاوية */
@@ -83,21 +94,27 @@
   }
   
   .hero-buttons .hero-button:first-child:hover {
-    background-color: #7a7a7a;
+    background-color: #D7273E;
+    color: #FFFFFF;
+    cursor: pointer;
     border-color: #7a7a7a;
     transform: translateY(-3px); /* رفع الزر عند التحويم */
   }
   
+
+  
   .hero-buttons .hero-button:last-child {
     background-color: #D7273E; /* لون زر "الخدمات" */
-    border-color: #5d3f6a;
+    /* border-color: #5d3f6a; */
     
     color: #fff;
   }
   
   .hero-buttons .hero-button:last-child:hover {
-    background-color: #4b3252;
-    border-color: #4b3252;
+    background-color: #FFFFFF;
+    color: #1A68A6;
+    cursor: pointer;
+    /* border-color: #4b3252; */
     transform: translateY(-3px); /* رفع الزر عند التحويم */
   }
   
@@ -118,9 +135,29 @@
   }
   
   /* Responsive adjustments */
+@media (max-width:1280px){
+  .hero-section{
+    margin-bottom: 10em;
+  }
+  .hero-content{
+    top: -140%;
+  }
+}
+
+
+@media (max-width:1100px){
+  .hero-section{
+    margin-bottom: 10em;
+  }
+  .hero-content{
+    top: -120%;
+  }
+}
+
   @media (max-width: 991px) {
     .hero-section {
       height: 80vh; /* تقليل الارتفاع على الشاشات الأصغر */
+      margin-bottom: 7em;
     }
 
     .hero-inner{
@@ -133,10 +170,13 @@
     .hero-content {
       padding-top: 0; /* إزالة المسافة العلوية */
       top: -72% !important;
+      top: -109% !important;
       /* bottom: 100% !important; */
     }
     .hero-title {
       font-size: 3.5em; /* تصغير حجم العنوان */
+      font-size: 6.5em;
+      /* margin-bottom: -50px !important; */
     }
     .hero-subtitle {
       font-size: 1.4em; /* تصغير حجم الوصف */
@@ -151,13 +191,14 @@
   @media (max-width: 770px) {
     .hero-section {
       height: 70vh;
+      margin-bottom: 0em;
     }
     .hero-section img{
       height: 100%;
     }
-    /* .hero-content{
-      top: -70% !important;
-    } */
+    .hero-content{
+      top: -75% !important;
+    }
     .hero-title {
       font-size: 2.8em;
     }
@@ -181,7 +222,7 @@
     height: 50vh;
   }
   .hero-content{
-    top: -70% !important;
+    top: -80% !important;
   }
   .hero-title {
     font-size: 2em;

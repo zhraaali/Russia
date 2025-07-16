@@ -2,38 +2,42 @@
 
   /* ImportantInfoSection.css */
 .important{
-  background-image: url('../../assets/images/Untitled-1 copy44.png');
+  /* background-image: url('../../assets/images/Untitled-1 copy44.png'); */
+  background-image: url('../../assets/images/background7.png');
   /* padding: 20px 0 0 0; */
-  background-size: cover;
+  background-size: auto;
   background-position: top;
   width: 100%;
-  height: 100vh; /* قد تحتاج لتعديل هذا الارتفاع ليتناسب مع المحتوى على الشاشات المختلفة */
-  height: max-content;
+  /* height: 100vh; */
+  height: 137vh !important;
+  height: 197vh !important;
+  /* height: max-content; */
   background-repeat: no-repeat;
 }
 .important-info-section {
-  background-image: url('./../../assets/images/Untitled-1 copy44-1@2x.png');
-  background-size: cover;
-  height: max-content;
-  background-repeat: no-repeat;
-  background-position:top;
+  /* background-image: url('./../../assets/images/Untitled-1 copy44-1@2x.png'); */
+  /* background-size: cover; */
+  /* height: max-content; */
+  /* background-repeat: no-repeat; */
+  /* background-position:top; */
   padding: 20px 0 0 0;
   text-align: center;
   position: relative;
 }
 
 .important-section-inner{
-  background-image: url('../../assets/images/travel b.png');
-  background-size: cover;
-  height: 100vh; /* قد تحتاج لتعديل هذا الارتفاع ليتناسب مع المحتوى على الشاشات المختلفة */
+  /* background-image: url('../../assets/images/travel b.png'); */
+  /* background-size: cover; */
+  /* height: 100vh; */
   /* height: max-content; */
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
 }
 
 .info-title {
   font-size: 3em;
   color: #2C3E50;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
+  margin-top: 80px;
 }
 
 .info-cards-grid {
@@ -69,24 +73,33 @@
  إذا كنت تريد تباعدًا مختلفًا، يمكنك إضافة كلاسات لبعض البطاقات وضبط الهامش عليها.
  سأحتفظ بها كما هي مع التوصية بمراجعتها.
 */
+
+.card-right{
+  position: relative;
+  /* top: 100%; */
+  top: 150%;
+  /* bottom: 10%; */
+}
+
 .payment{
   position: relative;
-  top: 35%;
+  /* top: 130%; */
+  top: 180%;
 }
 
 .payment2{
   position: relative;
-  top: 35%;
+  top: 180%;
 }
 
 .electric{
   position: relative;
-  top: 45%;
+  top: 195%;
 }
 
 .electric2{
   position: relative;
-  top: 45%;
+  top: 195%;
 }
 
 .info-card:hover {
@@ -142,7 +155,8 @@
 
   .info-title {
     font-size: 2.5em;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
+    margin-bottom: 4em;
   }
   .important-section-inner{
     height: max-content !important;
@@ -180,7 +194,12 @@
     font-size: 0.85em; /* حجم وصف أصغر */
   }
 }
-
+@media (max-width:690px){
+  .info-title{
+    margin-bottom: 3em;
+    margin-top: 1em;
+  }
+}
 /* الهواتف الذكية (أقل من 576px) */
 @media (max-width: 575px) {
   /* .important-section-inner{

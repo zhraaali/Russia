@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@font-face {
+  font-family: 'font'; /* اسم الخط الذي ستستخدمه في CSS */
+  src: url('./assets/All-Genders-Regular-v4.otf') format('woff2');
+       /* url('./assets/fonts/MyCustomFont-Regular.woff') format('woff'); */
+  font-weight: normal; /* للسمك العادي */
+  font-style: normal;
+  font-display: swap; /* مهم لتحسين تجربة المستخدم */
+}

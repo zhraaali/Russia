@@ -37,7 +37,7 @@
   
   .moscow-button {
     background-color: transparent; /* زر شفاف */
-    border: 2px solid #1A68A6; /* حدود زرقاء */
+    border: 5px solid #1A68A6; /* حدود زرقاء */
     color: #1A68A6;
     font-size: 1.5em;
     font-size: 3.5em;
@@ -83,8 +83,10 @@
     align-items: center;
     text-align: center;
     position: relative;
-    top: 12em;
+    /* top: 12em; */
     top: 4em;
+    /* top: 10em !important; */
+    top: 9.5em !important;
     /* لا يوجد خلفية بيضاء صلبة للبطاقة، النص فوق الصورة مباشرة */
   }
   

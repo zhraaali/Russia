@@ -32,9 +32,13 @@
     gap: 50px;
     gap: 20px;
     max-width: 1100px;
+    /* max-width: 1016px !important; */
+    /* max-height: 944px !important; */
     margin: 0 auto;
     position: absolute;
     top: 20em;
+    right: 15%;
+    /*new edit*/
     right: 15%;
     z-index: 1;
     /* margin-bottom: 50em; */
@@ -42,10 +46,12 @@
   
   .activity-card {
     width: 480px;
-    width: 480px;
+    /*new edit */
+    width: 507px ;
     height: 350px;
-    height: 350px;
-    border-radius: 15px;
+    /*new edit */
+    height: 481px ;
+    border-radius: 35px;
     overflow: hidden;
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
     position: relative;
@@ -73,14 +79,18 @@
     /* ليس لون خلفية صلب، بل صورة */
     background-image: url('../../assets/images/Path 142.png'); /* الصورة الحمراء المائلة */
     background-size:85%;
-    background-size: contain;
+    height: 100px;
+    /*new edit*/
+    height: 240px;
+    background-size: 100%;
+    /*end edit*/
+    /* background-size: contain; */
     background-repeat: no-repeat;
     background-position:right bottom;
     
     width: 100%;
     /* تحديد ارتفاع الـ overlay بناءً على الجزء الذي تغطيه الصورة الحمراء في التصميم */
     /* يمكن تقدير هذا الارتفاع أو جعله يتجاوب */
-    height: 100px; /* جرب هذه القيمة واضبطها حسب ما تراه في المتصفح */
     
     padding: 15px 25px; /* Adjust padding as needed for text positioning */
     display: flex; /* لتمكين توسيط النص داخله */
@@ -96,8 +106,12 @@
     font-size: 1.8em;
     font-weight: bold;
     margin: 0;
-    position: relative; /* لضمان ظهور النص فوق صورة الموجة الحمراء */
+    /*new edit*/
+    position: absolute; /* لضمان ظهور النص فوق صورة الموجة الحمراء */
     z-index: 2; /* لجعل النص فوق الخلفية الحمراء */
+    bottom: 16%;
+    right: 20%;
+    /*end edti*/
   }
   
   /* Media Queries للتجاوبية */
@@ -113,6 +127,7 @@
   }
   .activity-card{
     width: 365px;
+    height: 350px;
   }
 }
 

@@ -1,7 +1,8 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import './Hero.css'; // استيراد ملف CSS
-import heroimg from './../../assets/images/روسيل44.png'
+// import heroimg from './../../assets/images/روسيل44.png'
+import heroimg from '../../assets/images/background5.png'
 const HeroSection = ({ scrollToFeaturedTours ,scrollTotours}) => {
   return (
     

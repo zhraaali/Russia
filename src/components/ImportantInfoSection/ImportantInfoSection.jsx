@@ -8,13 +8,6 @@ import currencyIcon from '../../assets/images/circle-rubel-line-svgrepo-com.png'
 import climateIcon from '../../assets/images/weather.png'
 
 
-const ClimateIcon = () => (
-  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 18H11V16H13V18ZM13 14H11V6H13V14Z" fill="#2C7CCF"/>
-  </svg>
-);
-
-
 const ImportantInfoSection = () => {
   return (
     <div className='important'>
@@ -43,7 +36,7 @@ const ImportantInfoSection = () => {
           الدفع الإلكتروني: عبر تطبيقات مثل Sberbank Online و YooMoney و QIWI
           </p>
         </div>
-        <div className="info-card ">
+        <div className="info-card card-right">
           <div className="card-icon"><img src={plugIcon} /></div>
           <h3 className="card-title"> مخارج الكهرباء</h3>
           <p className="card-description">
@@ -77,7 +70,7 @@ const ImportantInfoSection = () => {
           </p>
         </div>
        
-        <div className="info-card ">
+        <div className="info-card card-right">
           <div className="card-icon"><img src={languageIcon} /></div>
           <h3 className="card-title">اللغة</h3>
           <p className="card-description">

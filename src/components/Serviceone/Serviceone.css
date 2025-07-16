@@ -1,6 +1,6 @@
 
 .services-section {
-    background-color: #F8F9FA;
+    /* background-color: #F8F9FA; */
     /* padding: 80px 20px; */
     text-align: center;
     position: relative;
@@ -37,13 +37,19 @@
     position: relative;
     z-index: 5;
     width: 150px; /* لتحديد عرض الأيقونة مع النص أسفلها */
+    width: 14.5625rem; /* 169px */
+  height: 10.25rem;
   }
   /* .absolute-positioned-item{
     position:  relative !important;
   } */
   .service-icon {
     width: 80px;
+    /* width: 10rem; */
+    /* width: 169px; */
     height: 80px;
+    /* height: 164px; */
+    /* height: 10rem; */
     background-color: #1A68A6;
     border-radius: 50%;
     display: flex;
@@ -55,10 +61,11 @@
   .service-icon img {
     width: 40px;
     height: 40px;
+    object-fit: contain;
   }
   
   .service-text {
-    color: #2C3E50;
+    color: #477BAE;
     font-size: 1.1em;
     margin-top: 15px;
     line-height: 1.4;

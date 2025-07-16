@@ -13,7 +13,7 @@
   
   .contact-us-title {
     font-size: 3em;
-    color: #2C7CCF; /* لون أزرق */
+    color: #1A68A6; /* لون أزرق */
     margin-bottom: 50px;
     margin-top: 10%;
     font-weight: bold;
@@ -49,7 +49,7 @@
     justify-content: center;
     gap: 15px; /* مسافة بين النص والأيقونة */
     font-size: 1.8em; /* حجم الخط */
-    font-size: 2em;
+    font-size: 2.5em;
     color: #333;
     font-weight: bold;
     /* direction: rtl; */
@@ -59,7 +59,7 @@
   .contact-item .contact-telegram {
     white-space: nowrap; /* منع انقسام الأرقام والأسماء */
     font-weight: 500; /* تخفيف سماكة الخط قليلاً إذا كان bold جداً */
-    color: #2C7CCF; /* لون أزرق للنص */
+    color: #1A68A6; /* لون أزرق للنص */
   }
   
   .whatsapp-icon-link img,

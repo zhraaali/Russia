@@ -13,11 +13,17 @@
 
   
   .activities-title {
-    font-size: 3em;
-    font-size: 90px;
+    font-size: 4em;
+    /* font-size: 90px; */
     color: #1A68A6;
     /* margin-bottom: 60px; */
     position: relative;
     z-index: 1;
     margin-top: 10rem;
+    top: 2em;
   }
+@media (max-width:400px){
+  .activities-title{
+    top: 0em;
+  }
+}

@@ -1,9 +1,11 @@
 /* Footer.css */
 
 .main-footer {
-    background-color: #F8F9FA; /* خلفية بيضاء/رمادية فاتحة */
+    /* background-color: #F8F9FA; */
     padding: 40px 20px; /* مساحة داخلية */
-    border-top: 1px solid #e0e0e0; /* خط فاصل علوي رفيع */
+    /* border-top: 4px solid #8D8D8D;  */
+    border-top: 4px solid rgba(141, 141, 141, 0.3); 
+    /* opacity: 30%; */
     text-align: right; /* محاذاة المحتوى لليمين كما في الصورة */
   }
   
