@@ -70,7 +70,7 @@ const ImportantInfoSection = () => {
           </p>
         </div>
        
-        <div className="info-card card-right">
+        <div className="info-card card-right2">
           <div className="card-icon"><img src={languageIcon} /></div>
           <h3 className="card-title">اللغة</h3>
           <p className="card-description">

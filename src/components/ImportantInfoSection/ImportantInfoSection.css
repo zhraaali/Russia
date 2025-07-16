@@ -36,6 +36,7 @@
 .info-title {
   font-size: 3em;
   color: #2C3E50;
+  color: #1A68A6;
   /* margin-bottom: 60px; */
   margin-top: 80px;
 }
@@ -62,6 +63,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   /* Height and width adjustments for responsive design */
   height: auto;
+  height: 250px;
   width: auto; /* استخدم auto ليتناسب مع grid */
   position: static; /* إزالة absolute positioning ما لم يكن هناك سبب قوي لها */
   /* top: 20%; */ /* إزالة هذا أو جعله responsive */
@@ -81,6 +83,11 @@
   /* bottom: 10%; */
 }
 
+.card-right2{
+  position: relative;
+  top: 180%;
+}
+
 .payment{
   position: relative;
   /* top: 130%; */
@@ -89,7 +96,8 @@
 
 .payment2{
   position: relative;
-  top: 180%;
+  /* top: 180%; */
+  top: 210%;
 }
 
 .electric{
@@ -99,7 +107,8 @@
 
 .electric2{
   position: relative;
-  top: 195%;
+  /* top: 195%; */
+  top: 235%;
 }
 
 .info-card:hover {
@@ -126,6 +135,7 @@
 .card-title {
   font-size: 1.4em; /* حجم مناسب للعناوين */
   color: #477BAE;
+  /* color: #1A68A6 !important; */
   margin-bottom: 10px; /* مسافة بين العنوان والوصف */
   margin-top: 0;
   font-weight: 600;
