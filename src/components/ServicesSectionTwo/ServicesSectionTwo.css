@@ -25,7 +25,7 @@
   
     background-image: url('../../assets/images/ww2.png'); /* */
     background-size: 100% auto;
-    background-position: 2em; /* توسيط الصورة */
+    background-position: 2.5em; /* توسيط الصورة */
     background-repeat: no-repeat; /* عدم تكرار الصورة */
   }
   
@@ -87,7 +87,7 @@
  
   .location-pos {
     /* left: 26%; */
-    left: 28%;
+    left: 28.8%;
     top: 74%;
     transform: translate(-50%, -50%);
   }
