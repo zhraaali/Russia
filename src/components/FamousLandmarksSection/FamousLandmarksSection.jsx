@@ -17,7 +17,9 @@ const FamousLandmarksSection = (props) => {
       <div className="landmarks-cards-container">
        
         <div className="landmark-card">
-          <p className="landmark-name">{props.title3}</p>
+          <p className="landmark-name">{props.title3}
+          {/* <p style={{margin:"0px 0px 0px -40px",fontSize:"1.5em"}}>{props.title4}</p> */}
+          </p>
           <div className="landmark-image-wrapper">
             <img src={props.img3} alt="الكرملين" />
           </div>

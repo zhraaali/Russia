@@ -10,6 +10,9 @@ import img6 from '../../assets/images/f2a86a26eb89ac4dfaf661c52b77f98a.png'
 import img7 from '../../assets/images/7686d76d393624b16473a8ec441d6709 (1).png'
 import img8 from '../../assets/images/360_F_312785854_NkRhaR5Uq2rVRRuqTdWEmHOHxPs88xOL (2).png'
 import img9 from '../../assets/images/cdef9dee428e85547106bad41a930f13.png'
+import img10 from '../../assets/images/mormanskimg1.png'
+import img11 from '../../assets/images/mormanskimg2.png'
+import img12 from '../../assets/images/mormanskimg3.png'
 const FamousSection = () => {
   return (
     <section className="famous-section">
@@ -46,7 +49,21 @@ const FamousSection = () => {
         title3="جبل أخون"
         img3={img9}
     
-    /></section>
+    />
+    <FamousLandmarksSection btn="مورمانسك"
+        title1="كاسحة الجليد النووية لينين"
+        img1={img12}
+    
+        title2="نصب أليوشا"
+        img2={img11}
+    
+        title3=" Aurora Villageمنتجع"
+        // title4="Aurora Village"
+        img3={img10}
+    
+    />
+    
+    </section>
   )
 }
 
