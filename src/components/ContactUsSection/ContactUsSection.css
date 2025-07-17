@@ -55,6 +55,11 @@
     /* direction: rtl; */
   }
   
+.contact-item a span{
+  direction: ltr;
+}
+
+
   .contact-item .contact-number,
   .contact-item .contact-telegram {
     white-space: nowrap; /* منع انقسام الأرقام والأسماء */

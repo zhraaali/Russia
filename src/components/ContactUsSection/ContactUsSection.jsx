@@ -13,15 +13,18 @@ const ContactUsSection = () => {
       </div>
       <div className="contact-details">
         <div className="contact-item">
+          <a href="https://wa.me/79268270788" target="_blank" style={{textDecoration:'none'}}>
           <span className="contact-number">+79268270788</span>
+          </a>
           <a href="https://wa.me/79268270788" target="_blank" rel="noopener noreferrer" className="whatsapp-icon-link">
             {/* <WhatsAppIcon /> */}
             <img src={WhatsAppIcon} alt="WhatsApp" />
           </a>
         </div>
         <div className="contact-item">
-        
+        <a href="https://t.me/Russia_golf" target="_blank" style={{textDecoration:'none'}}> 
           <span className="contact-telegram">@Russia_golf</span>
+          </a>
           <a href="https://t.me/Russia_golf" target="_blank" rel="noopener noreferrer" className="telegram-icon-link">
             {/* <TelegramIcon /> */}
             <img src={TelegramIcon} alt="WhatsApp" />
