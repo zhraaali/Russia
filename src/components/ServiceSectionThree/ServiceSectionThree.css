@@ -49,14 +49,22 @@
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-
+/* .service-text-three span{
+  margin: 5px 0px;
+} */
   .service-icon-three img {
     width: 40px;
     height: 40px;
     
   }
-  
-  
+  .service-icon-three .imgsim{
+    width: 35px;
+    height: 35px;
+  }
+  .service-icon-three .carimg{
+    width: 55px;
+    height: 55px;
+  }
   .service-text-three {
     color: #477BAE;
     font-size: 1.1em;
@@ -77,15 +85,17 @@
   /* خدمة جداول للأماكن السياحية */
   .location-pos-three {
     /* left: 25%; */
-    left: 30%;
-    top: 54%;
+    /* left: 30%; */
+    left: 27%;
+    /* top: 54%; */
+    top: 50%;
     transform: translate(-50%, -50%);
   }
   
   /* خدمة شراء خطوط وباقات انترنت */
   .internet-pos-three {
-    left: 50%;
-    /* left: 55%; */
+    /* left: 50%; */
+    left: 49%;
     top: 25%; /* أعلى قليلاً ليتبع الميلان */
     /* bottom: 60%; */
     transform: translate(-50%, -50%);
@@ -94,8 +104,8 @@
   
   /* خدمة إقامة في فنادق */
   .hotel-pos-three {
-    left: 77%;
-    /* left: 80%; */
+    /* left: 77%; */
+    left: 75%;
     /* top: 50%; */
     top: 38%;
     transform: translate(-50%, -50%);

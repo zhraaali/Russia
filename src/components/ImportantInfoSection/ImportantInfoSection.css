@@ -152,6 +152,7 @@
   color: #477BAE;
   line-height: 1.6; /* تباعد الأسطر لسهولة القراءة */
   margin: 0;
+  padding: 1em;
 }
 
 /* Media Queries للتجاوبية */

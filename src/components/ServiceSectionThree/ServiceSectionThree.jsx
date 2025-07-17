@@ -28,7 +28,7 @@ import airportIcon from '../../assets/images/airport-departure-svgrepo-com.png'
         {/* خدمة شراء خطوط وباقات انترنت */}
         <div className="service-item-three absolute-positioned-item internet-pos-three ">
           <div className="service-icon-wrapper-three " style={{marginTop:'10em',marginLeft:'4em'}}>
-          <div className="service-icon-three "><img src={simIcon} /></div>
+          <div className="service-icon-three "><img src={simIcon} className='imgsim'/></div>
           <div className="service-text-three">شراء بطاقة هاتف وكرت بنك تبديل عملة</div>
             
             
@@ -38,9 +38,9 @@ import airportIcon from '../../assets/images/airport-departure-svgrepo-com.png'
         {/* خدمة إقامة في فنادق */}
         <div className="service-item-three absolute-positioned-item hotel-pos-three">
           <div className="service-icon-wrapper-three">
-            <div className="service-text-three" style={{marginBottom:'1em'}}>تأمين سيارة كل النهار  <p>صغيرة او كبيرة </p>  و السفر ضمن المدن الروسية</div>
+            <div className="service-text-three" style={{marginBottom:'1em'}}>تأمين سيارة كل النهار  صغيرة او كبيرة   و السفر ضمن المدن الروسية</div>
             {/* <div className="service-icon-two"><HotelIcon /></div> */}
-            <div className="service-icon-three"><img src={caricon} /></div>
+            <div className="service-icon-three"><img src={caricon} className='carimg'/></div>
           </div>
         </div>
 

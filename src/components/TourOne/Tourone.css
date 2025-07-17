@@ -79,6 +79,7 @@
   .tour-details {
     flex-grow: 1; /* السماح للنص بأخذ المساحة المتبقية */
     max-width: 600px;
+    margin-top: 1em;
     /* max-width: 45% !important; */
   }
   
@@ -91,7 +92,8 @@
   
   .tour-details p {
     font-size: 1.1em;
-    font-size: 2.5vw !important;
+    /* font-size: 2.5vw !important; */
+    font-size: 2vw !important;
     color: #477BAE; /* لون نص فاتح قليلاً */
     /* line-height: 1.8; */
   }

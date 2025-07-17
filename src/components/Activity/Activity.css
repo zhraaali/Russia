@@ -30,7 +30,7 @@
     align-items: center;
     flex-wrap: nowrap;
     gap: 50px;
-    gap: 20px;
+    /* gap: 20px; */
     max-width: 1100px;
     /* max-width: 1016px !important; */
     /* max-height: 944px !important; */
@@ -82,7 +82,7 @@
     height: 100px;
     /*new edit*/
     height: 240px;
-    background-size: 100%;
+    /* background-size: 100%; */
     /*end edit*/
     /* background-size: contain; */
     background-repeat: no-repeat;
@@ -160,7 +160,10 @@
     }
   
     .card-name {
+      position: absolute;
       font-size: 1.6em;
+      bottom: 11%;
+      right: 10%;
     }
   }
   

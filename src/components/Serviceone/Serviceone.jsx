@@ -63,7 +63,7 @@ const ServiceOne = () => { // تم تغيير اسم المكون ليتناسب
         {/* خدمة الإستقبال من المطار */}
         <div className="service-item absolute-positioned-item car-pos">
           <div className="service-icon-wrapper">
-            <div className="service-icon"><img src={caricon} /></div>
+            <div className="service-icon"><img src={caricon} className='imgcar'/></div>
             <div className="service-text">الإستقبال من المطار بجميع أنواع السيارات الفاخرة و السياحية</div>
           </div>
         </div>

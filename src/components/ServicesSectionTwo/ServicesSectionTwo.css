@@ -86,22 +86,27 @@
   
  
   .location-pos {
-    left: 26%;
+    /* left: 26%; */
+    left: 28%;
     top: 74%;
     transform: translate(-50%, -50%);
   }
   
 
   .internet-pos {
-    left: 40%;
-    top: 52%; 
+    /* left: 40%; */
+    left: 44%;
+    /* top: 52%;  */
+    top: 58%;
     transform: translate(-50%, -50%);
   }
   
 
   .hotel-pos {
-    left: 64%;
-    top: 85%;
+    /* left: 64%; */
+    left: 68%;
+    /* top: 85%; */
+    top: 81%;
     transform: translate(-50%, -50%);
   }
   

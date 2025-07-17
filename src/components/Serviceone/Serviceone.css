@@ -63,7 +63,10 @@
     height: 40px;
     object-fit: contain;
   }
-  
+  .service-icon .imgcar{
+    width: 35px !important;
+    height: 35px !important;
+  }
   .service-text {
     color: #477BAE;
     font-size: 1.1em;
