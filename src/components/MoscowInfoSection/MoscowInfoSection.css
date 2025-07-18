@@ -163,6 +163,7 @@
 @media (max-width: 767px) {
   .moscow-info-section {
     padding: 60px 15px;
+    margin-bottom: 29em;
   }
 
   .moscow-info-title {
@@ -206,11 +207,23 @@
 }
 
 @media (max-width: 480px) {
+  
   .moscow-info-title {
     font-size: 1.8em;
   }
   .info-card-moscow {
     padding: 15px;
     padding-top: 40px;
+  }
+}
+
+@media (max-width:400px){
+  .moscow-info-section{
+    margin-bottom: 35em;
+  }
+}
+@media (max-width:370px){
+  .moscow-info-section{
+    margin-bottom: 45em;
   }
 }
