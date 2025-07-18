@@ -21,7 +21,7 @@ import HotelIcon from '../../assets/images/hotel-svgrepo-com (1).png'
         <div className="service-item-three absolute-positioned-item location-pos-three">
           <div className="service-icon-wrapper-three">
             <div className="service-text-three" style={{marginBottom:'1em'}}>نقل من و إلى المطار</div>
-            <div className="service-text-three mobile" style={{marginBottom:'1em'}}>نقل من و إلى المطار</div>
+            <div className="service-text-three mobile" style={{marginBottom:'1em'}}>إقامة في فنادق خمس نجوم أو أربع نجوم حسب الرغبة بأفضل الأسعار</div>
             <div className="service-icon-three">
               <img src={airportIcon} />
               <img src={HotelIcon} className='mobile-img'/>
@@ -47,7 +47,7 @@ import HotelIcon from '../../assets/images/hotel-svgrepo-com (1).png'
         <div className="service-item-three absolute-positioned-item hotel-pos-three">
           <div className="service-icon-wrapper-three">
             <div className="service-text-three" style={{marginBottom:'1em'}}>تأمين سيارة كل النهار  صغيرة او كبيرة   و السفر ضمن المدن الروسية</div>
-            <div className="service-text-three mobile" style={{marginBottom:'1em'}}>تأمين سيارة كل النهار  صغيرة او كبيرة   و السفر ضمن المدن الروسية</div>
+            <div className="service-text-three mobile" style={{marginBottom:'1em'}}>نقل من و إلى المطار</div>
             {/* <div className="service-icon-two"><HotelIcon /></div> */}
             <div className="service-icon-three">
               <img src={caricon} className='carimg'/>
