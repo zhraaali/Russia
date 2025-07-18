@@ -28,7 +28,13 @@
     background-position: 2.5em; /* توسيط الصورة */
     background-repeat: no-repeat; /* عدم تكرار الصورة */
   }
-  
+  .mobile{
+    display: none;
+  }
+
+  .mobile-img{
+    display: none;
+  }
   /* نمط الأيقونة الدائرية نفسها والنص */
   .service-icon-wrapper-two {
     display: flex;
@@ -53,7 +59,14 @@
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-  
+  /* .service-icon-two-mobile{
+    display: none !important;
+  } */
+
+.service-text-two-mobile{
+  display: none !important;
+}
+
   .service-icon-two img {
     width: 40px;
     height: 40px;
@@ -160,7 +173,7 @@
     }
   
     .absolute-positioned-item {
-        
+        position: absolute;
         transform: none; 
         margin-bottom: 30px; 
         
@@ -168,34 +181,72 @@
   
 
     .location-pos{
-      top: 11em;
-      left: 5em;
+      top: 7em;
+      left: 8em;
     }
     .internet-pos{
-      top: 1em;
-      left: 9em;
+      top: 2.5em;
+      left: 11em;
     }
     .hotel-pos{
-      top: -4em;
-      left: 19em;
+      top: 8em;
+      left: 20em;
     }
   }
 
-  @media (max-width: 830px){
+@media (max-width:910px){
   .location-pos{
-    top: 11em;
-    left: 3em !important;
+    top: 7em;
+    left: 7em;
   }
   .internet-pos{
-    top: 2em;
-    left: 8em;
+    top: 2.5em;
+    left: 11em;
   }
   .hotel-pos{
-    top: -3em;
-    left: 17em;
+    top: 8em;
+    left: 18em;
   }
+}
+
+
+  @media (max-width: 830px){
+    .services-layout-container-two{
+      background-position: 4.5em;
+    }
+    .location-pos{
+      top: 7em;
+      left: 7em;
+    }
+    .internet-pos{
+      top: 2.5em;
+      left: 11em;
+    }
+    .hotel-pos{
+      top: 8em;
+      left: 18em;
+    }
   
 }
+
+@media(max-width:798px){
+  .services-layout-container-two{
+    background-position: 2.5em;
+  }
+  .location-pos{
+    top: 7em;
+    left: 6em;
+  }
+  .internet-pos{
+    top: 2.5em;
+    left: 9em;
+  }
+  .hotel-pos{
+    top: 8em;
+    left: 16em;
+  }
+}
+
   @media (max-width: 750px){
     .service-icon-two{
       width: 60px !important;
@@ -206,18 +257,18 @@
       height: 25px !important;
 
     }
-  .location-pos{
-    top: 8em;
-    left: 4em !important;
-  }
-  .internet-pos{
-    top: 1em;
-    left: 7em;
-  }
-  .hotel-pos{
-    top: -4em;
-    left: 15em;
-  }
+    .location-pos{
+      top: 7em;
+      left: 6em;
+    }
+    .internet-pos{
+      top: 2.5em;
+      left: 8em;
+    }
+    .hotel-pos{
+      top: 7em;
+      left: 15em;
+    }
   .service-text-two{
     font-size: .8em !important;
   }
@@ -231,116 +282,212 @@
       width: 25px !important;
       height: 25px !important;
     }
-  .location-pos{
-    top: 8em;
-    left: 3em !important;
-  }
-  .internet-pos{
-    top: 1em;
-    left: 5.4em;
-  }
-  .hotel-pos{
-    top: -3em;
-    left: 13.4em;
-  }
+    .location-pos{
+      top: 7em;
+      left: 5em;
+    }
+    .internet-pos{
+      top: 2.5em;
+      left: 8em;
+    }
+    .hotel-pos{
+      top: 7em;
+      left: 14em;
+    }
   .service-text-two{
     font-size: .8em !important;
   }
+  .services-layout-container-two{
+    background-position: 2.5em;
+  }
 }
   @media (max-width: 600px){
+    .services-layout-container-two{
+      background-image: url('../../assets/images/section2.png') !important;
+      background-position: top !important;
+      background-size: contain !important;
+    }
+
+    .service-icon-two img{
+      display: none !important;
+    }
+    .service-icon-two .mobile-img{
+      display: block !important;
+    }
+    .service-text-two{
+      display: none !important;
+    }
+    .mobile{
+      display: block !important;
+    }
+    /* .service-icon-two-mobile{
+      display: block;
+    } */
     .service-icon-two{
       width: 50px !important;
       height: 50px !important;
     }
-    .service-icon-two img {
+    .service-icon-two-mobile img {
       width: 20px !important;
       height: 20px !important;
     }
   .location-pos{
-    top: 7em;
-    left: 3em !important;
+    top: 2.5em;
+    left: 2em !important;
   }
   .internet-pos{
-    top: .1em;
-    left: 4.4em;
+    top: -1.9em;
+    left: 5em;
   }
   .hotel-pos{
-    top: -3.5em;
-    left: 11.4em;
+    top: 2.5em;
+    left: 12.4em;
   }
   .service-text-two{
     font-size: .6em !important;
   }
+  
 }
-  @media (max-width: 520px){
-   .services-layout-container-two{
-    background-size: contain !important;
-   }
+
+
+
+@media (max-width:550px){
+  .services-layout-container-two{
+    /* height: 353px; */
+    min-height: 232px;
+    background-size: contain;
+  }
+  .service-text-two{
+    font-size: .5em !important;
+  }
+
   .location-pos{
-    top: 7em;
+    top: 2.5em;
+    left: 2em !important;
+  }
+  .hotel-pos{
+    top: 2.5em;
+    left: 11.4em;
+  }
+}
+
+  @media (max-width: 520px){
+    .internet-pos{
+      left: 4em !important;
+    }
+    .hotel-pos{
+      top: 2.5em;
+      left: 11em;
+    }
+  
+}
+
+@media (max-width: 480px){
+  .service-text-two{
+    font-size: .45em !important;
+  }
+  .location-pos{
+    top: 2em;
+    left: 2em !important;
+  }
+  .internet-pos{
+    top: -2.9em !important;
     left: 3em !important;
   }
-  .internet-pos{
-    top: -0.5em;
-    left: 4.4em;
-  }
   .hotel-pos{
-    top: -3.5em;
-    left: 9.4em;
+    left: 10em !important;
   }
-  
 }
-  @media (max-width: 440px){
-    .service-icon-two{
-      width: 40px !important;
-      height: 40px !important;
-    }
-    .service-icon-two img {
-      width: 17px !important;
-      height: 17px !important;
-    }
-   
-  .location-pos{
-    top: 7em;
-    left: 2em !important;
-  }
-  .internet-pos{
-    top: -0.5em;
-    left: 3em;
-  }
-  .hotel-pos{
-    top: -3em;
-    left: 7.4em;
+
+
+@media (max-width:450px){
+  .services-layout-container-two{
+    /* height: 353px; */
+    min-height: 232px;
+    background-size: contain;
   }
   .service-text-two{
-    font-size: .45em !important;
+    font-size: .35em !important;
+  }
+  .service-icon-two{
+    width: 40px !important;
+    height: 40px !important;
   }
   
-}
-  @media (max-width: 365px){
-    .service-icon-two{
-      width: 35px !important;
-      height: 35px !important;
-    }
-    .service-icon-two img {
-      width: 17px !important;
-      height: 17px !important;
-    }
-   
-  .location-pos{
-    top: 7em;
-    left: 2em !important;
+  .service-icon-two img{
+    width: 15px !important;
+    height: 15px !important;
   }
-  .internet-pos{
-    top: -0.5em;
-    left: 2em;
+  .location-pos{
+    top: 1.5em !important;
+    left: 1.5em !important;
   }
   .hotel-pos{
-    top: -3em;
-    left: 6.4em;
+    top: 1.6em !important;
+    left: 9em !important;
+  }
+}
+
+
+
+
+
+
+
+@media (max-width:405px){
+  .services-layout-container-two{
+    /* height: 353px; */
+    min-height: 232px;
+    background-size: contain;
   }
   .service-text-two{
-    font-size: .45em !important;
+    font-size: .35em !important;
   }
   
+  .location-pos{
+    top: 1.5em !important;
+    left: 1.5em !important;
+  }
+  .internet-pos{
+    left: 2.4em !important;
+  }
+  .hotel-pos{
+    top: 1.6em !important;
+    left: 8em !important;
+  }
+  
+  
+}
+
+
+@media (max-width:370px){
+  .services-layout-container-two{
+    /* height: 353px; */
+    min-height: 232px;
+    background-size: contain;
+  }
+  
+ 
+  .location-pos{
+    left: 1em !important;
+  }
+  .internet-pos{
+    left: 1.8em !important;
+  }
+  .hotel-pos{
+    left: 7em !important;
+  }
+}
+
+@media (max-width:335px){
+  .location-pos{
+    left: 1em !important;
+  }
+  .internet-pos{
+    top: -3.8em !important;
+    left: 1.3em !important;
+  }
+  .hotel-pos{
+    left: 6em !important;
+  }
 }

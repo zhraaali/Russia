@@ -251,7 +251,7 @@
 
 @media (max-width:670px){
   .custom-nav-links .nav-link-item {
-    font-size: .85em;
+    font-size: .85em !important;
   }
 }
 

@@ -216,18 +216,16 @@
     margin-top: 1em;
   }
 }
-/* الهواتف الذكية (أقل من 576px) */
-@media (max-width: 575px) {
-  /* .important-section-inner{
-    background-size: contain;
-  } */
+
+/* @media (max-width: 575px) {
+  
   .info-cards-grid {
-    grid-template-columns: 2fr; /* عمود واحد فقط */
+    grid-template-columns: 2fr;
     gap: 20px;
   }
 
   .important-info-section {
-    padding: 50px 15px; /* padding أقل للقسم بأكمله */
+    padding: 50px 15px;
   }
 
   .info-title {
@@ -236,8 +234,8 @@
   }
 
   .info-card {
-    padding: 20px; /* padding أصغر للبطاقات */
-    height: auto; /* مرونة في الارتفاع */
+    padding: 20px; 
+    height: auto; 
   }
 
   .card-icon {
@@ -256,16 +254,16 @@
   .card-description {
     font-size: 0.8em;
   }
-}
-@media (max-width: 575px) {
-  /* .info-cards-grid سيبقى بعمودين بسبب الـ media query الأعلى */
+} */
+/* @media (max-width: 575px) {
+ 
   .info-cards-grid {
-      gap: 15px; /* تقليل المسافة بين البطاقات أكثر على الشاشات الصغيرة جداً */
-      padding: 0 10px; /* padding أفقي أقل للشبكة */
+      gap: 15px; 
+      padding: 0 10px; 
   }
 
   .important-info-section {
-    padding: 40px 10px; /* padding أقل للقسم بأكمله */
+    padding: 40px 10px; 
   }
 
   .info-title {
@@ -274,11 +272,11 @@
   }
 
   .info-card {
-    padding: 15px; /* تقليل padding البطاقات أكثر */
+    padding: 15px; 
   }
 
   .card-icon {
-    width: 35px; /* حجم أيقونة أصغر جداً */
+    width: 35px; 
     height: 35px;
     margin-bottom: 8px;
   }
@@ -287,19 +285,109 @@
     height: 20px;
   }
   .card-title {
-    font-size: 1em; /* حجم عنوان أصغر */
+    font-size: 1em; 
     margin-bottom: 3px;
   }
   .card-description {
-    font-size: 0.75em; /* حجم وصف أصغر جداً */
+    font-size: 0.75em; 
     line-height: 1.5;
   }
-}
-/* يمكنك إضافة ميديا كويري إضافي إذا أردت 3 أعمدة بين 992px و 1200px */
-/*
-@media (min-width: 992px) and (max-width: 1200px) {
+} */
+
+
+
+@media (max-width: 605px) {
   .info-cards-grid {
-      grid-template-columns: repeat(3, 1fr);
+      display: flex; /* تحويل الشبكة إلى Flex container */
+      flex-wrap: wrap; /* السماح للعناصر بالانتقال إلى سطر جديد */
+      justify-content: center; /* توسيط البطاقات إذا لم تملأ السطر تمامًا */
+      align-items: flex-start; /* محاذاة البطاقات لأعلى (اختياري، حسب التصميم) */
+      gap: 15px; /* المسافة بين البطاقات */
+      padding: 0 10px; /* padding أفقي أقل للشبكة */
+  }
+
+  .info-card {
+      flex: 0 0 calc(50% - 15px); /* أساس Flexbox: بطاقتان في السطر مع مراعاة الـ gap */
+      /*
+        flex-grow: 0 (لا تنمو)
+        flex-shrink: 0 (لا تنكمش)
+        flex-basis: calc(50% - 15px) (العرض الأساسي 50% مطروحًا منه نصف الـ gap على كل جانب لبطاقتين)
+      */
+      max-width: calc(50% - 15px); /* ضمان ألا تزيد البطاقة عن هذا العرض */
+      padding: 0px;
+      box-sizing: border-box; /* التأكد من أن padding لا يزيد العرض الكلي */
+  }
+
+  /* التنسيقات الأخرى تبقى كما هي أو تُعدل حسب الحاجة */
+  .important-info-section {
+      padding: 40px 10px;
+  }
+
+  .info-title {
+      font-size: 2em;
+      margin-bottom: 25px;
+  }
+
+  .card-icon {
+      width: 35px;
+      height: 35px;
+      margin-bottom: 8px;
+  }
+
+  .card-icon img {
+      width: 20px;
+      height: 20px;
+  }
+
+  .card-title {
+      font-size: 1em;
+      margin-bottom: 3px;
+  }
+
+  .card-description {
+      /* font-size: 0.75em; */
+      font-size: .45em;
+      line-height: 1.5;
+  }
+
+
+  .card-right{
+    position: relative;
+    /* top: 100%; */
+    /* top: 130%; */
+    top: 26em;
+    /* bottom: 10%; */
+  }
+  
+  .card-right2{
+    position: relative;
+    /* top: 150%; */
+    top: 25em;
+  }
+  
+  .payment{
+    position: relative;
+    /* top: 130%; */
+    /* top: 150%; */
+    top: 23em;
+  }
+  
+  .payment2{
+    position: relative;
+    /* top: 180%; */
+    /* top: 170%; */
+    top: 26em;
+  }
+  
+  .electric{
+    position: relative;
+    top: 26em;
+  }
+  
+  .electric2{
+    position: relative;
+    /* top: 195%; */
+    /* top: 190%; */
+    top: 24em;
   }
 }
-*/

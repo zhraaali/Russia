@@ -127,7 +127,17 @@
       width: 265px; /* تصغير حجم الدائرة */
       height: 265px;
     }
+    .landmark-card{
+      top: 6.5em !important;
+    }
   }
+
+@media (max-width:1080px){
+  .landmark-card{
+    top: 4.5em !important;
+  }
+}
+
   /* أجهزة لوحية وشاشات متوسطة */
   @media (max-width: 992px) {
     .landmarks-title {
@@ -174,12 +184,12 @@
       margin-bottom: 5em;
     }
     .landmark-card{
-      top: 3em;
+      top: 1em !important;
     }
   
     .landmarks-cards-container {
       background-position-y: center;
-      background-size: contain;
+      /* background-size: contain; */
       /* flex-direction: column; 
       justify-content: flex-start;
       align-items: center;  */
@@ -223,9 +233,9 @@
     .moscow-button-container{
       margin-bottom: 2em;
     }
-    /* .landmark-card{
-      top: 7em;
-    } */
+    .landmark-card{
+      top: 3em !important;
+    }
   }
   @media (max-width: 515px) {
     .landmark-image-wrapper {
@@ -237,6 +247,9 @@
     }
     .moscow-button-container{
       margin-bottom: 5em;
+    }
+    .landmark-card{
+      top: 5em !important;
     }
   }
   @media (max-width:440px) {
@@ -251,7 +264,7 @@
     }
 
     .landmark-card{
-      top: 7em;
+      top: 7em !important;
     }
 
     .landmark-name {

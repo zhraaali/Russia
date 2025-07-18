@@ -1,0 +1,222 @@
+.services-section-four{
+    display: none;
+}
+
+
+
+.services-section-four {
+    /* background-color: #F8F9FA; */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  
+  
+
+  .services-layout-container-four {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* عرض تقريبي لكي تظهر الصورة بشكل جيد */
+    min-height: 417px;
+    margin: 0 auto 50px auto;
+  
+    background-image: url('../../assets/images/ww2.png'); /* */
+    background-size: 100% auto;
+    background-position: center; /* توسيط الصورة */
+    background-repeat: no-repeat; /* عدم تكرار الصورة */
+  }
+  
+  /* نمط الأيقونة الدائرية نفسها والنص */
+  .service-icon-wrapper-four {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    width: 200px; /* لتحديد عرض الأيقونة مع النص أسفلها */
+    /* margin-top: 3em; */
+    margin-right: 2em;
+  }
+  
+ /* .internet{
+    margin-top: 3em;
+} */
+.mobile{
+  display: none;
+}
+
+.mobile-img{
+  display: none;
+}
+  .service-icon-four {
+    width: 80px;
+    height: 80px;
+    background-color: #1A68A6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+/* .service-text-three span{
+  margin: 5px 0px;
+} */
+  .service-icon-four img {
+    width: 40px;
+    height: 40px;
+    
+  }
+  .service-icon-four .imgsim{
+    width: 35px;
+    height: 35px;
+  }
+  .service-icon-four .carimg{
+    width: 55px;
+    height: 55px;
+  }
+  .service-text-four {
+    color: #477BAE;
+    font-size: 1.1em;
+    margin-top: 15px;
+    line-height: 1.4;
+    text-align: center;
+    font-weight: 500;
+  }
+@media (max-width: 600px){
+    
+    .services-section-four{
+        display: block !important;
+    }
+    .services-layout-container-four{
+    position: relative;
+      background-image: url('../../assets/images/section4.png') !important;
+      height: 130px;
+      background-repeat: no-repeat;
+  
+      background-position: top !important;
+      background-size: contain !important;
+    }
+    .service-icon-wrapper-four{
+      display: flex !important;
+      flex-direction: column-reverse !important;
+    }
+    .service-icon-four img{
+      display: none !important;
+    }
+    .service-icon-four .mobile-img{
+      display: block !important;
+    }
+    .service-text-four{
+      display: none !important;
+    }
+    .mobile{
+      display: block !important;
+    }
+    .service-icon-four{
+      width: 60px !important;
+      height: 60px !important;
+    }
+    .service-icon-four img {
+      width: 40px !important;
+      height: 40px !important;
+    }
+  .location-pos-four{
+    position: absolute;
+    top: 2em;
+    left: 10em !important;
+  }
+  
+  .service-text-four{
+    font-size: .6em !important;
+  }
+  }
+  @media (max-width: 550px){
+   
+    .service-text-four{
+      font-size: .5em !important;
+    }
+  
+    .location-pos-four{
+      top: 3em;
+      left: 8em !important;
+    }
+    
+  
+  }
+  
+ 
+  
+  
+  @media (max-width: 480px){
+    .service-text-four{
+      font-size: .45em !important;
+    }
+    .location-pos-four{
+      top: 2em;
+      left: 6em !important;
+    }
+    
+  }
+  
+  
+  
+  
+  @media (max-width:459px){
+    
+    .service-text-four{
+      font-size: .35em !important;
+    }
+    .service-icon-four{
+      width: 60px !important;
+      height: 60px !important;
+    }
+    
+    .service-icon-four img{
+      width: 40px !important;
+      height: 40px !important;
+    }
+    
+    
+  }
+  
+  
+  
+  @media (max-width:408px){
+    
+    .service-text-four{
+      font-size: .35em !important;
+    }
+    
+    .location-pos-four{
+     
+      left: 4em !important;
+    }
+   
+    
+    
+  }
+  
+  @media (max-width:395px){
+    
+  }
+  
+  
+  @media (max-width:370px){
+   
+   
+    .location-pos-four{
+      left: 3em !important;
+    }
+    
+  }
+  
+  
+  @media (max-width:335px){
+    .location-pos-four{
+    top: 1em !important;
+      left: 2em !important;
+    }
+   
+  }
+  

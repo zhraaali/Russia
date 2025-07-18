@@ -74,7 +74,9 @@
   .hero-buttons .hero-button {
     /* padding: 15px 40px; */
     /* padding: 23px 50px; */
-    padding: 30px 60px;
+    /* padding: 30px 60px; */
+    width: 10em;
+    height: 4em;
     font-size: 1.2em;
     font-weight: 600;
     border-radius: 50px; /* أزرار بيضاوية */
@@ -232,8 +234,10 @@
   .hero-subtitle {
     font-size: 1em;
   }
-  .hero-buttons{
+  .hero-buttons .hero-button{
     gap: 10px;
+    width: 7.5em;
+    height: 3em;
   }
   .hero-button{
     width: 60%;

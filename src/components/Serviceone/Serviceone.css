@@ -133,10 +133,13 @@
   
   
   /* Media Query لأجهزة اللابتوب (للتأكد من عدم وجود التفاف) */
-  @media (min-width: 992px) {
+  @media (max-width: 992px) {
     .services-layout-container {
       /* للحفاظ على نسبة العرض إلى الارتفاع ووضع الأيقونات بدقة */
       /* background-size: 100% 100%; */
+    }
+    .service-text{
+      font-size: 0.9em !important;
     }
   }
   
@@ -163,7 +166,7 @@
     height: 30px;
   }
     .absolute-positioned-item {
-        position: relative !important;
+        /* position: relative !important; */
         transform: none; /* إلغاء التحويل */
         margin-bottom: 30px; /* مسافة بين العناصر */
         width: 80%; /* لتسهيل قراءة النصوص */
@@ -180,27 +183,59 @@
         margin: 20px auto; 
     } */
   .ticket-pos{
-    /* left: 50% !important; */
-    left: 10% !important;
-    top: 2% !important;
+    left: 6% !important;
+    top: 45%;
+    /* left: 10% !important; */
+    /* top: 2% !important; */
   }
   .card-pos{
-    /* left: 50% !important; */
-    left: 6% !important;
-    top: 4% !important;
+    left: 26% !important;
+    top: 52%;
+    /* left: 6% !important; */
+    /* top: 4% !important; */
   }
   .car-pos{
-    /* left: 50% !important; */
-    left: 3% !important;
-    top: 9% !important;
+    left: 47% !important;
+    top: 51%;
+    /* left: 3% !important; */
+    /* top: 9% !important; */
   }
   .document-pos{
-    /* left: 50% !important; */
-    left: 1% !important;
-    top: 5% !important;
+    left: 72% !important;
+    top: 52%;
+    /* left: 1% !important; */
+    /* top: 5% !important; */
   }
     
   }
+
+@media(max-width:930px){
+  .ticket-pos{
+    left: 6% !important;
+    top: 45%;
+    /* left: 10% !important; */
+    /* top: 2% !important; */
+  }
+  .card-pos{
+    left: 26% !important;
+    top: 52%;
+    /* left: 6% !important; */
+    /* top: 4% !important; */
+  }
+  .car-pos{
+    left: 47% !important;
+    top: 48%;
+    /* left: 3% !important; */
+    /* top: 9% !important; */
+  }
+  .document-pos{
+    left: 72% !important;
+    top: 52%;
+    /* left: 1% !important; */
+    /* top: 5% !important; */
+  }
+}
+
 
 @media (max-width:870px){
   .services-layout-container{
@@ -212,28 +247,57 @@
   .services-layout-container{
     height: 353px;
   }
-  .ticket-pos{
-    /* left: 50% !important; */
+  .service-text{
+    font-size: 0.7em !important;
+  }
+  /* .ticket-pos{
+    
     left: 7% !important;
     top: 0% !important;
   }
   .card-pos{
-    /* left: 50% !important; */
+   
     left: 6% !important;
     top: 4% !important;
   }
   .car-pos{
-    /* left: 50% !important; */
+   
     left: 3% !important;
     top: 9% !important;
   }
   .document-pos{
-    /* left: 50% !important; */
+    
     left: 1% !important;
     top: 2% !important;
-  }
+  } */
 }
 
+@media (max-width:790px){
+  .ticket-pos{
+    left: 0% !important;
+    top: 40%;
+    /* left: 10% !important; */
+    /* top: 2% !important; */
+  }
+  .card-pos{
+    left: 20% !important;
+    top: 47%;
+    /* left: 6% !important; */
+    /* top: 4% !important; */
+  }
+  .car-pos{
+    left: 46% !important;
+    top: 44%;
+    /* left: 3% !important; */
+    /* top: 9% !important; */
+  }
+  .document-pos{
+    left: 69% !important;
+    top: 45%;
+    /* left: 1% !important; */
+    /* top: 5% !important; */
+  }
+}
 
 @media (max-width:715px){
   .services-layout-container{
@@ -241,7 +305,7 @@
     min-height: 332px;
   }
   .service-text{
-    font-size: .8em;
+    font-size: .6em !important;
   }
 }
 @media (max-width:650px){
@@ -262,25 +326,62 @@
     width: 20px;
     height: 20px;
   }
-  .ticket-pos{
-    /* left: 50% !important; */
+  .service-icon .imgcar{
+    width: 25px !important;
+  }
+  .car-pos{
+    left: 44% !important;
+    top: 45%;
+  }
+  /* .ticket-pos{
+    
     left: 4% !important;
     top: -10% !important;
   }
   .card-pos{
-    /* left: 50% !important; */
+    
     left: -4% !important;
     top: -7% !important;
   }
   .car-pos{
-    /* left: 50% !important; */
+    
     left: -12% !important;
     top: -6% !important;
   }
   .document-pos{
-    /* left: 50% !important; */
+    
     left: -22% !important;
     top: -8% !important;
+  } */
+}
+
+@media (max-width:630px){
+  .car-pos{
+    left: 44% !important;
+    top: 42%;
+  }
+}
+@media (max-width:600px){
+  .services-layout-container{
+    background-image: url('../../assets/images/section1.png') !important;
+  }
+  .ticket-pos{
+    /* left: 50% !important; */
+    left: -2% !important;
+    top: 11% !important;
+  }
+  .card-pos{
+    /* left: 50% !important; */
+    left: 23% !important;
+    top: 16% !important;
+  }
+  .car-pos{
+    /* left: 50% !important; */
+    left: 55% !important;
+    top: 11% !important;
+  }
+  .document-pos{
+    display: none;
   }
 }
 @media (max-width:550px){
@@ -292,7 +393,7 @@
   .service-text{
     font-size: .5em;
   }
-  .service-icon{
+  /* .service-icon{
     width: 30px;
     height: 30px;
   }
@@ -300,31 +401,53 @@
   .service-icon img{
     width: 15px;
     height: 15px;
-  }
-  .ticket-pos{
-    /* left: 50% !important; */
+  } */
+  /* .ticket-pos{
+    
     left: 3% !important;
     top: -13% !important;
   }
   .card-pos{
-    /* left: 50% !important; */
+    
     left: -6% !important;
     top: -8% !important;
   }
   .car-pos{
-    /* left: 50% !important; */
+    
     left: -20% !important;
     top: -10% !important;
   }
   .document-pos{
-    /* left: 50% !important; */
+    
     left: -31% !important;
     top: -14% !important;
+  } */
+  .ticket-pos{
+    /* left: 50% !important; */
+    left: -5% !important;
+    top: 9% !important;
+  }
+  .card-pos{
+    /* left: 50% !important; */
+    left: 23% !important;
+    top: 16% !important;
+  }
+  .car-pos{
+    /* left: 50% !important; */
+    left: 53% !important;
+    top: 10% !important;
+  }
+  .document-pos{
+    display: none;
+  }
+  .service-icon .imgcar{
+    width: 15px !important;
+    height: 15px !important;
   }
 }
-@media (max-width:510px){
+/* @media (max-width:510px){
   .services-layout-container{
-    /* height: 353px; */
+    
     min-height: 232px;
     background-size: contain;
   }
@@ -341,26 +464,44 @@
     height: 15px;
   }
   .ticket-pos{
-    /* left: 50% !important; */
+    
     left: 2% !important;
     top: -18% !important;
   }
   .card-pos{
-    /* left: 50% !important; */
+    
     left: -13% !important;
     top: -16% !important;
   }
   .car-pos{
-    /* left: 50% !important; */
+    
     left: -28% !important;
     top: -17% !important;
   }
   .document-pos{
-    /* left: 50% !important; */
+    
     left: -42% !important;
     top: -18% !important;
   }
+} */
+
+@media (max-width:480px){
+  .ticket-pos{
+    left: -8% !important;
+  }
+  .card-pos{
+    left: 20% !important;
+    top: 12% !important;
+  }
+  .car-pos{
+    left: 48% !important;
+    top: 12.5% !important;
+  }
+  .service-text{
+    font-size: .45em !important;
+  }
 }
+
 @media (max-width:450px){
   .services-layout-container{
     /* height: 353px; */
@@ -368,9 +509,9 @@
     background-size: contain;
   }
   .service-text{
-    font-size: .45em;
+    font-size: .35em;
   }
-  .service-icon{
+  /* .service-icon{
     width: 25px;
     height: 25px;
   }
@@ -378,38 +519,32 @@
   .service-icon img{
     width: 12px;
     height: 12px;
-  }
+  } */
   .ticket-pos{
-    /* left: 50% !important; */
-    left: -1% !important;
-    top: -23% !important;
+    left: -11% !important;
   }
   .card-pos{
-    /* left: 50% !important; */
-    left: -25% !important;
-    top: -25% !important;
+    left: 16% !important;
+    top: 12% !important;
   }
   .car-pos{
-    /* left: 50% !important; */
-    left: -45% !important;
-    top: -21% !important;
+    left: 45% !important;
+    top: 12.5% !important;
   }
-  .document-pos{
-    /* left: 50% !important; */
-    left: -65% !important;
-    top: -28% !important;
+  .service-text{
+    font-size: .35em !important;
   }
 }
-@media (max-width:400px){
+@media (max-width:405px){
   .services-layout-container{
     /* height: 353px; */
     min-height: 232px;
     background-size: contain;
   }
   .service-text{
-    font-size: .45em;
+    font-size: .35em;
   }
-  .service-icon{
+  /* .service-icon{
     width: 25px;
     height: 25px;
   }
@@ -417,27 +552,23 @@
   .service-icon img{
     width: 12px;
     height: 12px;
-  }
+  } */
   .ticket-pos{
-    /* left: 50% !important; */
-    left: -8% !important;
-    top: -31% !important;
+    left: -14% !important;
+    top: 6% !important;
   }
   .card-pos{
-    /* left: 50% !important; */
-    left: -39% !important;
-    top: -32% !important;
+    left: 12% !important;
+    top: 7% !important;
   }
   .car-pos{
-    /* left: 50% !important; */
-    left: -68% !important;
-    top: -27% !important;
+    left: 40% !important;
+    top: 10.5% !important;
   }
-  .document-pos{
-    /* left: 50% !important; */
-    left: -100% !important;
-    top: -34% !important;
+  .service-text{
+    font-size: .35em !important;
   }
+  
 }
 @media (max-width:370px){
   .services-layout-container{
@@ -448,7 +579,7 @@
   .service-text{
     font-size: .45em;
   }
-  .service-icon{
+  /* .service-icon{
     width: 25px;
     height: 25px;
   }
@@ -456,25 +587,35 @@
   .service-icon img{
     width: 12px;
     height: 12px;
-  }
+  } */
   .ticket-pos{
-    /* left: 50% !important; */
-    left: -8% !important;
-    top: -31% !important;
+    left: -18% !important;
+    top: 6% !important;
   }
   .card-pos{
-    /* left: 50% !important; */
-    left: -34% !important;
-    top: -30% !important;
+    left: 4% !important;
+    top: 5% !important;
   }
   .car-pos{
-    /* left: 50% !important; */
-    left: -61% !important;
-    top: -25% !important;
+    left: 35% !important;
+    top: 6.5% !important;
   }
-  .document-pos{
-    /* left: 50% !important; */
-    left: -87% !important;
-    top: -31% !important;
+  .service-text{
+    font-size: .35em !important;
+  }
+}
+
+@media (max-width:335px){
+  .ticket-pos{
+    left: -22% !important;
+    top: 4% !important;
+  }
+  .card-pos{
+    left: 1% !important;
+    top: 5% !important;
+  }
+  .car-pos{
+    left: 29% !important;
+    top: 7.5% !important;
   }
 }

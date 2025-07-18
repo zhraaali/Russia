@@ -4,7 +4,7 @@ import dottedLineBackgroundTwo from '../../assets/images/ww2.png'; // استير
 import locationIcon from '../../assets/images/location-round-svgrepo-com@2x.png'
 import InternetIcon from '../../assets/images/internet-surfing-1-svgrepo-com.png'
 import HotelIcon from '../../assets/images/hotel-svgrepo-com (1).png'
-
+import locationIconMobile from '../../assets/images/document-svgrepo-com.png'
 
 
 const ServicesSectionTwo = () => {
@@ -17,8 +17,13 @@ const ServicesSectionTwo = () => {
         {/* خدمة جداول للأماكن السياحية */}
         <div className="service-item-two absolute-positioned-item location-pos">
           <div className="service-icon-wrapper-two location-pos">
-            <div className="service-icon-two"><img src={locationIcon} /></div>
+            <div className="service-icon-two">
+              <img src={locationIcon} />
+              <img src={locationIconMobile} className='mobile-img'/>
+            </div>
+            {/* <div className="service-icon-two-mobile"><img src={locationIconMobile} /></div> */}
             <div className="service-text-two">جداول للأماكن السياحية و إمكانية تغييرها حسب الرغبة</div>
+            <div className="service-text-two mobile">جداول للأماكن السياحية و إمكانية تغييرها حسب الرغبة</div>
           </div>
         </div>
 
@@ -26,7 +31,11 @@ const ServicesSectionTwo = () => {
         <div className="service-item-two absolute-positioned-item internet-pos ">
           <div className="service-icon-wrapper-two internet-pos" style={{marginTop:'10em',marginLeft:'4em'}}>
           <div className="service-text-two">شراء خطوط و باقات انترنت</div>
-            <div className="service-icon-two "><img src={InternetIcon} /></div>
+          <div className="service-text-two mobile">شراء خطوط و باقات انترنت</div>
+            <div className="service-icon-two ">
+              <img src={InternetIcon} />
+              <img src={locationIcon} className='mobile-img'/>
+            </div>
             
           </div>
         </div>
@@ -34,8 +43,12 @@ const ServicesSectionTwo = () => {
         {/* خدمة إقامة في فنادق */}
         <div className="service-item-two absolute-positioned-item hotel-pos">
           <div className="service-icon-wrapper-two hotel-pos">
-            <div className="service-icon-two"><img src={HotelIcon} /></div>
+            <div className="service-icon-two">
+              <img src={HotelIcon} />
+              <img src={InternetIcon} className='mobile-img'/>
+            </div>
             <div className="service-text-two">إقامة في فنادق خمس نجوم أو أربع نجوم حسب الرغبة بأفضل الأسعار</div>
+            <div className="service-text-two mobile">إقامة في فنادق خمس نجوم أو أربع نجوم حسب الرغبة بأفضل الأسعار</div>
           </div>
         </div>
 

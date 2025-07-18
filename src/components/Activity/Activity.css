@@ -115,7 +115,13 @@
   }
   
   /* Media Queries للتجاوبية */
-  
+
+@media (max-width:1280px){
+  .activities-cards-container{
+    right: 1%;
+  }
+}
+
 
 @media (max-width:1150px){
   .activities-cards-container{
@@ -200,6 +206,13 @@
       font-size: 1.5em;
     }
   }
+
+@media (max-width:770px){
+  .activities-cards-container{
+    top: 10em;
+  }
+}
+
   @media (max-width:525px){
     .activities-cards-container{
       bottom: 40%;
