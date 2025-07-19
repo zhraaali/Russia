@@ -206,6 +206,15 @@
   }
 }
 
+@media (max-width: 600px){
+  .info-card-moscow{
+    margin: 0 14%;
+  }
+  .info-cards-grid-moscow{
+    margin-bottom: 18em;
+  }
+}
+
 @media (max-width: 480px) {
   
   .moscow-info-title {
@@ -214,12 +223,16 @@
   .info-card-moscow {
     padding: 15px;
     padding-top: 40px;
+    margin: 0 13%;
   }
 }
 
 @media (max-width:400px){
   .moscow-info-section{
     margin-bottom: 35em;
+  }
+  .info-card-moscow{
+    margin: 0 7%;
   }
 }
 @media (max-width:370px){

@@ -165,7 +165,7 @@
     }
   
     .tour-image-container img{
-      margin-left: 0em;
+      margin-left: 2em;
     }
   
     .tour-details {
@@ -174,9 +174,28 @@
   
     .tour-details h3 {
       font-size: 1.8em;
+      text-align: end;
     }
   
     .tour-details p {
-      font-size: 1em;
+      font-size: 2.2em !important;
+      text-align: end;
+    }
+  }
+
+
+  @media (max-width: 480px) {
+    .tour-details p {
+      font-size: 1.7em !important;
+    }
+  }
+  @media (max-width: 400px) {
+    .tour-details p {
+      font-size: 1.4em !important;
+    }
+  }
+  @media (max-width: 330px) {
+    .tour-details p {
+      font-size: 1.2em !important;
     }
   }

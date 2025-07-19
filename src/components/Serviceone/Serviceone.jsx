@@ -40,7 +40,7 @@ const ServiceOne = (props) => { // تم تغيير اسم المكون ليتن�
         <div className="service-item absolute-positioned-item car-pos">
           <div className="service-icon-wrapper">
             <div className="service-icon"><img src={caricon} className='imgcar'/></div>
-            <div className="service-text">الإستقبال من المطار بجميع أنواع السيارات الفاخرة و السياحية</div>
+            <div className="service-text padingtext">الإستقبال من المطار بجميع أنواع السيارات الفاخرة و السياحية</div>
           </div>
         </div>
 

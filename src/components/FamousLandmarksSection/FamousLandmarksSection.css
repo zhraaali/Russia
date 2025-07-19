@@ -231,7 +231,10 @@
       font-size: 1em;
     }
     .moscow-button-container{
-      margin-bottom: 2em;
+      margin-bottom: 1em;
+    }
+    .moscow-button{
+      border: 3px solid #1A68A6;
     }
     .landmark-card{
       top: 3em !important;
@@ -239,14 +242,14 @@
   }
   @media (max-width: 515px) {
     .landmark-image-wrapper {
-      width: 100px;
-      height: 100px;
+      width: 113px;
+      height: 113px;
     }
     .landmark-name {
       font-size: .8em;
     }
     .moscow-button-container{
-      margin-bottom: 5em;
+      margin-bottom: 1em;
     }
     .landmark-card{
       top: 5em !important;

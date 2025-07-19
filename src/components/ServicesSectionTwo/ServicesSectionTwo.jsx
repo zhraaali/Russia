@@ -23,7 +23,7 @@ const ServicesSectionTwo = () => {
             </div>
             {/* <div className="service-icon-two-mobile"><img src={locationIconMobile} /></div> */}
             <div className="service-text-two">جداول للأماكن السياحية و إمكانية تغييرها حسب الرغبة</div>
-            <div className="service-text-two mobile">المساعدة في الأوراق المطلوبة</div>
+            <div className="service-text-two mobile padingtext">المساعدة في الأوراق المطلوبة</div>
           </div>
         </div>
 

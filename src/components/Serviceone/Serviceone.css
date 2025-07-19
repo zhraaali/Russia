@@ -364,6 +364,8 @@
 @media (max-width:600px){
   .services-layout-container{
     background-image: url('../../assets/images/section1.png') !important;
+    height: 200px !important;
+    min-height: auto !important;
   }
   .ticket-pos{
     /* left: 50% !important; */
@@ -383,15 +385,18 @@
   .document-pos{
     display: none;
   }
+  .service-text{
+    font-size: .8em !important;
+  }
 }
 @media (max-width:550px){
   .services-layout-container{
     /* height: 353px; */
-    min-height: 232px;
+    /* min-height: 232px; */
     background-size: contain;
   }
   .service-text{
-    font-size: .5em;
+    font-size: .7em !important;
   }
   /* .service-icon{
     width: 30px;
@@ -505,7 +510,7 @@
 @media (max-width:450px){
   .services-layout-container{
     /* height: 353px; */
-    min-height: 232px;
+    /* min-height: 232px; */
     background-size: contain;
   }
   .service-text{
@@ -538,7 +543,7 @@
 @media (max-width:405px){
   .services-layout-container{
     /* height: 353px; */
-    min-height: 232px;
+    /* min-height: 232px; */
     background-size: contain;
   }
   .service-text{
@@ -573,7 +578,7 @@
 @media (max-width:370px){
   .services-layout-container{
     /* height: 353px; */
-    min-height: 232px;
+    /* min-height: 232px; */
     background-size: contain;
   }
   .service-text{

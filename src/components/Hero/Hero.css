@@ -233,11 +233,13 @@
   }
   .hero-subtitle {
     font-size: 1em;
+    margin-top: 14%;
   }
   .hero-buttons .hero-button{
     gap: 10px;
-    width: 7.5em;
-    height: 3em;
+    width: 8.5em;
+    /* height: 3em; */
+    font-size: .7em;
   }
   .hero-button{
     width: 60%;

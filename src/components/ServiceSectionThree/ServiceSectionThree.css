@@ -536,6 +536,8 @@
     background-image: url('../../assets/images/section3.png') !important;
     background-position: top !important;
     background-size: contain !important;
+    height: 200px !important;
+    min-height: auto !important;
   }
   .service-icon-wrapper-three{
     display: flex !important;
@@ -574,13 +576,16 @@
   left: 20.4em;
 }
 .service-text-three{
-  font-size: .6em !important;
+  font-size: .8em !important;
+}
+.padingtext{
+  padding: 0px 22px;
 }
 }
 @media (max-width: 550px){
   .services-layout-container-three{
     /* height: 353px; */
-    min-height: 232px;
+    /* min-height: 232px; */
     background-size: contain;
   }
   .service-text-three{

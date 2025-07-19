@@ -306,6 +306,8 @@
       background-image: url('../../assets/images/section2.png') !important;
       background-position: top !important;
       background-size: contain !important;
+      height: 200px !important;
+      min-height: auto !important;
     }
 
     .service-icon-two img{
@@ -344,7 +346,7 @@
     left: 12.4em;
   }
   .service-text-two{
-    font-size: .6em !important;
+    font-size: .8em !important;
   }
   
 }
@@ -354,7 +356,7 @@
 @media (max-width:550px){
   .services-layout-container-two{
     /* height: 353px; */
-    min-height: 232px;
+    /* min-height: 232px; */
     background-size: contain;
   }
   .service-text-two{
@@ -403,7 +405,7 @@
 @media (max-width:450px){
   .services-layout-container-two{
     /* height: 353px; */
-    min-height: 232px;
+    /* min-height: 232px; */
     background-size: contain;
   }
   .service-text-two{
@@ -437,7 +439,7 @@
 @media (max-width:405px){
   .services-layout-container-two{
     /* height: 353px; */
-    min-height: 232px;
+    /* min-height: 232px; */
     background-size: contain;
   }
   .service-text-two{
@@ -463,7 +465,7 @@
 @media (max-width:370px){
   .services-layout-container-two{
     /* height: 353px; */
-    min-height: 232px;
+    /* min-height: 232px; */
     background-size: contain;
   }
   

@@ -255,6 +255,20 @@
   }
 }
 
+@media (max-width:600px){
+  .custom-nav-links .nav-link-item {
+    font-weight: bold;
+  }
+  .custom-navbar.navbar-scrolled .navbar-collapse{
+    margin-top: 15px;
+  }
+  .custom-navbar .navbar-collapse{
+    margin-top: -21px;
+  }
+  .custom-navbar .navbar-brand{
+    margin-left: 0px;
+  }
+}
 
 @media (max-width: 580px) {
   /* .custom-navbar .navbar-brand {
