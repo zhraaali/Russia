@@ -213,6 +213,9 @@
   .info-cards-grid-moscow{
     margin-bottom: 18em;
   }
+  .moscow-info-title{
+    margin-bottom: 3em;
+  }
 }
 
 @media (max-width: 480px) {

@@ -155,7 +155,9 @@
   margin: 0;
   padding: 1em;
 }
-
+.special-p{
+  margin-top: 0px;
+}
 /* Media Queries للتجاوبية */
 
 /* أجهزة لوحية وشاشات أقل من 992px (متوسطة) */
@@ -305,6 +307,7 @@
       align-items: flex-start; /* محاذاة البطاقات لأعلى (اختياري، حسب التصميم) */
       gap: 15px; /* المسافة بين البطاقات */
       padding: 0 10px; /* padding أفقي أقل للشبكة */
+      margin-top: 5em;
   }
 
   .info-card {
@@ -328,6 +331,8 @@
       font-size: 2em;
       margin-bottom: 1em;
       /* margin-top: 6em; */
+      position: relative;
+      top: 3em;
   }
 
   .card-icon {

@@ -33,7 +33,7 @@ const ImportantInfoSection = () => {
           <h3 className="card-title">طريقة الدفع</h3>
           <p className="card-description">
           النقد (الكاش) و البطاقات المصرفية التحويلات البنكية: شائعة بين الأفراد والشركات
-          الدفع الإلكتروني: عبر تطبيقات مثل Sberbank Online و YooMoney و QIWI
+          الدفع الإلكتروني: عبر تطبيقات مثل <p className='special-p'>Sberbank Online و YooMoney و QIWI</p>
           </p>
         </div>
         <div className="info-card card-right">

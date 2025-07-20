@@ -31,7 +31,7 @@ const ServicesSectionTwo = () => {
         <div className="service-item-two absolute-positioned-item internet-pos ">
           <div className="service-icon-wrapper-two internet-pos" style={{marginTop:'10em',marginLeft:'4em'}}>
           <div className="service-text-two">شراء خطوط و باقات انترنت</div>
-          <div className="service-text-two mobile padingtext2">جداول للأماكن السياحية و إماكنية تغيرها حسب الرغبة</div>
+          <div className="service-text-two mobile padingtext2" style={{marginBottom:'1em'}}>جداول للأماكن السياحية و إماكنية تغيرها حسب الرغبة</div>
             <div className="service-icon-two ">
               <img src={InternetIcon} />
               <img src={locationIcon} className='mobile-img'/>
