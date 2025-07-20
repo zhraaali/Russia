@@ -167,7 +167,9 @@
     .tour-image-container img{
       margin-left: 2em;
     }
-  
+  .tour-image{
+    bottom: 17em !important;
+  }
     .tour-details {
       max-width: 90%;
     }

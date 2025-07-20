@@ -6,7 +6,8 @@
   background-image: url('../../assets/images/background7.png');
   /* padding: 20px 0 0 0; */
   background-size: auto;
-  background-position: top;
+  /* background-position: top; */
+  background-position: bottom;
   width: 100%;
   /* height: 100vh; */
   height: 137vh !important;
@@ -325,8 +326,8 @@
 
   .info-title {
       font-size: 2em;
-      /* margin-bottom: 25px; */
-      margin-top: 6em;
+      margin-bottom: 1em;
+      /* margin-top: 6em; */
   }
 
   .card-icon {

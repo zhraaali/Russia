@@ -218,11 +218,17 @@
   
   /* للهواتف الصغيرة جداً */
   @media (max-width: 600px) {
+    
     .landmarks-cards-container{
       background-position-y: center;
-      background-size: contain;
-      /* height: 400px; */
+      background-size: cover;
+      height: 355px;
     }
+
+    .landmark-card{
+      top: 3em !important;
+    }
+
     .landmark-image-wrapper {
       width: 127px;
       height: 127px;
@@ -231,13 +237,13 @@
       font-size: 1em;
     }
     .moscow-button-container{
-      margin-bottom: 1em;
+      margin-bottom: 2.5em;
     }
     .moscow-button{
       border: 3px solid #1A68A6;
     }
     .landmark-card{
-      top: 3em !important;
+      top: 1em !important;
     }
   }
   @media (max-width: 515px) {
@@ -249,11 +255,11 @@
       font-size: .8em;
     }
     .moscow-button-container{
-      margin-bottom: 1em;
+      margin-bottom: 2.5em;
     }
-    .landmark-card{
+    /* .landmark-card{
       top: 5em !important;
-    }
+    } */
   }
   @media (max-width:440px) {
     .landmarks-cards-container{
@@ -267,7 +273,7 @@
     }
 
     .landmark-card{
-      top: 7em !important;
+      top: 4em !important;
     }
 
     .landmark-name {

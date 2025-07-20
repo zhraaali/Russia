@@ -140,3 +140,10 @@
       flex-direction: column;
     }
   }
+
+
+@media (max-width:600px){
+  .tour-image{
+    bottom: 17em !important;
+  }
+}
