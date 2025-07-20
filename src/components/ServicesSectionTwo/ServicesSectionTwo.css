@@ -464,7 +464,7 @@
     font-size: .35em !important;
   }
   
-  .location-pos{
+  /* .location-pos{
     top: 1.5em !important;
     left: 1.5em !important;
   }
@@ -474,7 +474,7 @@
   .hotel-pos{
     top: 1.6em !important;
     left: 8em !important;
-  }
+  } */
   
   
 }
@@ -488,7 +488,7 @@
   }
   
  
-  .location-pos{
+  /* .location-pos{
     left: 1em !important;
   }
   .internet-pos{
@@ -496,11 +496,18 @@
   }
   .hotel-pos{
     left: 7em !important;
+  } */
+  .internet-pos{
+    top: -86%;
+  }
+  .hotel-pos{
+    top: 42%;
+    left: 43% !important;
   }
 }
 
 @media (max-width:335px){
-  .location-pos{
+  /* .location-pos{
     left: 1em !important;
   }
   .internet-pos{
@@ -509,5 +516,5 @@
   }
   .hotel-pos{
     left: 6em !important;
-  }
+  } */
 }

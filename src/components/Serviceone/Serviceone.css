@@ -571,19 +571,9 @@
     /* min-height: 232px; */
     background-size: contain;
   }
-  .service-text{
-    font-size: .45em;
-  }
-  /* .service-icon{
-    width: 25px;
-    height: 25px;
-  }
   
-  .service-icon img{
-    width: 12px;
-    height: 12px;
-  } */
-  .ticket-pos{
+
+  /* .ticket-pos{
     left: -18% !important;
     top: 6% !important;
   }
@@ -594,6 +584,9 @@
   .car-pos{
     left: 35% !important;
     top: 6.5% !important;
+  } */
+  .card-pos{
+    left: 13% !important;
   }
   .service-text{
     font-size: .35em !important;
@@ -601,7 +594,7 @@
 }
 
 @media (max-width:335px){
-  .ticket-pos{
+  /* .ticket-pos{
     left: -22% !important;
     top: 4% !important;
   }
@@ -612,5 +605,5 @@
   .car-pos{
     left: 29% !important;
     top: 7.5% !important;
-  }
+  } */
 }
