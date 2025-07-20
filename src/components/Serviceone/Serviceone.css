@@ -364,7 +364,7 @@
 @media (max-width:600px){
   .services-layout-container{
     background-image: url('../../assets/images/section1.png') !important;
-    height: 200px !important;
+    height: 115px !important;
     min-height: auto !important;
   }
   .ticket-pos{
