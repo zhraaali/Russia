@@ -479,7 +479,7 @@
   }
 
   .service-text{
-    font-size: .35em !important;
+    font-size: .41em !important;
   }
   .padingtext1{
     padding: 0px 70px;
@@ -491,9 +491,7 @@
     
     background-size: auto;
   }
-  .service-text{
-    font-size: .35em;
-  }
+  
  
   /* .ticket-pos{
     left: -11% !important;
@@ -537,7 +535,7 @@
     background-size: contain;
   }
   .service-text{
-    font-size: .35em;
+    font-size: .41em !important;
   }
   /* .service-icon{
     width: 25px;
@@ -560,9 +558,7 @@
     left: 45% !important;
     top: 10.5% !important;
   }
-  .service-text{
-    font-size: .35em !important;
-  }
+  
   
 }
 @media (max-width:370px){

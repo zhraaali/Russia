@@ -31,7 +31,7 @@ const ServiceOne = (props) => { // تم تغيير اسم المكون ليتن�
         <div className="service-item absolute-positioned-item card-pos">
           <div className="service-icon-wrapper">
             
-            <div className="service-text">إصدارات بطاقات بنكية</div>
+            <div className="service-text" style={{marginBottom:'1em'}}>إصدارات بطاقات بنكية</div>
             <div className="service-icon"><img src={cardIcon} /></div>
           </div>
         </div>

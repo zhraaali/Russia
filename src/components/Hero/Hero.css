@@ -238,6 +238,9 @@
 
 .hero-buttons{
   gap: 0px;
+  width: 48vw;
+  
+  margin: 0 auto;
 }
 
   .hero-buttons .hero-button{
@@ -246,7 +249,7 @@
     width: 40%;
     height: auto;
     /* height: 3em; */
-    font-size: .5em;
+    font-size: .6em;
   }
   .hero-button{
     width: 60%;
