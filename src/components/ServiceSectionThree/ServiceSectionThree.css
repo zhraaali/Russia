@@ -644,7 +644,7 @@
 
 
 
-@media (max-width:459px){
+@media (max-width:450px){
   .services-layout-container-three{
     /* height: 353px; */
     min-height: 232px;
@@ -663,9 +663,16 @@
     height: 15px !important;
   }
   
-  .hotel-pos-three{
-    top: 1.6em !important;
-    left: 12em !important;
+  .location-pos-three{
+    left: -8% !important;
+    top: 7%;
+  }
+  .internet-pos-three{
+    left: 1% !important;
+    top: -128%;
+  }
+  .padingtext{
+    padding: 0px 57px !important;
   }
 }
 
