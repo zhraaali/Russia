@@ -209,7 +209,7 @@
     /* background-color: #2C7CCF; */
     border-radius: 8px;
     margin-top: 10px;
-    padding: 15px 0px;
+    padding: 15px 3px 15px 0px;
     /* position: absolute; */
     /* top: 100%; */
     /* left: 0; */
@@ -298,7 +298,7 @@
     height: 55px;
   }
   .custom-nav-links .nav-link-item {
-    font-size: .6em !important;
+    font-size: .55em !important;
   }
  
 }
