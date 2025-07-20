@@ -42,7 +42,7 @@
 
 .custom-nav-links .nav-link-item {
   color: #FAFCFE !important; /* لون الروابط أبيض */
-  font-size: 1.4em !important; /* حجم خط مناسب للشاشات الكبيرة */
+  font-size: 1.4em ; /* حجم خط مناسب للشاشات الكبيرة */
   text-decoration: none;
   font-weight: 500;
   margin-left: 4.5rem; /* المسافة بين الروابط (في RTL) */
@@ -209,7 +209,7 @@
     /* background-color: #2C7CCF; */
     border-radius: 8px;
     margin-top: 10px;
-    padding: 15px;
+    padding: 15px 0px;
     /* position: absolute; */
     /* top: 100%; */
     /* left: 0; */
@@ -251,7 +251,7 @@
 
 @media (max-width:670px){
   .custom-nav-links .nav-link-item {
-    font-size: .85em !important;
+    font-size: .85em ;
   }
 }
 
@@ -262,9 +262,15 @@
   .custom-navbar.navbar-scrolled .navbar-collapse{
     margin-top: 15px;
   }
-  /* .custom-navbar .navbar-collapse{
+  .custom-navbar .navbar-collapse {
     margin-top: -21px;
-  } */
+  }
+
+  .custom-navbar .navbar-collapse .nav-link-item{
+    font-size: .95em ;
+
+  }
+
   .custom-navbar .navbar-brand{
     margin-left: 0px;
   }
@@ -278,8 +284,8 @@
   .navbar-logo-image{
     height: 75px;
   }
-  .custom-nav-links .nav-link-item {
-    font-size: .7em !important;
+  .custom-navbar .navbar-collapse .custom-nav-links .nav-link-item {
+    font-size: .75em ;
   }
   
 }
@@ -292,7 +298,7 @@
     height: 55px;
   }
   .custom-nav-links .nav-link-item {
-    font-size: .55em !important;
+    font-size: .6em !important;
   }
  
 }

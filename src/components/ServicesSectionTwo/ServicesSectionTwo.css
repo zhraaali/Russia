@@ -410,7 +410,7 @@
     background-size: contain;
   }
   .service-text-two{
-    font-size: .35em !important;
+    font-size: .45em !important;
   }
   .service-icon-two{
     width: 40px !important;
@@ -444,7 +444,7 @@
     top: -82%;
   }
   .padingtext2{
-    padding: 0px 39px;
+    padding: 0px 30px;
   }
 }
 

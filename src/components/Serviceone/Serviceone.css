@@ -479,10 +479,10 @@
   }
 
   .service-text{
-    font-size: .41em !important;
+    font-size: .45em !important;
   }
   .padingtext1{
-    padding: 0px 70px;
+    padding: 0px 66px;
   }
 }
 
@@ -535,7 +535,7 @@
     background-size: contain;
   }
   .service-text{
-    font-size: .41em !important;
+    font-size: .45em !important;
   }
   /* .service-icon{
     width: 25px;

@@ -625,7 +625,7 @@
 
 @media (max-width: 480px){
   .service-text-three{
-    font-size: .35em !important;
+    font-size: .45em !important;
   }
   .padingtext{
     padding: 0px 49px;
@@ -651,7 +651,7 @@
     background-size: contain;
   }
   .service-text-three{
-    font-size: .35em !important;
+    font-size: .45em !important;
   }
   .service-icon-three{
     width: 40px !important;
@@ -672,7 +672,7 @@
     top: -128%;
   }
   .padingtext{
-    padding: 0px 57px !important;
+    padding: 0px 52px !important;
   }
 }
 
@@ -685,7 +685,7 @@
     background-size: contain;
   }
   .service-text-three{
-    font-size: .35em !important;
+    font-size: .45em !important;
   }
   
   /* .location-pos-three{
