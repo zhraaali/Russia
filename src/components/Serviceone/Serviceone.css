@@ -318,13 +318,13 @@
     font-size: .6em;
   }
   .service-icon{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
   }
   
   .service-icon img{
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
   }
   .service-icon .imgcar{
     width: 25px !important;
@@ -366,21 +366,22 @@
     background-image: url('../../assets/images/section1.png') !important;
     height: 115px !important;
     min-height: auto !important;
+    background-size: auto;
   }
   .ticket-pos{
     /* left: 50% !important; */
-    left: -2% !important;
-    top: 11% !important;
+    left: 6% !important;
+    top: 12% !important;
   }
   .card-pos{
     /* left: 50% !important; */
-    left: 23% !important;
-    top: 16% !important;
+    left: 27% !important;
+    top: 15% !important;
   }
   .car-pos{
     /* left: 50% !important; */
-    left: 55% !important;
-    top: 11% !important;
+    left: 48% !important;
+    top: 15% !important;
   }
   .document-pos{
     display: none;
@@ -388,60 +389,35 @@
   .service-text{
     font-size: .8em !important;
   }
+  .padingtext1{
+    padding: 0px 22px;
+  }
 }
 @media (max-width:550px){
   .services-layout-container{
     /* height: 353px; */
     /* min-height: 232px; */
-    background-size: contain;
+    /* background-size: contain; */
   }
   .service-text{
     font-size: .7em !important;
   }
-  /* .service-icon{
-    width: 30px;
-    height: 30px;
-  }
-  
-  .service-icon img{
-    width: 15px;
-    height: 15px;
-  } */
+
   /* .ticket-pos{
     
-    left: 3% !important;
-    top: -13% !important;
-  }
-  .card-pos{
-    
-    left: -6% !important;
-    top: -8% !important;
-  }
-  .car-pos{
-    
-    left: -20% !important;
-    top: -10% !important;
-  }
-  .document-pos{
-    
-    left: -31% !important;
-    top: -14% !important;
-  } */
-  .ticket-pos{
-    /* left: 50% !important; */
     left: -5% !important;
     top: 9% !important;
   }
   .card-pos{
-    /* left: 50% !important; */
+    
     left: 23% !important;
     top: 16% !important;
   }
   .car-pos{
-    /* left: 50% !important; */
+    
     left: 53% !important;
     top: 10% !important;
-  }
+  } */
   .document-pos{
     display: none;
   }
@@ -492,18 +468,21 @@
 
 @media (max-width:480px){
   .ticket-pos{
-    left: -8% !important;
+    left: -3% !important;
   }
   .card-pos{
-    left: 20% !important;
-    top: 12% !important;
+    left: 23% !important;
   }
+
   .car-pos{
-    left: 48% !important;
-    top: 12.5% !important;
+    left: 44% !important;
   }
+
   .service-text{
-    font-size: .45em !important;
+    font-size: .35em !important;
+  }
+  .padingtext1{
+    padding: 0px 70px;
   }
 }
 
@@ -511,7 +490,7 @@
   .services-layout-container{
     /* height: 353px; */
     /* min-height: 232px; */
-    background-size: contain;
+    background-size: auto;
   }
   .service-text{
     font-size: .35em;

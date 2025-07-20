@@ -535,7 +535,7 @@
   .services-layout-container-three{
     background-image: url('../../assets/images/section3.png') !important;
     background-position: top !important;
-    background-size: contain !important;
+    background-size: auto !important;
     height: 115px !important;
     min-height: auto !important;
   }
@@ -564,16 +564,16 @@
     height: 20px !important;
   }
 .location-pos-three{
-  top: 2em;
-  left: 0em !important;
+  top: 1%;
+  left: 9% !important;
 }
 .internet-pos-three{
-  top: -6.9em;
-  left: 4.4em;
+  top: -142%;
+  left: 17%;
 }
 .hotel-pos-three{
-  top: 1.5em;
-  left: 20.4em;
+  top: 21%;
+  left: 50%;
 }
 .service-text-three{
   font-size: .8em !important;
@@ -592,7 +592,7 @@
     font-size: .5em !important;
   }
 
-  .location-pos-three{
+  /* .location-pos-three{
     top: 2em;
     left: 0em !important;
   }
@@ -602,37 +602,42 @@
   .hotel-pos-three{
     top: 2.5em;
     left: 18.4em;
-  }
-
+  } */
+.internet-pos-three{
+  top: -129%;
+}
+.padingtext{
+  padding: 0px 42px;
+}
 }
 
 @media (max-width: 520px){
-  .internet-pos-three{
+  /* .internet-pos-three{
     left: 2.4em !important;
   }
   .hotel-pos-three{
     top: 2.5em;
     left: 16.4em;
-  }
+  } */
 
 }
 
 
 @media (max-width: 480px){
   .service-text-three{
-    font-size: .45em !important;
+    font-size: .35em !important;
+  }
+  .padingtext{
+    padding: 0px 49px;
   }
   .location-pos-three{
-    top: 1em;
-    left: -1em !important;
+    left: 0% !important;
   }
   .internet-pos-three{
-    top: -7.9em !important;
-    left: 1.4em !important;
+    left: 10% !important;
   }
   .hotel-pos-three{
-    top: 2.5em;
-    left: 13em !important;
+    left: 48%;
   }
 }
 

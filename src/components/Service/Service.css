@@ -12,9 +12,9 @@
   }
   
 @media (max-width:600px){
-  .service{
+  /* .service{
     padding: 0px 20px;
-  }
+  } */
   .service h2{
     font-size: 2em;
   }

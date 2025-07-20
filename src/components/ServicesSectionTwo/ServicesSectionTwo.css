@@ -334,16 +334,16 @@
       height: 20px !important;
     }
   .location-pos{
-    top: 2.5em;
-    left: 2em !important;
+    top: 53%;
+    left: 15% !important;
   }
   .internet-pos{
-    top: -1.9em;
-    left: 5em;
+    top: -88%;
+    left: 20%;
   }
   .hotel-pos{
-    top: 2.5em;
-    left: 12.4em;
+    top: 53%;
+    left: 39%;
   }
   .service-text-two{
     font-size: .8em !important;
@@ -363,41 +363,42 @@
     font-size: .5em !important;
   }
 
-  .location-pos{
+  /* .location-pos{
     top: 2.5em;
     left: 2em !important;
   }
   .hotel-pos{
     top: 2.5em;
     left: 11.4em;
-  }
+  } */
 }
 
   @media (max-width: 520px){
-    .internet-pos{
+    /* .internet-pos{
       left: 4em !important;
     }
     .hotel-pos{
       top: 2.5em;
       left: 11em;
-    }
+    } */
   
 }
 
 @media (max-width: 480px){
-  .service-text-two{
-    font-size: .45em !important;
-  }
   .location-pos{
-    top: 2em;
-    left: 2em !important;
+    left: 12% !important;
   }
   .internet-pos{
-    top: -2.9em !important;
-    left: 3em !important;
+    left: 19% !important;
   }
   .hotel-pos{
-    left: 10em !important;
+    left: 40%;
+  }
+  .service-text-two{
+    font-size: .35em !important;
+  }
+  .padingtext{
+    padding: 0px 49px;
   }
 }
 

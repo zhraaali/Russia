@@ -37,7 +37,7 @@ import HotelIcon from '../../assets/images/hotel-svgrepo-com (1).png'
             <img src={simIcon} className='mobile-img' />
           </div>
           <div className="service-text-three">شراء بطاقة هاتف وكرت بنك تبديل عملة</div>
-          <div className="service-text-three mobile">شراء بطاقة هاتف وكرت بنك تبديل عملة</div>
+          <div className="service-text-three mobile padingtext">شراء بطاقة هاتف وكرت بنك تبديل عملة</div>
             
             
           </div>

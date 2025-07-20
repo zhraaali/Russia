@@ -95,7 +95,7 @@
       background-repeat: no-repeat;
   
       background-position: top !important;
-      background-size: contain !important;
+      background-size: auto !important;
     }
     .service-icon-wrapper-four{
       display: flex !important;
@@ -123,8 +123,8 @@
     }
   .location-pos-four{
     position: absolute;
-    top: 2em;
-    left: 10em !important;
+    top: 0%;
+    left: 29% !important;
   }
   
   .service-text-four{
@@ -138,11 +138,13 @@
       font-size: .5em !important;
     }
   
-    .location-pos-four{
+    /* .location-pos-four{
       top: 3em;
       left: 8em !important;
+    } */
+    .padingtext4{
+      padding: 0px 62px;
     }
-    
   
   }
   
@@ -151,13 +153,15 @@
   
   @media (max-width: 480px){
     .service-text-four{
-      font-size: .45em !important;
+      font-size: .35em !important;
     }
-    .location-pos-four{
+    /* .location-pos-four{
       top: 2em;
       left: 6em !important;
+    } */
+    .location-pos-four{
+      left: 25% !important;
     }
-    
   }
   
   
