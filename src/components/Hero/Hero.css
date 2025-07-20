@@ -235,10 +235,16 @@
     font-size: 1em;
     margin-top: 14%;
   }
+
+.hero-buttons{
+  gap: 0px;
+}
+
   .hero-buttons .hero-button{
-    gap: 10px;
+    /* gap: 0px !important; */
     /* width: 8.5em; */
-    width: 40%;
+    width: 35%;
+    height: auto;
     /* height: 3em; */
     font-size: .7em;
   }
