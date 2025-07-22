@@ -271,17 +271,38 @@
 
 
 
+@media (min-width: 768px) and (max-width: 769px){
+.hero-content{
+  top: -73% !important;
+}
+}
 
-
-
-@media (min-width: 768px) and (max-width: 1024px)   {
+@media (min-width: 770px) and (max-width: 1024px)   {
+  .hero-section{
+    height: 50vh;
+  }
   .hero-content{
-    top: -63% !important;
+    /* position: absolute; */
+    top: -123% !important;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+
   }
 }
 
+@media (min-width: 820px) and (max-width: 912px) {
+  .hero-content{
+    top: -100% !important;
+  }
+}
 
-
+/* @media (min-width: 1023px) and (max-width: 1024px){
+  .hero-content{
+    top: -59% !important;
+  }
+} */
 
 
 
