@@ -395,10 +395,13 @@
     left: 40%;
   }
   .service-text-two{
-    font-size: .35em !important;
+    font-size: .55em !important;
   }
   .padingtext{
-    padding: 0px 49px;
+    padding: 0px 37px;
+  }
+  .padingtext2{
+    padding: 0px 35px;
   }
 }
 

@@ -172,7 +172,7 @@
 
     .hero-content {
       padding-top: 0; /* إزالة المسافة العلوية */
-      top: -72% !important;
+      /* top: -72% !important; */
       top: -109% !important;
       /* bottom: 100% !important; */
     }
@@ -274,7 +274,11 @@
 
 
 
-
+@media (min-width: 768px) and (max-width: 1024px)   {
+  .hero-content{
+    top: -63% !important;
+  }
+}
 
 
 

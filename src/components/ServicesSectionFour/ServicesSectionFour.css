@@ -154,7 +154,7 @@
   
   @media (max-width: 480px){
     .service-text-four{
-      font-size: .45em !important;
+      font-size: .55em !important;
     }
     /* .location-pos-four{
       top: 2em;
@@ -163,6 +163,9 @@
     .location-pos-four{
       left: 25% !important;
     }
+    .padingtext4 {
+      padding: 0px 48px;
+  }
   }
   
   
