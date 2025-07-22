@@ -409,10 +409,15 @@
 @media (min-width: 768px) and (max-width: 1023px){
   .important{
     height: 150vh !important;
+    /* height: 144vh !important; */
   }
   .info-cards-grid{
     position: absolute;
     top: 302%;
+  }
+  .info-title{
+    position: relative;
+    top: 3em;
   }
   
 }
