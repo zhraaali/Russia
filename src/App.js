@@ -1,52 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
 
-import NavbarComponent from './components/Navbar/Navbar';
-import HeroSection from './components/Hero/Hero';
-import FeaturedToursSection from './components/FeaturedToursSection/FeaturedToursSection';
-import backimg from './assets/images/Rectangle 3.svg'
-import moscowImage from './assets/images/eac37e124ffa14030bbcc438ab28bb31 (1)@2x.png'
-import Service from './components/Service/Service';
-import ImportantInfoSection from './components/ImportantInfoSection/ImportantInfoSection'
-import FamousLandmarksSection from './components/FamousLandmarksSection/FamousLandmarksSection';
-import FamousSection from './components/FamousSection/FamousSection';
-import Footer from './components/Footer/Footer';
-import ActivitiesSection from './components/ActivitiesSection/ActivitiesSection';
-import MoscowInfoSection from './components/MoscowInfoSection/MoscowInfoSection';
-import ContactUsSection from './components/ContactUsSection/ContactUsSection';
-import { Route, Routes } from 'react-router-dom/dist';
-import Home from './Pages/Home/Home';
-import Activity from './Pages/Activity/Activity';
-import Information from './Pages/Information/Information';
-import Contact from './Pages/Contact/Contact';
+import { HelmetProvider } from 'react-helmet-async'
+import { Route, Routes } from 'react-router-dom/dist'
+import Activity from './Pages/Activity/Activity'
+import Contact from './Pages/Contact/Contact'
+import Home from './Pages/Home/Home'
+import Information from './Pages/Information/Information'
+import NavbarComponent from './components/Navbar/Navbar'
 function App() {
   return (
-    <div className="App">
-      <NavbarComponent/>
-      <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/activity' element={<Activity/>}/>
-        <Route path='/informations' element={<Information/>}/>
-        <Route path='/contact' element={<Contact/>}/>
-      {/* <HeroSection/> */}
-      {/* <Service/> */}
-   
-      {/* <FeaturedToursSection/> */}
-      {/* <ImportantInfoSection/> */}
+    <HelmetProvider>
+      <div className='App'>
+        <NavbarComponent />
+        <Routes>
+          <Route
+            path='/'
+            element={<Home />}
+          />
+          <Route
+            path='/activity'
+            element={<Activity />}
+          />
+          <Route
+            path='/informations'
+            element={<Information />}
+          />
+          <Route
+            path='/contact'
+            element={<Contact />}
+          />
+          {/* <HeroSection/> */}
+          {/* <Service/> */}
 
-      {/* <FamousSection/> */}
-      {/* <Footer/> */}
-      {/* <ActivitiesSection/> */}
-      {/* <MoscowInfoSection/> */}
-      {/* <ContactUsSection/> */}
-      </Routes>
-    </div>
-  );
+          {/* <FeaturedToursSection/> */}
+          {/* <ImportantInfoSection/> */}
+
+          {/* <FamousSection/> */}
+          {/* <Footer/> */}
+          {/* <ActivitiesSection/> */}
+          {/* <MoscowInfoSection/> */}
+          {/* <ContactUsSection/> */}
+        </Routes>
+      </div>
+    </HelmetProvider>
+  )
 }
 
-export default App;
-
-
+export default App
 
 // مكون لـ Navbar (سننشئه في الخطوة التالية)
 // import Navbar from './components/Navbar/Navbar';
@@ -84,7 +84,6 @@ export default App;
 //     <ContactUsSection />
 //   </>
 // );
-
 
 // function App() {
 //   return (
