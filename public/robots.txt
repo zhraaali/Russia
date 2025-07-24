@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://russia-ten.vercel.app/sitemap.xml
+Sitemap: https://russia-gulf.vercel.app/sitemap.xml

@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const baseUrl =  'https://russia-ten.vercel.app'; 
+const baseUrl =  'https://russia-gulf.vercel.app'; 
 const routes = [
   { path: '/', priority: '1.0' },
   { path: '/activity', priority: '0.8' },
