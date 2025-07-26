@@ -226,7 +226,8 @@
     height: 50vh;
   }
   .hero-content{
-    top: -80% !important;
+    /* top: -80% !important; */
+    top: -85% !important;
   }
   .hero-title {
     font-size: 2em;

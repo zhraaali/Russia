@@ -320,6 +320,8 @@
       max-width: calc(50% - 15px); /* ضمان ألا تزيد البطاقة عن هذا العرض */
       padding: 0px;
       box-sizing: border-box; /* التأكد من أن padding لا يزيد العرض الكلي */
+      width: 45% !important;
+      height: 200px !important;
   }
 
   /* التنسيقات الأخرى تبقى كما هي أو تُعدل حسب الحاجة */
